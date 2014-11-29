@@ -17,6 +17,14 @@
  */
 
 
+.footer_grid {
+  $total-columns:10;
+  @include grid-row();
+  @include grid-html-classes($size:large);
+  $total-columns:10;
+}
+
+
 
 /**
  * 1.0 Custom settings
