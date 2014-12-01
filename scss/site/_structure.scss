@@ -17,15 +17,6 @@
  */
 
 
-.footer_grid {
-  $total-columns:10;
-  @include grid-row();
-  @include grid-html-classes($size:large);
-  $total-columns:10;
-}
-
-
-
 /**
  * 1.0 Custom settings
  * ----------------------------------------------------------------------------
@@ -94,10 +85,32 @@ img.alignright {
 // Insert styles here
 
 
+button, .button {
+	border-radius: $global-rounded;
+}
+
 /**
  * 3.0 Header, sidebar and footer
  * ----------------------------------------------------------------------------
  */
+
+$header_height: 130px;
+
+ul.title-area li.name h1 a div.header_logo {
+	background: url('images/logo_attentivehealth_white.svg') no-repeat center center;
+	text-indent: -9999px;
+	width: 100px;
+	height: $header_height;
+}
+
+.top-bar {
+height: $header_height;
+line-height: 45px;
+	.name {
+		height: $header_height;
+	}
+
+}
 
 // A more subtle background color for the active menu item
 .top-bar-section li.active:not(.has-form) a:not(.button)  {
@@ -107,12 +120,67 @@ img.alignright {
 	background: #202020;
 }
 
-// Add some whitespace above the footer for medium-up screens
+/* Add some whitespace above the footer for medium-up screens
 @media #{$medium-up} {
 	footer.row {
-		margin-top: rem-calc(60);
+		padding-top: rem-calc(20);
+		border-top: solid 4px $small_contrast;
+
 	}
 }
+*/
+footer.row {
+	border-top: solid 10px $small_contrast;
+	max-width: 100%;
+}
+
+// makes it so that the medium new grid rules only apply to medium and up. the next mixin does it only for small screens
+@media #{$medium-up} {
+.footer_grid {
+	$total-columns:10;
+	@include grid-row();
+	@include grid-html-classes($size:medium);
+	$total-columns:10;
+	}
+}
+
+@media #{$small-only} {
+	.footer_grid {
+		$total-columns:10;
+		@include grid-row();
+		@include grid-html-classes($size:small);
+		$total-columns:10;
+	}
+}
+
+.footer_grid {
+	padding-top: rem-calc(20);
+
+
+  article.widget {
+  	text-align: center;
+  	padding-top: .5rem;
+  	@include footer_font_style;
+  	p {
+  		@include footer_font_style;
+  	}
+  	ul {
+  		margin-left: 0;
+  		li {
+	  		list-style: none;
+	  		@include footer_font_style;
+	  		
+	  		a {
+	  			color: $greige;
+	  		}
+  		}
+  	}
+  	&.dots {
+  		border-right: 2px $greige_light dotted;
+  	}
+  }
+}
+
 
 
 /**

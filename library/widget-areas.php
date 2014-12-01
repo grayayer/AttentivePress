@@ -12,10 +12,54 @@ function foundationpress_sidebar_widgets() {
   ));
 
   register_sidebar(array(
-      'id' => 'footer-widgets',
-      'name' => __('Footer widgets', 'FoundationPress'),
+      'id' => 'footer-widget-1',
+      'name' => __('Footer Widget 1', 'FoundationPress'),
       'description' => __('Drag widgets to this footer container', 'FoundationPress'),
-      'before_widget' => '<article id="%1$s" class="large-4 columns widget %2$s">',
+      'before_widget' => '<article id="%1$s" class="small-5 medium-2 columns dots widget %2$s" data-equalizer-watch>',
+      'after_widget' => '</article>',
+      'before_title' => '<h6>',
+      'after_title' => '</h6>'      
+  ));
+
+
+  register_sidebar(array(
+      'id' => 'footer-widget-2',
+      'name' => __('Footer Widget 2', 'FoundationPress'),
+      'description' => __('Drag widgets to this footer container', 'FoundationPress'),
+      'before_widget' => '<article id="%1$s" class="small-5 medium-2 columns dots widget %2$s" data-equalizer-watch>',
+      'after_widget' => '</article>',
+      'before_title' => '<h6>',
+      'after_title' => '</h6>'      
+  ));
+
+
+  register_sidebar(array(
+      'id' => 'footer-widget-3',
+      'name' => __('Footer Widget 3', 'FoundationPress'),
+      'description' => __('Drag widgets to this footer container', 'FoundationPress'),
+      'before_widget' => '<article id="%1$s" class="small-5 medium-2 columns dots widget %2$s" data-equalizer-watch>',
+      'after_widget' => '</article>',
+      'before_title' => '<h6>',
+      'after_title' => '</h6>'      
+  ));
+
+
+  register_sidebar(array(
+      'id' => 'footer-widget-4',
+      'name' => __('Footer Widget 4', 'FoundationPress'),
+      'description' => __('Drag widgets to this footer container', 'FoundationPress'),
+      'before_widget' => '<article id="%1$s" class="small-5 medium-2 columns widget %2$s" data-equalizer-watch>',
+      'after_widget' => '</article>',
+      'before_title' => '<h6>',
+      'after_title' => '</h6>'      
+  ));
+
+
+  register_sidebar(array(
+      'id' => 'footer-widget-5',
+      'name' => __('Footer Widget 5', 'FoundationPress'),
+      'description' => __('Drag widgets to this footer container', 'FoundationPress'),
+      'before_widget' => '<article id="%1$s" class="small-10 medium-2 columns widget %2$s" data-equalizer-watch>',
       'after_widget' => '</article>',
       'before_title' => '<h6>',
       'after_title' => '</h6>'      
