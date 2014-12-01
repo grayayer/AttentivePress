@@ -12,6 +12,14 @@
 	<?php do_action('foundationPress_after_footer'); ?>
   </div>
 </footer>
+<footer class="credit_footer">
+  <div class="row">
+    <div class="centered">
+      <a href="http://#"><img src="<?php echo get_stylesheet_directory_uri()?>/css/images/laura_sue_logo2.png"/ style="padding-right:10px;"></a>
+      <a href="http://#"><img src="<?php echo get_stylesheet_directory_uri()?>/css/images/studiok40_logo2.png"/></a>
+    </div>
+  </div>
+</div>
 <a class="exit-off-canvas"></a>
 
 	<?php do_action('foundationPress_layout_end'); ?>

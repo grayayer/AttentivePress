@@ -5668,7 +5668,8 @@ ul.title-area li.name h1 a div.header_logo {
 */
 footer.row {
   border-top: solid 10px #f7f6f5;
-  max-width: 100%; }
+  max-width: 100%;
+  margin-bottom: 1.5rem; }
 
 @media only screen and (min-width:40.063em) {
   .footer_grid {
@@ -6011,6 +6012,13 @@ footer.row {
           color: #776c5f; }
     .footer_grid article.widget.dots {
       border-right: 2px #d1c1ab dotted; }
+
+.credit_footer {
+  background: #f7f6f5;
+  height: 3rem; }
+  .credit_footer .centered {
+    width: 325px;
+    margin: 0.5rem auto 0 auto; }
 
 /**
  * 4.0 Content

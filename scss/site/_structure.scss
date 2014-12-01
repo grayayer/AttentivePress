@@ -132,6 +132,7 @@ line-height: 45px;
 footer.row {
 	border-top: solid 10px $small_contrast;
 	max-width: 100%;
+	margin-bottom: 1.5rem;
 }
 
 // makes it so that the medium new grid rules only apply to medium and up. the next mixin does it only for small screens
@@ -182,7 +183,14 @@ footer.row {
 }
 
 
-
+.credit_footer {
+	background: $small_contrast;
+	height: 3rem;
+	.centered {
+		width: 325px;
+		margin: .5rem auto 0 auto;
+	}
+}
 /**
  * 4.0 Content
  * ----------------------------------------------------------------------------
