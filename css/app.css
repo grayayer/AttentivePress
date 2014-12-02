@@ -4020,7 +4020,7 @@ meta.foundation-mq-topbar {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: #333333; }
+  background: #16304b; }
   .contain-to-grid .top-bar {
     margin-bottom: 0; }
 
@@ -4048,7 +4048,7 @@ meta.foundation-mq-topbar {
   height: 45px;
   line-height: 45px;
   position: relative;
-  background: #333333;
+  background: #16304b;
   margin-bottom: 0; }
   .top-bar ul {
     margin-bottom: 0;
@@ -4127,7 +4127,7 @@ meta.foundation-mq-topbar {
     height: auto;
     background: transparent; }
     .top-bar.expanded .title-area {
-      background: #333333; }
+      background: #16304b; }
     .top-bar.expanded .toggle-topbar a {
       color: #888888; }
       .top-bar.expanded .toggle-topbar a span::after {
@@ -4146,12 +4146,12 @@ meta.foundation-mq-topbar {
     font-size: 16px;
     margin: 0; }
   .top-bar-section .divider, .top-bar-section [role="separator"] {
-    border-top: solid 1px #1a1a1a;
+    border-top: none;
     clear: both;
     height: 1px;
     width: 100%; }
   .top-bar-section ul li {
-    background: #333333; }
+    background: rgba(255, 255, 255, 0.05); }
     .top-bar-section ul li > a {
       display: block;
       width: 100%;
@@ -4249,8 +4249,8 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li > button.warning:hover, .top-bar-section ul li > button.warning:focus {
           color: white; }
     .top-bar-section ul li:hover:not(.has-form) > a {
-      background-color: #555555;
-      background: #272727;
+      background-color: rgba(255, 255, 255, 0.05);
+      background: inherit;
       color: white; }
     .top-bar-section ul li.active > a {
       background: #008cba;
@@ -4334,7 +4334,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width:40.063em) {
   .top-bar {
-    background: #333333;
+    background: #16304b;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
       content: " ";
@@ -4352,7 +4352,7 @@ meta.foundation-mq-topbar {
       position: relative;
       top: 7px; }
     .top-bar.expanded {
-      background: #333333; }
+      background: #16304b; }
   .contain-to-grid .top-bar {
     max-width: 62.5rem;
     margin: 0 auto;
@@ -4369,16 +4369,16 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li .js-generated {
           display: none; }
     .top-bar-section li.hover > a:not(.button) {
-      background-color: #555555;
-      background: #272727;
+      background-color: rgba(255, 255, 255, 0.05);
+      background: inherit;
       color: white; }
     .top-bar-section li:not(.has-form) a:not(.button) {
       padding: 0 15px;
       line-height: 45px;
-      background: #333333; }
+      background: rgba(255, 255, 255, 0.05); }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
-        background-color: #555555;
-        background: #272727; }
+        background-color: rgba(255, 255, 255, 0.05);
+        background: inherit; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       padding: 0 15px;
       line-height: 45px;
@@ -4437,18 +4437,18 @@ meta.foundation-mq-topbar {
       background: transparent;
       min-width: 100%; }
       .top-bar-section .dropdown li a {
-        color: white;
+        color: #275982;
         line-height: 45px;
         white-space: nowrap;
         padding: 12px 15px;
-        background: #333333; }
+        background: rgba(255, 255, 255, 0.95); }
       .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
-        color: white;
-        background: #333333; }
+        color: #275982;
+        background: rgba(255, 255, 255, 0.95); }
       .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
         color: white;
-        background-color: #555555;
-        background: #272727; }
+        background-color: rgba(255, 255, 255, 0.05);
+        background: inherit; }
       .top-bar-section .dropdown li label {
         white-space: nowrap;
         background: #333333; }
@@ -4458,12 +4458,12 @@ meta.foundation-mq-topbar {
     .top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
       border-bottom: none;
       border-top: none;
-      border-right: solid 1px #4e4e4e;
+      border-right: none;
       clear: none;
       height: 45px;
       width: 0; }
     .top-bar-section .has-form {
-      background: #333333;
+      background: rgba(255, 255, 255, 0.05);
       padding: 0 15px;
       height: 45px; }
     .top-bar-section .right li .dropdown {
@@ -4477,8 +4477,8 @@ meta.foundation-mq-topbar {
       .top-bar-section .left li .dropdown li .dropdown {
         left: 100%; }
   .no-js .top-bar-section ul li:hover > a {
-    background-color: #555555;
-    background: #272727;
+    background-color: rgba(255, 255, 255, 0.05);
+    background: inherit;
     color: white; }
   .no-js .top-bar-section ul li:active > a {
     background: #008cba;
@@ -5639,6 +5639,28 @@ button, .button {
  * 3.0 Header, sidebar and footer
  * ----------------------------------------------------------------------------
  */
+@media only screen and (min-width: 40.063em) {
+  .top-bar {
+    background-color: #16304b;
+    background: radial-gradient(circle at bottom center, #2f6c9d, #16304b); } }
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+  background: rgba(255, 255, 255, 0.05) !important;
+  /*this fakes a white line above the space
+	  background-image: 
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 15%,
+      #FFFFFF 15%,
+      #FFFFFF 26%,
+      transparent 26%
+    ) !important;
+     */ }
+
+.top-bar-section li.active:not(.has-form) a:hover:not(.button) {
+  background: rgba(255, 255, 255, 0.05) !important; }
+
 ul.title-area li.name h1 a div.header_logo {
   background: url('images/logo_attentivehealth_white.svg') no-repeat center center;
   text-indent: -9999px;
@@ -5656,6 +5678,15 @@ ul.title-area li.name h1 a div.header_logo {
 
 .top-bar-section li.active:not(.has-form) a:hover:not(.button) {
   background: #202020; }
+
+.right-off-canvas-toggle.right-menu-icon {
+  float: right;
+  color: white;
+  margin-right: 1rem; }
+  .right-off-canvas-toggle.right-menu-icon i {
+    font-size: 1.5rem;
+    position: relative;
+    top: 4px; }
 
 /* Add some whitespace above the footer for medium-up screens
 @media #{$medium-up} {

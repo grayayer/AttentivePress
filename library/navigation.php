@@ -7,7 +7,9 @@
 register_nav_menus(array(
     'top-bar-l' => 'Left Top Bar', // registers the menu in the WordPress admin menu editor
     'top-bar-r' => 'Right Top Bar',
-    'mobile-off-canvas' => 'Mobile'
+    'mobile-off-canvas-corporate' => 'Corporate Mobile',
+    'mobile-off-canvas-personal' => 'Personal Mobile',
+    'medium-right-off-canvas' => 'Medium Right Common'
 ));
 
 
@@ -43,7 +45,7 @@ if ( ! function_exists( 'foundationPress_top_bar_r' ) ) {
 	        'container' => false,                           // remove nav container
 	        'container_class' => '',                        // class of container
 	        'menu' => '',                                   // menu name
-	        'menu_class' => 'top-bar-menu right',           // adding custom nav class
+	        'menu_class' => 'top-bar-menu right show-for-large-up',           // adding custom nav class
 	        'theme_location' => 'top-bar-r',                // where it's located in the theme
 	        'before' => '',                                 // before each link <a> 
 	        'after' => '',                                  // after each link </a>
@@ -57,16 +59,60 @@ if ( ! function_exists( 'foundationPress_top_bar_r' ) ) {
 }
 
 /**
- * Mobile off-canvas
+ * Mobile off-canvas corporate
  */
-if ( ! function_exists( 'foundationPress_mobile_off_canvas' ) ) {
-	function foundationPress_mobile_off_canvas() {
+if ( ! function_exists( 'foundationPress_mobile_off_canvas_corporate' ) ) {
+	function foundationPress_mobile_off_canvas_corporate() {
 	    wp_nav_menu(array( 
 	        'container' => false,                           // remove nav container
 	        'container_class' => '',                        // class of container
 	        'menu' => '',                                   // menu name
 	        'menu_class' => 'off-canvas-list',              // adding custom nav class
-	        'theme_location' => 'mobile-off-canvas',        // where it's located in the theme
+	        'theme_location' => 'mobile-off-canvas-corporate',        // where it's located in the theme
+	        'before' => '',                                 // before each link <a> 
+	        'after' => '',                                  // after each link </a>
+	        'link_before' => '',                            // before each link text
+	        'link_after' => '',                             // after each link text
+	        'depth' => 5,                                   // limit the depth of the nav
+	        'fallback_cb' => false,                         // fallback function (see below)
+	        'walker' => new top_bar_walker()
+	    ));
+	}
+}
+
+/**
+ * Mobile off-canvas personal
+ */
+if ( ! function_exists( 'foundationPress_mobile_off_canvas_personal' ) ) {
+	function foundationPress_mobile_off_canvas_personal() {
+	    wp_nav_menu(array( 
+	        'container' => false,                           // remove nav container
+	        'container_class' => '',                        // class of container
+	        'menu' => '',                                   // menu name
+	        'menu_class' => 'off-canvas-list',              // adding custom nav class
+	        'theme_location' => 'mobile-off-canvas-personal',        // where it's located in the theme
+	        'before' => '',                                 // before each link <a> 
+	        'after' => '',                                  // after each link </a>
+	        'link_before' => '',                            // before each link text
+	        'link_after' => '',                             // after each link text
+	        'depth' => 5,                                   // limit the depth of the nav
+	        'fallback_cb' => false,                         // fallback function (see below)
+	        'walker' => new top_bar_walker()
+	    ));
+	}
+}
+
+/**
+ * Medium off-canvas right
+ */
+if ( ! function_exists( 'foundationPress_medium_right_off_canvas' ) ) {
+	function foundationPress_medium_right_off_canvas() {
+	    wp_nav_menu(array( 
+	        'container' => false,                           // remove nav container
+	        'container_class' => '',                        // class of container
+	        'menu' => '',                                   // menu name
+	        'menu_class' => 'off-canvas-list',              // adding custom nav class
+	        'theme_location' => 'medium-right-off-canvas',  // where it's located in the theme
 	        'before' => '',                                 // before each link <a> 
 	        'after' => '',                                  // after each link </a>
 	        'link_before' => '',                            // before each link text

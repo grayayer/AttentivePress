@@ -96,6 +96,37 @@ button, .button {
 
 $header_height: 130px;
 
+
+@media only screen and (min-width:40.063em) {
+	.top-bar {
+		background-color: $corporate_bg_header_primary;
+		background: radial-gradient(
+			circle at bottom center,
+			$corporate_bg_header_highlight, $corporate_bg_header_primary)
+		;
+	}
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+  		background: $header_menu_overlay !important;
+/*this fakes a white line above the space
+	  background-image: 
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 15%,
+      #FFFFFF 15%,
+      #FFFFFF 26%,
+      transparent 26%
+    ) !important;
+     */
+  	}
+
+.top-bar-section li.active:not(.has-form) a:hover:not(.button) {
+  background: $header_menu_overlay !important;
+}
+
+
 ul.title-area li.name h1 a div.header_logo {
 	background: url('images/logo_attentivehealth_white.svg') no-repeat center center;
 	text-indent: -9999px;
@@ -120,6 +151,18 @@ line-height: 45px;
 	background: #202020;
 }
 
+.right-off-canvas-toggle.right-menu-icon {
+	float: right;
+	color: white;
+	//margin-top: 1rem;
+	margin-right: 1rem;
+	i {
+		font-size: 1.5rem;
+		position: relative;
+		top: 4px;
+	}
+}
+
 /* Add some whitespace above the footer for medium-up screens
 @media #{$medium-up} {
 	footer.row {
@@ -129,6 +172,7 @@ line-height: 45px;
 	}
 }
 */
+
 footer.row {
 	border-top: solid 10px $small_contrast;
 	max-width: 100%;

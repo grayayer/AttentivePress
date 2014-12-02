@@ -41,20 +41,26 @@
 	
 	<?php do_action('foundationPress_layout_start'); ?>
 	
+	<!--the mobile header display -->
 	<nav class="tab-bar show-for-small-only">
 		<section class="left-small">
 			<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
 		</section>
 		<section class="middle tab-bar-section">
-			
 			<h1 class="title"><?php bloginfo( 'name' ); ?></h1>
-
 		</section>
+		<section class="right-small">
+			<a href="#" role="button" class="right-off-canvas-toggle menu-icon" ><span></span></a>
+		</section>		
 	</nav>
 
-	<?php get_template_part('parts/off-canvas-menu'); ?>
 
+
+	<?php get_template_part('parts/off-canvas-left'); ?>
+	<?php  get_template_part('parts/off-canvas-right-common'); ?>
 	<?php get_template_part('parts/top-bar'); ?>
+
+
 
 <section class="container" role="document">
 	<?php do_action('foundationPress_after_header'); ?>

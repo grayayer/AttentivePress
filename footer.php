@@ -12,6 +12,7 @@
 	<?php do_action('foundationPress_after_footer'); ?>
   </div>
 </footer>
+<a class="exit-off-canvas"></a>
 <footer class="credit_footer">
   <div class="row">
     <div class="centered">
@@ -20,7 +21,6 @@
     </div>
   </div>
 </div>
-<a class="exit-off-canvas"></a>
 
 	<?php do_action('foundationPress_layout_end'); ?>
 	</div>
