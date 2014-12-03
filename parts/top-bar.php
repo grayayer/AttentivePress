@@ -9,7 +9,7 @@
             <ul>
                 <li><a href="/personal/" class="personal_active left"><span>Personal</span></a></li>
                 <li><a href="/corporate/" class="corporate_active left"><span>Corporate</span></a></li>
-                <li><a href="#" class="passport right"><span>Passport to Health</span><i class="fi-play"></i></a></li>
+                <li><a href="#" class="passport right"><span>Passport to Health</span></a></li>
             </ul>
         </nav>
         <section class="top-bar-section">

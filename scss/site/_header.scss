@@ -88,22 +88,15 @@ $pre_top_bar_height: $topbar-height * .75;
 						border-top: none;
 						color: saturate($yellow, 40%);
 					}
+					&:after {
+						content: '\25E5';
+						margin-left: -1px;
+						position: relative;
+						top: -6px;
+						font-size: 8px;				
+					}
 				}
-
 			}
-			.fi-play {
-				color: $yellow;
-				padding-left: 1px;
-				position: relative;
-				top: -5px;				
-				&:before {
-					-moz-transform: rotate(-45deg);
-					-webkit-transform: rotate(-45deg);
-					-o-transform: rotate(-45deg);
-					-ms-transform: rotate(-45deg);
-					transform: rotate(-45deg);
-				}
-			}		
 
 			&.corporate_active {
 				background: $header_menu_overlay;
