@@ -7,6 +7,7 @@
  * Custom color scheme
  * ----------------------------------------------------------------------------
  */
+/*also changes the background for the top level items as well*/
 /* Foundation 5 */
 meta.foundation-version {
   font-family: "/5.4.7/"; }
@@ -4151,7 +4152,7 @@ meta.foundation-mq-topbar {
     height: 1px;
     width: 100%; }
   .top-bar-section ul li {
-    background: rgba(255, 255, 255, 0.05); }
+    background: transparent; }
     .top-bar-section ul li > a {
       display: block;
       width: 100%;
@@ -4249,7 +4250,7 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li > button.warning:hover, .top-bar-section ul li > button.warning:focus {
           color: white; }
     .top-bar-section ul li:hover:not(.has-form) > a {
-      background-color: rgba(255, 255, 255, 0.05);
+      background-color: rgba(255, 255, 255, 0.08);
       background: inherit;
       color: white; }
     .top-bar-section ul li.active > a {
@@ -4369,15 +4370,15 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li .js-generated {
           display: none; }
     .top-bar-section li.hover > a:not(.button) {
-      background-color: rgba(255, 255, 255, 0.05);
+      background-color: rgba(255, 255, 255, 0.08);
       background: inherit;
       color: white; }
     .top-bar-section li:not(.has-form) a:not(.button) {
       padding: 0 15px;
       line-height: 45px;
-      background: rgba(255, 255, 255, 0.05); }
+      background: transparent; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
-        background-color: rgba(255, 255, 255, 0.05);
+        background-color: rgba(255, 255, 255, 0.08);
         background: inherit; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       padding: 0 15px;
@@ -4447,7 +4448,7 @@ meta.foundation-mq-topbar {
         background: rgba(255, 255, 255, 0.95); }
       .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
         color: white;
-        background-color: rgba(255, 255, 255, 0.05);
+        background-color: rgba(255, 255, 255, 0.08);
         background: inherit; }
       .top-bar-section .dropdown li label {
         white-space: nowrap;
@@ -4463,7 +4464,7 @@ meta.foundation-mq-topbar {
       height: 45px;
       width: 0; }
     .top-bar-section .has-form {
-      background: rgba(255, 255, 255, 0.05);
+      background: transparent;
       padding: 0 15px;
       height: 45px; }
     .top-bar-section .right li .dropdown {
@@ -4477,7 +4478,7 @@ meta.foundation-mq-topbar {
       .top-bar-section .left li .dropdown li .dropdown {
         left: 100%; }
   .no-js .top-bar-section ul li:hover > a {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.08);
     background: inherit;
     color: white; }
   .no-js .top-bar-section ul li:active > a {
@@ -4645,7 +4646,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: "Nimbus Condensed", "nimbus-sans-condensed", "helvetica LT Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosCnRegular', sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -5636,58 +5637,9 @@ button, .button {
   border-radius: 1000px; }
 
 /**
- * 3.0 Header, sidebar and footer
+ * 3.06 Header, sidebar and footer
  * ----------------------------------------------------------------------------
  */
-@media only screen and (min-width: 40.063em) {
-  .top-bar {
-    background-color: #16304b;
-    background: radial-gradient(circle at bottom center, #2f6c9d, #16304b); } }
-
-.top-bar-section li.active:not(.has-form) a:not(.button) {
-  background: rgba(255, 255, 255, 0.05) !important;
-  /*this fakes a white line above the space
-	  background-image: 
-    linear-gradient(
-      to bottom,
-      transparent 0%,
-      transparent 15%,
-      #FFFFFF 15%,
-      #FFFFFF 26%,
-      transparent 26%
-    ) !important;
-     */ }
-
-.top-bar-section li.active:not(.has-form) a:hover:not(.button) {
-  background: rgba(255, 255, 255, 0.05) !important; }
-
-ul.title-area li.name h1 a div.header_logo {
-  background: url('images/logo_attentivehealth_white.svg') no-repeat center center;
-  text-indent: -9999px;
-  width: 100px;
-  height: 130px; }
-
-.top-bar {
-  height: 130px;
-  line-height: 45px; }
-  .top-bar .name {
-    height: 130px; }
-
-.top-bar-section li.active:not(.has-form) a:not(.button) {
-  background: #272727; }
-
-.top-bar-section li.active:not(.has-form) a:hover:not(.button) {
-  background: #202020; }
-
-.right-off-canvas-toggle.right-menu-icon {
-  float: right;
-  color: white;
-  margin-right: 1rem; }
-  .right-off-canvas-toggle.right-menu-icon i {
-    font-size: 1.5rem;
-    position: relative;
-    top: 4px; }
-
 /* Add some whitespace above the footer for medium-up screens
 @media #{$medium-up} {
 	footer.row {
@@ -6099,6 +6051,146 @@ footer.row {
  * 5.0 Plugins
  * ----------------------------------------------------------------------------
  */
+/*VARIABLES */
+@media only screen and (min-width: 40.063em) {
+  .top-bar {
+    background-color: #16304b;
+    background: radial-gradient(circle at bottom center, #2f6c9d, #16304b); } }
+
+.top-bar {
+  height: 130px;
+  line-height: 45px; }
+  .top-bar .name {
+    height: 130px; }
+  .top-bar ul.title-area {
+    position: relative;
+    width: 11%; }
+    .top-bar ul.title-area li.name h1 a div.header_logo {
+      background: url('images/logo_attentivehealth_white.svg') no-repeat center center;
+      background-size: contain;
+      text-indent: -9999px;
+      height: 130px; }
+
+.pre-top-bar-section, section.top-bar-section {
+  display: table;
+  /*otherwise, if this was inline-block, there'd be a gap between the sections*/
+  width: 89%; }
+
+.pre-top-bar-section {
+  height: 45px; }
+  .pre-top-bar-section ul {
+    margin-left: 0; }
+    .pre-top-bar-section ul li a {
+      list-style: none;
+      font-style: normal;
+      font-weight: normal;
+      padding: 0 25px;
+      line-height: 45px; }
+      .pre-top-bar-section ul li a.left {
+        float: left;
+        color: white;
+        font-size: 0.8125rem; }
+      .pre-top-bar-section ul li a.right {
+        float: right;
+        font-size: 0.625rem; }
+      .pre-top-bar-section ul li a.passport span {
+        color: #f0cc4e;
+        transition: all 300ms ease-out; }
+        .pre-top-bar-section ul li a.passport span:hover {
+          border-top: none;
+          color: #ffd23f; }
+      .pre-top-bar-section ul li a .fi-play {
+        color: #f0cc4e;
+        padding-left: 1px;
+        position: relative;
+        top: -5px; }
+        .pre-top-bar-section ul li a .fi-play:before {
+          -moz-transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+      .pre-top-bar-section ul li a.corporate_active {
+        background: rgba(255, 255, 255, 0.08); }
+      .pre-top-bar-section ul li a span:hover {
+        border-top: 3px solid rgba(255, 255, 255, 0.3);
+        padding-top: 2px;
+        -webkit-transition: border-width 300ms ease-in-out;
+        -moz-transition: border-width 300ms ease-in-out;
+        -ms-transition: border-width 300ms ease-in-out;
+        -o-transition: border-width 300ms ease-in-out;
+        transition: border-width 300ms ease-in-out; }
+
+section.top-bar-section {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0 15px 0 10px;
+  /*the states of the main navigation buttons when on the active page, and hovering, but only for the first level */ }
+  section.top-bar-section li.active:not(.has-form) > a:not(.button) {
+    background: transparent !important; }
+    section.top-bar-section li.active:not(.has-form) > a:not(.button) > span {
+      border-top: 3px solid rgba(255, 255, 255, 0.3);
+      padding-top: 2px;
+      -webkit-transition: border-width 300ms ease-in-out;
+      -moz-transition: border-width 300ms ease-in-out;
+      -ms-transition: border-width 300ms ease-in-out;
+      -o-transition: border-width 300ms ease-in-out;
+      transition: border-width 300ms ease-in-out; }
+  section.top-bar-section li:not(.has-form) a:not(.button):hover > span {
+    /*hover effect for top level nav items*/
+    border-top: 3px solid rgba(255, 255, 255, 0.3);
+    padding-top: 2px;
+    -webkit-transition: border-width 300ms ease-in-out;
+    -moz-transition: border-width 300ms ease-in-out;
+    -ms-transition: border-width 300ms ease-in-out;
+    -o-transition: border-width 300ms ease-in-out;
+    transition: border-width 300ms ease-in-out; }
+  section.top-bar-section .dropdown li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  section.top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
+    color: #222222;
+    background: rgba(255, 255, 255, 0.95); }
+
+.right-off-canvas-toggle.right-menu-icon {
+  float: right;
+  color: white;
+  margin-right: 1rem; }
+  .right-off-canvas-toggle.right-menu-icon i {
+    font-size: 1.5rem;
+    position: relative;
+    top: 4px;
+    line-height: initial; }
+
+h1.entry-title {
+  font-weight: bold;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px; }
+
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on December 3, 2014 */
+@font-face {
+  font-family: 'Nimbus Condensed';
+  src: url('fonts/nimbussanst-regularcondensed-webfont.eot');
+  src: url('fonts/nimbussanst-regularcondensed-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/nimbussanst-regularcondensed-webfont.woff2') format('woff2'), url('fonts/nimbussanst-regularcondensed-webfont.woff') format('woff'), url('fonts/nimbussanst-regularcondensed-webfont.ttf') format('truetype'), url('fonts/nimbussanst-regularcondensed-webfont.svg#nimbusantregconregular') format('svg');
+  font-weight: normal;
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Nimbus Condensed';
+  src: url('fonts/nimbussanst-boldcondensed-webfont.eot');
+  src: url('fonts/nimbussanst-boldcondensed-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/nimbussanst-boldcondensed-webfont.woff2') format('woff2'), url('fonts/nimbussanst-boldcondensed-webfont.woff') format('woff'), url('fonts/nimbussanst-boldcondensed-webfont.ttf') format('truetype'), url('fonts/nimbussanst-boldcondensed-webfont.svg#nimbusantbolconregular') format('svg');
+  font-weight: bold;
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Nimbus Condensed';
+  src: url('fonts/nimbussanst-blackcondensed-webfont.eot');
+  src: url('fonts/nimbussanst-blackcondensed-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/nimbussanst-blackcondensed-webfont.woff2') format('woff2'), url('fonts/nimbussanst-blackcondensed-webfont.woff') format('woff'), url('fonts/nimbussanst-blackcondensed-webfont.ttf') format('truetype'), url('fonts/nimbussanst-blackcondensed-webfont.svg#nimbusantblaconregular') format('svg');
+  font-weight: bolder;
+  font-weight: 700;
+  font-style: normal; }
+
 /* Assets */
 /* 
  * Foundation Icons v 3.0

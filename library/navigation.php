@@ -5,30 +5,54 @@
  * http://codex.wordpress.org/Function_Reference/register_nav_menus#Examples
  */
 register_nav_menus(array(
-    'top-bar-l' => 'Left Top Bar', // registers the menu in the WordPress admin menu editor
+	'top-bar-l-corporate' => 'Left Corprate Top Bar', // registers the menu in the WordPress admin menu editor    
+    'top-bar-l-personal' => 'Left Personal Top Bar', // registers the menu in the WordPress admin menu editor
     'top-bar-r' => 'Right Top Bar',
     'mobile-off-canvas-corporate' => 'Corporate Mobile',
     'mobile-off-canvas-personal' => 'Personal Mobile',
     'medium-right-off-canvas' => 'Medium Right Common'
 ));
 
-
 /**
- * Left top bar
+ * Left Corporate top bar
  * http://codex.wordpress.org/Function_Reference/wp_nav_menu
  */
-if ( ! function_exists( 'foundationPress_top_bar_l' ) ) {
+if ( ! function_exists( 'foundationPress_top_bar_l_corporate' ) ) {
+	function foundationPress_top_bar_l_corporate() {
+	    wp_nav_menu(array( 
+	        'container' => false,                           // remove nav container
+	        'container_class' => '',                        // class of container
+	        'menu' => '',                                   // menu name
+	        'menu_class' => 'top-bar-menu left',            // adding custom nav class
+	        'theme_location' => 'top-bar-l-corporate',                // where it's located in the theme
+	        'before' => '',                                 // before each link <a> 
+	        'after' => '',                                  // after each link </a>
+	        'link_before' => '<span>',                      // before each link text
+	        'link_after' => '<span>',                       // after each link text
+	        'depth' => 5,                                   // limit the depth of the nav
+	        'fallback_cb' => false,                         // fallback function (see below)
+	        'walker' => new top_bar_walker()
+	    ));
+	}
+}
+
+
+/**
+ * Left Personal top bar
+ * http://codex.wordpress.org/Function_Reference/wp_nav_menu
+ */
+if ( ! function_exists( 'foundationPress_top_bar_l_personal' ) ) {
 	function foundationPress_top_bar_l() {
 	    wp_nav_menu(array( 
 	        'container' => false,                           // remove nav container
 	        'container_class' => '',                        // class of container
 	        'menu' => '',                                   // menu name
 	        'menu_class' => 'top-bar-menu left',            // adding custom nav class
-	        'theme_location' => 'top-bar-l',                // where it's located in the theme
+	        'theme_location' => 'top-bar-l-personal',                // where it's located in the theme
 	        'before' => '',                                 // before each link <a> 
 	        'after' => '',                                  // after each link </a>
-	        'link_before' => '',                            // before each link text
-	        'link_after' => '',                             // after each link text
+	        'link_before' => '<span>',                      // before each link text
+	        'link_after' => '<span>',                       // after each link text
 	        'depth' => 5,                                   // limit the depth of the nav
 	        'fallback_cb' => false,                         // fallback function (see below)
 	        'walker' => new top_bar_walker()
@@ -49,8 +73,8 @@ if ( ! function_exists( 'foundationPress_top_bar_r' ) ) {
 	        'theme_location' => 'top-bar-r',                // where it's located in the theme
 	        'before' => '',                                 // before each link <a> 
 	        'after' => '',                                  // after each link </a>
-	        'link_before' => '',                            // before each link text
-	        'link_after' => '',                             // after each link text
+	        'link_before' => '<span>',                      // before each link text
+	        'link_after' => '<span>',                       // after each link text
 	        'depth' => 5,                                   // limit the depth of the nav
 	        'fallback_cb' => false,                         // fallback function (see below)
 	        'walker' => new top_bar_walker()

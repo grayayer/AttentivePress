@@ -193,6 +193,8 @@ $global-rounded: 1000px;
 
 // We use these to control header font styles
 // $header-font-family: $body-font-family;
+
+$header-font-family: "Nimbus Condensed", "nimbus-sans-condensed", "helvetica LT Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosCnRegular', sans-serif;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
 // $header-font-color: $jet;
@@ -1366,6 +1368,7 @@ $topbar-bg: $topbar-bg-color;
 
 // Height and margin
 // $topbar-height: 45px;
+$topbar-height: 45px;
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
@@ -1381,7 +1384,7 @@ $topbar-bg: $topbar-bg-color;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
-$topbar-link-bg: $header_menu_overlay;
+$topbar-link-bg: transparent;
 ///////// $topbar-link-bg-color-hover: $charcoal;
 $topbar-link-bg-color-hover: $header_menu_overlay;
 // $topbar-link-bg-hover: #272727;
@@ -1400,7 +1403,7 @@ $topbar-link-bg-hover: inherit;
 
 // Style the top bar dropdown elements
 // $topbar-dropdown-bg: $oil;
-$topbar-dropdown-bg: $header_menu_overlay;
+$topbar-dropdown-bg: transparent; /*also changes the background for the top level items as well*/
 
 // $topbar-dropdown-link-color: $white;
 $topbar-dropdown-link-color: $corporate_primary;

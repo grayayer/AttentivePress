@@ -1,0 +1,157 @@
+/*VARIABLES */
+$logo_width_size: 11%;
+$top_bar_width: 100%-$logo_width_size;
+$header_height: 130px;
+$top_bar_left_padding_number: 10px;
+
+@mixin menu_hover_effect {
+	border-top: 3px solid rgba(255,255,255, 0.3);
+	padding-top: 2px;
+	//opacity: 1;
+	//@include single-transition();
+	-webkit-transition: border-width 300ms ease-in-out;
+	-moz-transition: border-width 300ms ease-in-out;
+	-ms-transition: border-width 300ms ease-in-out;
+	-o-transition: border-width 300ms ease-in-out;
+	transition: border-width 300ms ease-in-out;
+}
+
+@media only screen and (min-width:40.063em) {
+	.top-bar {
+		background-color: $corporate_bg_header_primary;
+		background: radial-gradient(
+			circle at bottom center,
+			$corporate_bg_header_highlight, $corporate_bg_header_primary)
+		;
+	}
+}
+
+.top-bar {
+	height: $header_height;
+	line-height: 45px;
+	
+	.name {
+		height: $header_height;
+	}
+
+	ul.title-area {
+		position: relative;
+		width: $logo_width_size;
+
+		li.name h1 a div.header_logo {
+			background: url('images/logo_attentivehealth_white.svg') no-repeat center center;
+			background-size: contain;
+			text-indent: -9999px;
+			height: $header_height;
+		}
+	}
+}
+
+
+
+
+%top-bar-section-style {
+	display: table; /*otherwise, if this was inline-block, there'd be a gap between the sections*/
+	width: $top_bar_width;
+}
+
+.pre-top-bar-section {
+	@extend %top-bar-section-style;
+	height: $topbar-height;
+	 ul {
+	 	margin-left: 0;
+
+	 	li a {
+	 	list-style: none;
+		font-style: normal;
+		font-weight: normal;
+		padding: 0 (($topbar-height / 3) + $top_bar_left_padding_number);
+		line-height: $topbar-height;
+			&.left {
+			 	float: left;
+			 	color: $topbar-link-color;
+				font-size: rem-calc(13);			
+			}
+			&.right {
+				float: right;
+				font-size: rem-calc(10);
+			}
+			&.passport {
+				span {
+					color: $yellow;
+					@include single-transition;
+					&:hover {
+						border-top: none;
+						color: saturate($yellow, 40%);
+					}
+				}
+
+			}
+			.fi-play {
+				color: $yellow;
+				padding-left: 1px;
+				position: relative;
+				top: -5px;				
+				&:before {
+					-moz-transform: rotate(-45deg);
+					-webkit-transform: rotate(-45deg);
+					-o-transform: rotate(-45deg);
+					-ms-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+				}
+			}		
+
+			&.corporate_active {
+				background: $header_menu_overlay;
+			}
+
+			span:hover {
+				@include menu_hover_effect;
+			}
+		} 	
+	}
+}
+
+
+section.top-bar-section {
+	@extend %top-bar-section-style;
+	background: $header_menu_overlay;
+	padding: 0 $top_bar_left_padding_number+5 0 $top_bar_left_padding_number;	
+	
+	/*the states of the main navigation buttons when on the active page, and hovering, but only for the first level */
+	li {
+		&.active:not(.has-form) { 
+			> a:not(.button) {
+				background: transparent !important;
+				
+				> span {
+			    @include menu_hover_effect;
+				}
+			}
+		}
+	}
+	li:not(.has-form) a:not(.button):hover > span { /*hover effect for top level nav items*/
+		@include menu_hover_effect;
+	}
+	.dropdown li {
+		border-bottom: 1px solid rgba(0,0,0,.1);
+	}
+	.dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
+		color: $jet;
+		background: $header_menu_dropdown_overlay;
+	}
+}
+
+
+
+.right-off-canvas-toggle.right-menu-icon {
+	float: right;
+	color: #FFF;
+	margin-right: 1rem;
+	i {
+		font-size: 1.5rem;
+		position: relative;
+		top: 4px;
+		line-height: initial;		
+	}
+}

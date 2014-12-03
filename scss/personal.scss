@@ -1,0 +1,11 @@
+/*PERSONAL SIDE ACTIVE STYLESHEET */
+
+.pre-top-bar-section {
+	 ul {
+	 	li a {
+		&.personal_active {
+			background: $header_menu_overlay;
+			}			
+		}
+	}
+}

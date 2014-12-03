@@ -30,6 +30,9 @@
 		<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/apple-touch-icon-precomposed.png">
 		<!-- fonts 
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>-->
+		<!--<script src="//use.typekit.net/ant3dpu.js"></script> 
+		<script>try{Typekit.load();}catch(e){}</script>
+		nimbus font through typekit -->
 
 		<?php wp_head(); ?>
 	</head>
