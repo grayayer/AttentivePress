@@ -1,0 +1,67 @@
+
+footer.row {
+	border-top: solid 10px $small_contrast;
+	max-width: 100%;
+	margin-bottom: 1.5rem;
+}
+
+// makes it so that the medium new grid rules only apply to medium and up. the next mixin does it only for small screens
+@media #{$medium-up} {
+.footer_grid {
+	$total-columns:10;
+	@include grid-row();
+	@include grid-html-classes($size:medium);
+	$total-columns:10;
+	}
+}
+
+@media #{$small-only} {
+	.footer_grid {
+		$total-columns:10;
+		@include grid-row();
+		@include grid-html-classes($size:small);
+		$total-columns:10;
+	}
+}
+
+.footer_grid {
+	padding-top: rem-calc(20);
+
+
+  article.widget {
+  	text-align: center;
+  	padding-top: .5rem;
+  	@include footer_font_style;
+  	p {
+  		@include footer_font_style;
+  	}
+  	ul {
+  		margin-left: 0;
+  		li {
+	  		list-style: none;
+	  		@include footer_font_style;
+	  		
+	  		a {
+	  			color: $greige;
+	  			@include single-transition($property:color, $speed:100ms, $ease:ease-out);
+	  			&:hover {
+	  				color: darken($greige, 30%);
+	  			}
+	  		}
+  		}
+  	}
+  	&.dots {
+  		border-right: 2px $greige_light dotted;
+  	}
+  }
+}
+
+
+.credit_footer {
+	background: $small_contrast;
+	height: 3rem;
+	.centered {
+		width: 325px;
+		margin: .5rem auto 0 auto;
+	}
+}

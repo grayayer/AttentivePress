@@ -1,7 +1,10 @@
 <?php get_header(); ?>
 <div class="row">
 	<div class="small-12 large-8 columns" role="main">
-
+		<header>
+			<h1 class="entry-title">Blog</h1>
+			<hr>
+		</header>	
 	<?php if ( have_posts() ) : ?>
 
 		<?php do_action('foundationPress_before_content'); ?>

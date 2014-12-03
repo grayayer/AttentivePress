@@ -50,6 +50,7 @@ This can decrease the css file size drastically, and should be done before produ
 /* Site structure */
 @import "site/structure"; // Your site structure
 @import "site/header";
+@import "site/footer";
 @import "site/typography";
 @import "site/webfonts";
 

@@ -1,8 +1,9 @@
 /*VARIABLES */
-$logo_width_size: 11%;
+$logo_width_size: 8%;
 $top_bar_width: 100%-$logo_width_size;
-$header_height: 130px;
+$header_height: 125px;
 $top_bar_left_padding_number: 10px;
+$pre_top_bar_height: $topbar-height * .75;
 
 @mixin menu_hover_effect {
 	border-top: 3px solid rgba(255,255,255, 0.3);
@@ -38,11 +39,14 @@ $top_bar_left_padding_number: 10px;
 		position: relative;
 		width: $logo_width_size;
 
-		li.name h1 a div.header_logo {
-			background: url('images/logo_attentivehealth_white.svg') no-repeat center center;
-			background-size: contain;
-			text-indent: -9999px;
-			height: $header_height;
+		li.name h1 a {
+			padding: 8px 4px 0 4px;
+			div.header_logo {
+				background: url('images/logo_attentivehealth_white.svg') no-repeat center center;
+				background-size: contain;
+				text-indent: -9999px;
+				height: $header_height / 1.13;
+			}
 		}
 	}
 }
@@ -57,7 +61,7 @@ $top_bar_left_padding_number: 10px;
 
 .pre-top-bar-section {
 	@extend %top-bar-section-style;
-	height: $topbar-height;
+	height: $pre_top_bar_height;
 	 ul {
 	 	margin-left: 0;
 
@@ -65,8 +69,8 @@ $top_bar_left_padding_number: 10px;
 	 	list-style: none;
 		font-style: normal;
 		font-weight: normal;
-		padding: 0 (($topbar-height / 3) + $top_bar_left_padding_number);
-		line-height: $topbar-height;
+		padding: 0 (($pre_top_bar_height / 3) + $top_bar_left_padding_number);
+		line-height: $pre_top_bar_height;
 			&.left {
 			 	float: left;
 			 	color: $topbar-link-color;
@@ -135,10 +139,12 @@ section.top-bar-section {
 	}
 	.dropdown li {
 		border-bottom: 1px solid rgba(0,0,0,.1);
+		border-bottom: 1px solid #CCC;
 	}
 	.dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
 		color: $jet;
 		background: $header_menu_dropdown_overlay;
+		background: #FFF;
 	}
 }
 

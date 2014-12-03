@@ -7,6 +7,7 @@
  * Custom color scheme
  * ----------------------------------------------------------------------------
  */
+/*a dark blue*/
 /*also changes the background for the top level items as well*/
 /* Foundation 5 */
 meta.foundation-version {
@@ -48,7 +49,7 @@ html, body {
 
 body {
   background: white;
-  color: #222222;
+  color: #585859;
   padding: 0;
   margin: 0;
   font-family: 'Montserrat', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -4042,12 +4043,12 @@ meta.foundation-mq-topbar {
       z-index: 99; }
     .fixed.expanded:not(.top-bar) .top-bar-section {
       z-index: 98;
-      margin-top: 45px; }
+      margin-top: 55px; }
 
 .top-bar {
   overflow: hidden;
-  height: 45px;
-  line-height: 45px;
+  height: 55px;
+  line-height: 55px;
   position: relative;
   background: #16304b;
   margin-bottom: 0; }
@@ -4076,11 +4077,11 @@ meta.foundation-mq-topbar {
     position: relative;
     margin: 0; }
   .top-bar .name {
-    height: 45px;
+    height: 55px;
     margin: 0;
     font-size: 16px; }
     .top-bar .name h1 {
-      line-height: 45px;
+      line-height: 55px;
       font-size: 1.0625rem;
       margin: 0; }
       .top-bar .name h1 a {
@@ -4088,7 +4089,7 @@ meta.foundation-mq-topbar {
         color: white;
         width: 75%;
         display: block;
-        padding: 0 15px; }
+        padding: 0 18.33333px; }
   .top-bar .toggle-topbar {
     position: absolute;
     right: 0;
@@ -4100,16 +4101,16 @@ meta.foundation-mq-topbar {
       font-weight: bold;
       position: relative;
       display: block;
-      padding: 0 15px;
-      height: 45px;
-      line-height: 45px; }
+      padding: 0 18.33333px;
+      height: 55px;
+      line-height: 55px; }
     .top-bar .toggle-topbar.menu-icon {
       top: 50%;
       margin-top: -16px; }
       .top-bar .toggle-topbar.menu-icon a {
         height: 34px;
         line-height: 33px;
-        padding: 0 40px 0 15px;
+        padding: 0 43.33333px 0 18.33333px;
         color: white;
         position: relative; }
         .top-bar .toggle-topbar.menu-icon a span::after {
@@ -4119,7 +4120,7 @@ meta.foundation-mq-topbar {
           height: 0;
           top: 50%;
           margin-top: -8px;
-          right: 15px;
+          right: 18.33333px;
           box-shadow: 0 0px 0 1px white, 0 7px 0 1px white, 0 14px 0 1px white;
           width: 16px; }
         .top-bar .toggle-topbar.menu-icon a span:hover:after {
@@ -4158,15 +4159,15 @@ meta.foundation-mq-topbar {
       width: 100%;
       color: white;
       padding: 12px 0 12px 0;
-      padding-left: 15px;
+      padding-left: 18.33333px;
       font-family: 'Montserrat', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
       font-size: 0.8125rem;
       font-weight: normal;
       text-transform: none; }
       .top-bar-section ul li > a.button {
         font-size: 0.8125rem;
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 18.33333px;
+        padding-left: 18.33333px;
         background-color: #008cba;
         border-color: #007295;
         color: white; }
@@ -4208,8 +4209,8 @@ meta.foundation-mq-topbar {
           color: white; }
     .top-bar-section ul li > button {
       font-size: 0.8125rem;
-      padding-right: 15px;
-      padding-left: 15px;
+      padding-right: 18.33333px;
+      padding-left: 18.33333px;
       background-color: #008cba;
       border-color: #007295;
       color: white; }
@@ -4260,7 +4261,7 @@ meta.foundation-mq-topbar {
         background: #007ba0;
         color: white; }
   .top-bar-section .has-form {
-    padding: 15px; }
+    padding: 18.33333px; }
   .top-bar-section .has-dropdown {
     position: relative; }
     .top-bar-section .has-dropdown > a:after {
@@ -4271,7 +4272,7 @@ meta.foundation-mq-topbar {
       border: inset 5px;
       border-color: transparent transparent transparent rgba(255, 255, 255, 0.4);
       border-left-style: solid;
-      margin-right: 15px;
+      margin-right: 18.33333px;
       margin-top: -4.5px;
       position: absolute;
       top: 50%;
@@ -4306,7 +4307,7 @@ meta.foundation-mq-topbar {
       height: auto; }
       .top-bar-section .dropdown li a {
         font-weight: normal;
-        padding: 8px 15px; }
+        padding: 8px 18.33333px; }
         .top-bar-section .dropdown li a.parent-link {
           font-weight: normal; }
       .top-bar-section .dropdown li.title h5, .top-bar-section .dropdown li.parent-link {
@@ -4319,11 +4320,11 @@ meta.foundation-mq-topbar {
           .top-bar-section .dropdown li.title h5 a:hover, .top-bar-section .dropdown li.parent-link a:hover {
             background: none; }
       .top-bar-section .dropdown li.has-form {
-        padding: 8px 15px; }
+        padding: 8px 18.33333px; }
       .top-bar-section .dropdown li .button, .top-bar-section .dropdown li button {
         top: auto; }
     .top-bar-section .dropdown label {
-      padding: 8px 15px 2px;
+      padding: 8px 18.33333px 2px;
       margin-bottom: 0;
       text-transform: uppercase;
       color: #777777;
@@ -4374,22 +4375,22 @@ meta.foundation-mq-topbar {
       background: inherit;
       color: white; }
     .top-bar-section li:not(.has-form) a:not(.button) {
-      padding: 0 15px;
-      line-height: 45px;
+      padding: 0 18.33333px;
+      line-height: 55px;
       background: transparent; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
         background-color: rgba(255, 255, 255, 0.08);
         background: inherit; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
-      padding: 0 15px;
-      line-height: 45px;
+      padding: 0 18.33333px;
+      line-height: 55px;
       color: white;
       background: #008cba; }
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
         background: #007ba0;
         color: white; }
     .top-bar-section .has-dropdown > a {
-      padding-right: 35px !important; }
+      padding-right: 38.33333px !important; }
       .top-bar-section .has-dropdown > a:after {
         content: "";
         display: block;
@@ -4399,7 +4400,7 @@ meta.foundation-mq-topbar {
         border-color: rgba(255, 255, 255, 0.4) transparent transparent transparent;
         border-top-style: solid;
         margin-top: -2.5px;
-        top: 22.5px; }
+        top: 27.5px; }
     .top-bar-section .has-dropdown.moved {
       position: relative; }
       .top-bar-section .has-dropdown.moved > .dropdown {
@@ -4439,9 +4440,9 @@ meta.foundation-mq-topbar {
       min-width: 100%; }
       .top-bar-section .dropdown li a {
         color: #275982;
-        line-height: 45px;
+        line-height: 55px;
         white-space: nowrap;
-        padding: 12px 15px;
+        padding: 12px 18.33333px;
         background: rgba(255, 255, 255, 0.95); }
       .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
         color: #275982;
@@ -4461,12 +4462,12 @@ meta.foundation-mq-topbar {
       border-top: none;
       border-right: none;
       clear: none;
-      height: 45px;
+      height: 55px;
       width: 0; }
     .top-bar-section .has-form {
       background: transparent;
-      padding: 0 15px;
-      height: 45px; }
+      padding: 0 18.33333px;
+      height: 55px; }
     .top-bar-section .right li .dropdown {
       left: auto;
       right: 0; }
@@ -4620,11 +4621,11 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, t
 
 /* Default Link Styles */
 a {
-  color: #008cba;
+  color: #265981;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #007ba0; }
+    color: #214d6f; }
   a img {
     border: none; }
 
@@ -4649,14 +4650,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Nimbus Condensed", "nimbus-sans-condensed", "helvetica LT Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosCnRegular', sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #222222;
+  color: #1b3951;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
   line-height: 1.4; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-size: 60%;
-    color: #6f6f6f;
+    color: #3e85bb;
     line-height: 0; }
 
 h1 {
@@ -4679,7 +4680,7 @@ h6 {
 
 .subheader {
   line-height: 1.4;
-  color: #6f6f6f;
+  color: #3e85bb;
   font-weight: normal;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem; }
@@ -4767,7 +4768,7 @@ dl dd {
 abbr, acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #222222;
+  color: #585859;
   cursor: help; }
 
 abbr {
@@ -4783,15 +4784,15 @@ blockquote {
   blockquote cite {
     display: block;
     font-size: 0.8125rem;
-    color: #555555; }
+    color: #326b96; }
     blockquote cite:before {
       content: "\2014 \0020"; }
     blockquote cite a, blockquote cite a:visited {
-      color: #555555; }
+      color: #326b96; }
 
 blockquote, blockquote p {
   line-height: 1.6;
-  color: #6f6f6f; }
+  color: #3e85bb; }
 
 /* Microformats */
 .vcard {
@@ -5649,6 +5650,167 @@ button, .button {
 	}
 }
 */
+/**
+ * 4.0 Content
+ * ----------------------------------------------------------------------------
+ */
+/**
+	 * 4.1 Pages
+	 * ------------------------------------
+	 */
+#homepage-hero {
+  background: url("http://foundation.zurb.com/assets/img/marquee-stars.svg") repeat scroll 0 0 #074e68;
+  padding: 1.25rem 0;
+  margin: -2rem 0 2rem;
+  position: relative;
+  text-align: left;
+  height: auto; }
+  #homepage-hero h1 a, #homepage-hero h4 {
+    color: white; }
+  #homepage-hero .floatingyeti img {
+    max-width: 30%;
+    position: absolute;
+    right: 6.25rem; }
+  #homepage-hero .download {
+    margin-top: 1.25rem; }
+
+/**
+	 * 4.2 Posts
+	 * ------------------------------------
+	 */
+/**
+	 * 4.3 Widgets
+	 * ------------------------------------
+	 */
+/**
+	 * 4.4 Comments
+	 * ------------------------------------
+	 */
+/**
+	 * 4.5 Lists
+	 * ------------------------------------
+	 */
+/**
+	 * 4.6 Forms
+	 * ------------------------------------
+	 */
+/**
+ * 5.0 Plugins
+ * ----------------------------------------------------------------------------
+ */
+/*VARIABLES */
+@media only screen and (min-width: 40.063em) {
+  .top-bar {
+    background-color: #16304b;
+    background: radial-gradient(circle at bottom center, #2f6c9d, #16304b); } }
+
+.top-bar {
+  height: 125px;
+  line-height: 45px; }
+  .top-bar .name {
+    height: 125px; }
+  .top-bar ul.title-area {
+    position: relative;
+    width: 8%; }
+    .top-bar ul.title-area li.name h1 a {
+      padding: 8px 4px 0 4px; }
+      .top-bar ul.title-area li.name h1 a div.header_logo {
+        background: url('images/logo_attentivehealth_white.svg') no-repeat center center;
+        background-size: contain;
+        text-indent: -9999px;
+        height: 110.61947px; }
+
+.pre-top-bar-section, section.top-bar-section {
+  display: table;
+  /*otherwise, if this was inline-block, there'd be a gap between the sections*/
+  width: 92%; }
+
+.pre-top-bar-section {
+  height: 41.25px; }
+  .pre-top-bar-section ul {
+    margin-left: 0; }
+    .pre-top-bar-section ul li a {
+      list-style: none;
+      font-style: normal;
+      font-weight: normal;
+      padding: 0 23.75px;
+      line-height: 41.25px; }
+      .pre-top-bar-section ul li a.left {
+        float: left;
+        color: white;
+        font-size: 0.8125rem; }
+      .pre-top-bar-section ul li a.right {
+        float: right;
+        font-size: 0.625rem; }
+      .pre-top-bar-section ul li a.passport span {
+        color: #f0cc4e;
+        transition: all 300ms ease-out; }
+        .pre-top-bar-section ul li a.passport span:hover {
+          border-top: none;
+          color: #ffd23f; }
+      .pre-top-bar-section ul li a .fi-play {
+        color: #f0cc4e;
+        padding-left: 1px;
+        position: relative;
+        top: -5px; }
+        .pre-top-bar-section ul li a .fi-play:before {
+          -moz-transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+      .pre-top-bar-section ul li a.corporate_active {
+        background: rgba(255, 255, 255, 0.08); }
+      .pre-top-bar-section ul li a span:hover {
+        border-top: 3px solid rgba(255, 255, 255, 0.3);
+        padding-top: 2px;
+        -webkit-transition: border-width 300ms ease-in-out;
+        -moz-transition: border-width 300ms ease-in-out;
+        -ms-transition: border-width 300ms ease-in-out;
+        -o-transition: border-width 300ms ease-in-out;
+        transition: border-width 300ms ease-in-out; }
+
+section.top-bar-section {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0 15px 0 10px;
+  /*the states of the main navigation buttons when on the active page, and hovering, but only for the first level */ }
+  section.top-bar-section li.active:not(.has-form) > a:not(.button) {
+    background: transparent !important; }
+    section.top-bar-section li.active:not(.has-form) > a:not(.button) > span {
+      border-top: 3px solid rgba(255, 255, 255, 0.3);
+      padding-top: 2px;
+      -webkit-transition: border-width 300ms ease-in-out;
+      -moz-transition: border-width 300ms ease-in-out;
+      -ms-transition: border-width 300ms ease-in-out;
+      -o-transition: border-width 300ms ease-in-out;
+      transition: border-width 300ms ease-in-out; }
+  section.top-bar-section li:not(.has-form) a:not(.button):hover > span {
+    /*hover effect for top level nav items*/
+    border-top: 3px solid rgba(255, 255, 255, 0.3);
+    padding-top: 2px;
+    -webkit-transition: border-width 300ms ease-in-out;
+    -moz-transition: border-width 300ms ease-in-out;
+    -ms-transition: border-width 300ms ease-in-out;
+    -o-transition: border-width 300ms ease-in-out;
+    transition: border-width 300ms ease-in-out; }
+  section.top-bar-section .dropdown li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #cccccc; }
+  section.top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
+    color: #222222;
+    background: rgba(255, 255, 255, 0.95);
+    background: white; }
+
+.right-off-canvas-toggle.right-menu-icon {
+  float: right;
+  color: white;
+  margin-right: 1rem; }
+  .right-off-canvas-toggle.right-menu-icon i {
+    font-size: 1.5rem;
+    position: relative;
+    top: 4px;
+    line-height: initial; }
+
 footer.row {
   border-top: solid 10px #f7f6f5;
   max-width: 100%;
@@ -5992,7 +6154,10 @@ footer.row {
         line-height: 1.6rem;
         color: #776c5f; }
         .footer_grid article.widget ul li a {
-          color: #776c5f; }
+          color: #776c5f;
+          transition: color 100ms ease-out; }
+          .footer_grid article.widget ul li a:hover {
+            color: #221f1b; }
     .footer_grid article.widget.dots {
       border-right: 2px #d1c1ab dotted; }
 
@@ -6003,168 +6168,15 @@ footer.row {
     width: 325px;
     margin: 0.5rem auto 0 auto; }
 
-/**
- * 4.0 Content
- * ----------------------------------------------------------------------------
- */
-/**
-	 * 4.1 Pages
-	 * ------------------------------------
-	 */
-#homepage-hero {
-  background: url("http://foundation.zurb.com/assets/img/marquee-stars.svg") repeat scroll 0 0 #074e68;
-  padding: 1.25rem 0;
-  margin: -2rem 0 2rem;
-  position: relative;
-  text-align: left;
-  height: auto; }
-  #homepage-hero h1 a, #homepage-hero h4 {
-    color: white; }
-  #homepage-hero .floatingyeti img {
-    max-width: 30%;
-    position: absolute;
-    right: 6.25rem; }
-  #homepage-hero .download {
-    margin-top: 1.25rem; }
-
-/**
-	 * 4.2 Posts
-	 * ------------------------------------
-	 */
-/**
-	 * 4.3 Widgets
-	 * ------------------------------------
-	 */
-/**
-	 * 4.4 Comments
-	 * ------------------------------------
-	 */
-/**
-	 * 4.5 Lists
-	 * ------------------------------------
-	 */
-/**
-	 * 4.6 Forms
-	 * ------------------------------------
-	 */
-/**
- * 5.0 Plugins
- * ----------------------------------------------------------------------------
- */
-/*VARIABLES */
-@media only screen and (min-width: 40.063em) {
-  .top-bar {
-    background-color: #16304b;
-    background: radial-gradient(circle at bottom center, #2f6c9d, #16304b); } }
-
-.top-bar {
-  height: 130px;
-  line-height: 45px; }
-  .top-bar .name {
-    height: 130px; }
-  .top-bar ul.title-area {
-    position: relative;
-    width: 11%; }
-    .top-bar ul.title-area li.name h1 a div.header_logo {
-      background: url('images/logo_attentivehealth_white.svg') no-repeat center center;
-      background-size: contain;
-      text-indent: -9999px;
-      height: 130px; }
-
-.pre-top-bar-section, section.top-bar-section {
-  display: table;
-  /*otherwise, if this was inline-block, there'd be a gap between the sections*/
-  width: 89%; }
-
-.pre-top-bar-section {
-  height: 45px; }
-  .pre-top-bar-section ul {
-    margin-left: 0; }
-    .pre-top-bar-section ul li a {
-      list-style: none;
-      font-style: normal;
-      font-weight: normal;
-      padding: 0 25px;
-      line-height: 45px; }
-      .pre-top-bar-section ul li a.left {
-        float: left;
-        color: white;
-        font-size: 0.8125rem; }
-      .pre-top-bar-section ul li a.right {
-        float: right;
-        font-size: 0.625rem; }
-      .pre-top-bar-section ul li a.passport span {
-        color: #f0cc4e;
-        transition: all 300ms ease-out; }
-        .pre-top-bar-section ul li a.passport span:hover {
-          border-top: none;
-          color: #ffd23f; }
-      .pre-top-bar-section ul li a .fi-play {
-        color: #f0cc4e;
-        padding-left: 1px;
-        position: relative;
-        top: -5px; }
-        .pre-top-bar-section ul li a .fi-play:before {
-          -moz-transform: rotate(-45deg);
-          -webkit-transform: rotate(-45deg);
-          -o-transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg); }
-      .pre-top-bar-section ul li a.corporate_active {
-        background: rgba(255, 255, 255, 0.08); }
-      .pre-top-bar-section ul li a span:hover {
-        border-top: 3px solid rgba(255, 255, 255, 0.3);
-        padding-top: 2px;
-        -webkit-transition: border-width 300ms ease-in-out;
-        -moz-transition: border-width 300ms ease-in-out;
-        -ms-transition: border-width 300ms ease-in-out;
-        -o-transition: border-width 300ms ease-in-out;
-        transition: border-width 300ms ease-in-out; }
-
-section.top-bar-section {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 0 15px 0 10px;
-  /*the states of the main navigation buttons when on the active page, and hovering, but only for the first level */ }
-  section.top-bar-section li.active:not(.has-form) > a:not(.button) {
-    background: transparent !important; }
-    section.top-bar-section li.active:not(.has-form) > a:not(.button) > span {
-      border-top: 3px solid rgba(255, 255, 255, 0.3);
-      padding-top: 2px;
-      -webkit-transition: border-width 300ms ease-in-out;
-      -moz-transition: border-width 300ms ease-in-out;
-      -ms-transition: border-width 300ms ease-in-out;
-      -o-transition: border-width 300ms ease-in-out;
-      transition: border-width 300ms ease-in-out; }
-  section.top-bar-section li:not(.has-form) a:not(.button):hover > span {
-    /*hover effect for top level nav items*/
-    border-top: 3px solid rgba(255, 255, 255, 0.3);
-    padding-top: 2px;
-    -webkit-transition: border-width 300ms ease-in-out;
-    -moz-transition: border-width 300ms ease-in-out;
-    -ms-transition: border-width 300ms ease-in-out;
-    -o-transition: border-width 300ms ease-in-out;
-    transition: border-width 300ms ease-in-out; }
-  section.top-bar-section .dropdown li {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-  section.top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
-    color: #222222;
-    background: rgba(255, 255, 255, 0.95); }
-
-.right-off-canvas-toggle.right-menu-icon {
-  float: right;
-  color: white;
-  margin-right: 1rem; }
-  .right-off-canvas-toggle.right-menu-icon i {
-    font-size: 1.5rem;
-    position: relative;
-    top: 4px;
-    line-height: initial; }
-
 h1.entry-title {
   font-weight: bold;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 4px; }
+
+.paragraph_lead {
+  color: #2c2c2c;
+  font-size: 1.3rem; }
 
 /* Generated by Font Squirrel (http://www.fontsquirrel.com) on December 3, 2014 */
 @font-face {
@@ -6172,7 +6184,7 @@ h1.entry-title {
   src: url('fonts/nimbussanst-regularcondensed-webfont.eot');
   src: url('fonts/nimbussanst-regularcondensed-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/nimbussanst-regularcondensed-webfont.woff2') format('woff2'), url('fonts/nimbussanst-regularcondensed-webfont.woff') format('woff'), url('fonts/nimbussanst-regularcondensed-webfont.ttf') format('truetype'), url('fonts/nimbussanst-regularcondensed-webfont.svg#nimbusantregconregular') format('svg');
   font-weight: normal;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal; }
 
 @font-face {
