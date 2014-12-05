@@ -5,3 +5,19 @@ var b={start_page_x:a.touches[0].pageX,start_page_y:a.touches[0].pageY,start_tim
 $('#start-jr').on('click', function() {
   $(document).foundation('joyride','start');
 });
+
+
+$(document).ready(function(){
+    var highContrast = false;
+    $("#contrast-btn a").click(function () {
+        if (!(highContrast)) {
+            $('head').append('<link rel="stylesheet" href="/wp-content/themes/attentivepress/css/personal.css" type="text/css" id="hc_stylesheet"/>');
+            highContrast = true;
+        }       
+        else {
+            // remove the high-contrast style
+            $("#hc_stylesheet").remove();
+            highContrast = false;
+        }
+    });
+});

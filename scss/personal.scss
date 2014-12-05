@@ -3,26 +3,23 @@
 @import 'config/colors';
 @import 'site/attentive_variables';
 
-.pre-top-bar-section {
-	 ul {
-	 	li a {
-		&.personal_active {
-			background: $header_menu_overlay;
-			}			
-		}
-	}
-}
-
-.corporate_active {
+.corporate_section {
 	display:none !important;
 }
 
+.personal_section {
+	display:inherit !important;
+}
+
 .pre-top-bar-section {
 	 ul {
 	 	li a {
-			&.personal {
+			&.personal_style {
 				background: $header_menu_overlay;
 			}
+			&.corporate_style {
+				background: transparent;
+			}			
 			span:hover {
 			}
 		} 	

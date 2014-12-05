@@ -1,19 +1,25 @@
 /*this gives coloring for the corporate side*/
 
+@import 'config/colors';
 @import 'site/attentive_variables';
 
-.personal_active {
+.personal_section {
 	display:none !important;
 }
 
-
+.corporate_section {
+	display:inherit !important;
+}
 
 .pre-top-bar-section {
 	 ul {
 	 	li a {
-			&.corporate {
+			&.corporate_style {
 				background: $header_menu_overlay;
 			}
+			&.personal_style {
+				background: transparent;
+			}			
 			span:hover {
 			}
 		} 	
