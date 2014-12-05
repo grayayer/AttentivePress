@@ -1,0 +1,18 @@
+/*this gives coloring for the corporate side*/
+/**
+ * Custom variables
+ * ----------------------------------------------------------------------------
+ */
+/**
+ * Custom color scheme
+ * ----------------------------------------------------------------------------
+ */
+/*a dark blue*/
+/*also changes the background for the top level items as well*/
+/*header variables*/
+/*VARIABLES */
+.personal_active {
+  display: none !important; }
+
+.pre-top-bar-section ul li a.corporate {
+  background: rgba(255, 255, 255, 0.08); }

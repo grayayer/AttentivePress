@@ -1,0 +1,20 @@
+@import '../config/settings';
+
+
+$footer_font_size: .8rem;
+$footer_line_height: 2 * $footer_font_size;
+
+@mixin footer_font_style {
+	font-size: $footer_font_size;
+	line-height: $footer_line_height;
+	color: $greige;
+}
+
+
+/*header variables*/
+/*VARIABLES */
+$logo_width_size: 8%;
+$top_bar_width: 100%-$logo_width_size;
+$header_height: 125px;
+$top_bar_left_padding_number: 10px;
+$pre_top_bar_height: $topbar-height * .75;

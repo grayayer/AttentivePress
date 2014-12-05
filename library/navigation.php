@@ -23,12 +23,12 @@ if ( ! function_exists( 'foundationPress_top_bar_l_corporate' ) ) {
 	        'container' => false,                           // remove nav container
 	        'container_class' => '',                        // class of container
 	        'menu' => '',                                   // menu name
-	        'menu_class' => 'top-bar-menu left',            // adding custom nav class
+	        'menu_class' => 'top-bar-menu corporate_active left',            // adding custom nav class
 	        'theme_location' => 'top-bar-l-corporate',                // where it's located in the theme
 	        'before' => '',                                 // before each link <a> 
 	        'after' => '',                                  // after each link </a>
 	        'link_before' => '<span>',                      // before each link text
-	        'link_after' => '<span>',                       // after each link text
+	        'link_after' => '</span>',                       // after each link text
 	        'depth' => 5,                                   // limit the depth of the nav
 	        'fallback_cb' => false,                         // fallback function (see below)
 	        'walker' => new top_bar_walker()
@@ -42,17 +42,17 @@ if ( ! function_exists( 'foundationPress_top_bar_l_corporate' ) ) {
  * http://codex.wordpress.org/Function_Reference/wp_nav_menu
  */
 if ( ! function_exists( 'foundationPress_top_bar_l_personal' ) ) {
-	function foundationPress_top_bar_l() {
+	function foundationPress_top_bar_l_personal() {
 	    wp_nav_menu(array( 
 	        'container' => false,                           // remove nav container
 	        'container_class' => '',                        // class of container
 	        'menu' => '',                                   // menu name
-	        'menu_class' => 'top-bar-menu left',            // adding custom nav class
+	        'menu_class' => 'top-bar-menu personal_active left',            // adding custom nav class
 	        'theme_location' => 'top-bar-l-personal',                // where it's located in the theme
 	        'before' => '',                                 // before each link <a> 
 	        'after' => '',                                  // after each link </a>
 	        'link_before' => '<span>',                      // before each link text
-	        'link_after' => '<span>',                       // after each link text
+	        'link_after' => '</span>',                       // after each link text
 	        'depth' => 5,                                   // limit the depth of the nav
 	        'fallback_cb' => false,                         // fallback function (see below)
 	        'walker' => new top_bar_walker()
@@ -74,7 +74,7 @@ if ( ! function_exists( 'foundationPress_top_bar_r' ) ) {
 	        'before' => '',                                 // before each link <a> 
 	        'after' => '',                                  // after each link </a>
 	        'link_before' => '<span>',                      // before each link text
-	        'link_after' => '<span>',                       // after each link text
+	        'link_after' => '</span>',                       // after each link text
 	        'depth' => 5,                                   // limit the depth of the nav
 	        'fallback_cb' => false,                         // fallback function (see below)
 	        'walker' => new top_bar_walker()
@@ -91,7 +91,7 @@ if ( ! function_exists( 'foundationPress_mobile_off_canvas_corporate' ) ) {
 	        'container' => false,                           // remove nav container
 	        'container_class' => '',                        // class of container
 	        'menu' => '',                                   // menu name
-	        'menu_class' => 'off-canvas-list',              // adding custom nav class
+	        'menu_class' => 'off-canvas-list corporate_active',              // adding custom nav class
 	        'theme_location' => 'mobile-off-canvas-corporate',        // where it's located in the theme
 	        'before' => '',                                 // before each link <a> 
 	        'after' => '',                                  // after each link </a>
@@ -113,7 +113,7 @@ if ( ! function_exists( 'foundationPress_mobile_off_canvas_personal' ) ) {
 	        'container' => false,                           // remove nav container
 	        'container_class' => '',                        // class of container
 	        'menu' => '',                                   // menu name
-	        'menu_class' => 'off-canvas-list',              // adding custom nav class
+	        'menu_class' => 'off-canvas-list personal_active',              // adding custom nav class
 	        'theme_location' => 'mobile-off-canvas-personal',        // where it's located in the theme
 	        'before' => '',                                 // before each link <a> 
 	        'after' => '',                                  // after each link </a>

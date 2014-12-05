@@ -3,11 +3,3 @@
  * ----------------------------------------------------------------------------
  */
 
-	$footer_font_size: .8rem;
-	$footer_line_height: 2 * $footer_font_size;
-
-@mixin footer_font_style {
-	font-size: $footer_font_size;
-	line-height: $footer_line_height;
-	color: $greige;
-}

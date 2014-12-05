@@ -1,5 +1,8 @@
 /*PERSONAL SIDE ACTIVE STYLESHEET */
 
+@import 'config/colors';
+@import 'site/attentive_variables';
+
 .pre-top-bar-section {
 	 ul {
 	 	li a {
@@ -7,5 +10,21 @@
 			background: $header_menu_overlay;
 			}			
 		}
+	}
+}
+
+.corporate_active {
+	display:none !important;
+}
+
+.pre-top-bar-section {
+	 ul {
+	 	li a {
+			&.personal {
+				background: $header_menu_overlay;
+			}
+			span:hover {
+			}
+		} 	
 	}
 }

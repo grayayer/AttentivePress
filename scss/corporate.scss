@@ -1,0 +1,21 @@
+/*this gives coloring for the corporate side*/
+
+@import 'site/attentive_variables';
+
+.personal_active {
+	display:none !important;
+}
+
+
+
+.pre-top-bar-section {
+	 ul {
+	 	li a {
+			&.corporate {
+				background: $header_menu_overlay;
+			}
+			span:hover {
+			}
+		} 	
+	}
+}

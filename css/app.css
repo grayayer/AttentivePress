@@ -8,6 +8,15 @@
  * ----------------------------------------------------------------------------
  */
 /*a dark blue*/
+/**
+ * Custom variables
+ * ----------------------------------------------------------------------------
+ */
+/**
+ * Custom color scheme
+ * ----------------------------------------------------------------------------
+ */
+/*a dark blue*/
 /*also changes the background for the top level items as well*/
 /* Foundation 5 */
 meta.foundation-version {
@@ -5573,6 +5582,18 @@ th.hide-for-touch {
 /* Behold, here are all the Foundation components. Comment out "foundation" above if you would select the parts
 of Foundation used instead.
 This can decrease the css file size drastically, and should be done before production*/
+/**
+ * Custom variables
+ * ----------------------------------------------------------------------------
+ */
+/**
+ * Custom color scheme
+ * ----------------------------------------------------------------------------
+ */
+/*a dark blue*/
+/*also changes the background for the top level items as well*/
+/*header variables*/
+/*VARIABLES */
 /* Site structure */
 /**
  * Table of Contents for FoundationPress:
@@ -5698,7 +5719,6 @@ button, .button {
  * 5.0 Plugins
  * ----------------------------------------------------------------------------
  */
-/*VARIABLES */
 @media only screen and (min-width: 40.063em) {
   .top-bar {
     background-color: #16304b;
@@ -5734,7 +5754,12 @@ button, .button {
       font-style: normal;
       font-weight: normal;
       padding: 0 23.75px;
-      line-height: 41.25px; }
+      line-height: 41.25px;
+      /* DEACTIVATED TO FORCE STYLING INTO SEPERATE STYLESHEETS
+			&.corporate {
+				background: $header_menu_overlay;
+			}
+*/ }
       .pre-top-bar-section ul li a.left {
         float: left;
         color: white;
@@ -5754,8 +5779,6 @@ button, .button {
           position: relative;
           top: -6px;
           font-size: 9px; }
-      .pre-top-bar-section ul li a.corporate_active {
-        background: rgba(255, 255, 255, 0.08); }
       .pre-top-bar-section ul li a span:hover {
         border-top: 3px solid rgba(255, 255, 255, 0.3);
         padding-top: 2px;
@@ -5768,7 +5791,22 @@ button, .button {
 section.top-bar-section {
   background: rgba(255, 255, 255, 0.08);
   padding: 0 15px 0 10px;
-  /*the states of the main navigation buttons when on the active page, and hovering, but only for the first level */ }
+  /*the states of the main navigation buttons when on the active page, and hovering, but only for the first level */
+  /**** HOVER EFFECTS ********/ }
+  section.top-bar-section li.menu_cta {
+    /*rules for the call to action button*/ }
+    section.top-bar-section li.menu_cta a span {
+      border: 2px solid white;
+      background-color: #275982;
+      box-shadow: 0 0 10px #275982;
+      border-radius: 30px;
+      padding: 5px 10px;
+      text-transform: uppercase;
+      -webkit-transition: background 150ms ease-out;
+      -moz-transition: background 150ms ease-out;
+      -ms-transition: background 150ms ease-out;
+      -o-transition: background 150ms ease-out;
+      transition: background 150ms ease-out; }
   section.top-bar-section li.active:not(.has-form) > a:not(.button) {
     background: transparent !important; }
     section.top-bar-section li.active:not(.has-form) > a:not(.button) > span {
@@ -5779,7 +5817,7 @@ section.top-bar-section {
       -ms-transition: border-width 300ms ease-in-out;
       -o-transition: border-width 300ms ease-in-out;
       transition: border-width 300ms ease-in-out; }
-  section.top-bar-section li:not(.has-form) a:not(.button):hover > span {
+  section.top-bar-section li:not(.menu_cta) a:not(.button):hover > span {
     /*hover effect for top level nav items*/
     border-top: 3px solid rgba(255, 255, 255, 0.3);
     padding-top: 2px;
@@ -5788,6 +5826,12 @@ section.top-bar-section {
     -ms-transition: border-width 300ms ease-in-out;
     -o-transition: border-width 300ms ease-in-out;
     transition: border-width 300ms ease-in-out; }
+  section.top-bar-section li.menu_cta a:not(.button):hover > span {
+    /*hover effect for top level nav items*/
+    background-color: #214c6e; }
+  section.top-bar-section li.menu_cta a:not(.button):active > span {
+    box-shadow: inset 0 0 10px #1b3e5b;
+    color: whitesmoke; }
   section.top-bar-section .dropdown li {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid #cccccc; }

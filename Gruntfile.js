@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
@@ -11,7 +11,9 @@ module.exports = function(grunt) {
           outputStyle: 'extended'
         },
         files: {
-          'css/app.css': 'scss/app.scss'
+          'css/app.css': 'scss/app.scss',
+          'css/corporate.css': 'scss/corporate.scss',
+          'css/personal.css': 'scss/personal.scss'
         }        
       }
     },
@@ -64,6 +66,7 @@ module.exports = function(grunt) {
       }
     }
   });
+
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
