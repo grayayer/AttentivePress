@@ -60,7 +60,7 @@
             */
         ?>
 
-
+<!-- <link id="corporate_stylesheet" rel="stylesheet" href="<?php // echo get_stylesheet_directory_uri() ; ?>/css/corporate.css" /> -->
 <!-- 		<link rel="stylesheet" href="<?php // echo get_stylesheet_directory_uri() ; ?>/css/<?php // echo $style ?>.css" />
  -->
 
