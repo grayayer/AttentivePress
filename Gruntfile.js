@@ -49,7 +49,8 @@
       dist: {
         src: [
           'js/foundation/js/foundation.min.js',
-          'js/custom/*.js'
+          'js/custom/*.js',
+          'js/custom/jquery.cookie.js'
         ],
 
         dest: 'js/app.js'
@@ -70,7 +71,7 @@
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-concat'); //this should work right?
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
 

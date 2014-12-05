@@ -7,13 +7,13 @@
         </ul>
         <nav class="pre-top-bar-section">
             <ul>
-                <li><a href="/personal/?theme=personal" class="personal left personal_style"><span>Personal</span></a></li>
-                <li><a href="/corporate/?theme=corporate" class="corporate left corporate_style"><span>Corporate</span></a></li>
+                <li><a href="/personal/" class="personal left personal_style"><span>Personal</span></a></li>
+                <li><a href="/corporate/" class="corporate left corporate_style"><span>Corporate</span></a></li>
 
                     <li id="corporate"><a class="left" href="">Corporate Style</a></li>
-                    <li id="personalStyle"><a class="left" rel="<?php echo get_stylesheet_directory_uri() ; ?>/css/personal.css" href="">Personal Style</a></li>
+                    <li id="personal_style_btn"><a class="left" rel="<?php echo get_stylesheet_directory_uri() ; ?>/css/personal.css" href="">Personal Style</a></li>
 
-                    <li id="contrast-btn"><a class="left" href="#" rel="css/high-contrast.css">high contrast</a></li>
+                    <li id="personal_style_btn"><a class="left" href="#">high contrast</a></li>
 
 
                 <li><a href="#" class="passport right"><span>Passport to Health</span></a></li>
