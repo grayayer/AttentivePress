@@ -20,8 +20,11 @@
 		} else {
 			echo wp_title( ' | ', 'false', 'right' ); bloginfo( 'name' );
 		} ?></title>
+
+		<style type="text/css">@import url("<?php echo get_stylesheet_directory_uri() ; ?>/css/app.css");</style>
 		
-		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ; ?>/css/app.css" />
+<!-- 		<link rel="stylesheet" href="<?php // echo get_stylesheet_directory_uri() ; ?>/css/app.css" /> -->
+
 
 		<link rel="icon" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/favicon.ico" type="image/x-icon">
 		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/apple-touch-icon-144x144-precomposed.png">
@@ -35,6 +38,34 @@
 		nimbus font through typekit -->
 
 		<?php wp_head(); ?>
+
+	<?php /*
+	       $walker = new My_Walker;
+		wp_nav_menu(array(
+		        'echo' => true,
+			'container' => '',
+			'theme_location' => 'top-bar-l-corporate',
+			'menu_class' => 'grid-10 omega',
+			'walker' => $walker
+		));
+		*/
+	?>
+
+<!-- section for stylesheet switcher, must come after jQuery is already loaded -->
+        <?php
+            // Checks for, and assigns cookie to local variable:
+            if(!empty($_COOKIE['style'])) $style = $_COOKIE['style'];
+            // If no cookie is present then set style as "corporate" (default):
+            else $style = 'corporate';
+        ?>
+
+
+		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ; ?>/css/<?php echo $style ?>.css" />
+
+		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ; ?>/js/styleswitcher.jquery.js"></script>
+
+<!-- end of stylesheet switcher -->
+
 	</head>
 	<body <?php body_class(); ?>>
 	<?php do_action('foundationPress_after_body'); ?>

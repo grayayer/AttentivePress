@@ -27,5 +27,11 @@
 </div>
 <?php wp_footer(); ?>
 <?php do_action('foundationPress_before_closing_body'); ?>
+
+
+        <script type="text/javascript">
+            jQuery('#style-switcher a').styleSwitcher(); // Calling the plugin...
+        </script>
+
 </body>
 </html>
