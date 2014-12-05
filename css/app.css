@@ -5719,11 +5719,15 @@ button, .button {
  * 5.0 Plugins
  * ----------------------------------------------------------------------------
  */
-@media only screen and (min-width: 40.063em) {
-  .top-bar {
-    background-color: #16304b;
-    background: radial-gradient(circle at bottom center, #2f6c9d, #16304b); } }
-
+/*@media only screen and (min-width:40.063em) {
+	.top-bar {
+		background-color: $corporate_bg_header_primary;
+		background: radial-gradient(
+			circle at bottom center,
+			$corporate_bg_header_highlight, $corporate_bg_header_primary)
+		;
+	}
+}*/
 .top-bar {
   height: 125px;
   line-height: 45px; }
@@ -6254,6 +6258,12 @@ h1.entry-title {
   font-weight: bolder;
   font-weight: 700;
   font-style: normal; }
+
+.personal_section {
+  display: none !important; }
+
+.corporate_section {
+  display: none !important; }
 
 /* Assets */
 /* 

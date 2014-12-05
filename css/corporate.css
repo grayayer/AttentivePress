@@ -26,3 +26,8 @@
   background: rgba(255, 255, 255, 0.08); }
 .pre-top-bar-section ul li a.personal_style {
   background: transparent; }
+
+@media only screen and (min-width: 40.063em) {
+  .top-bar {
+    background-color: #16304b;
+    background: radial-gradient(circle at bottom center, #2f6c9d, #16304b); } }

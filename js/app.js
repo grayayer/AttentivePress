@@ -128,7 +128,7 @@ $('#start-jr').on('click', function() {
 /* stylesheet switcher plugin */
 
 
-/**** ANOTHER VERSION ***/
+/**** PERSONAL VERSION ***/
 $(document).ready(function(){
     // Append the stylesheet on page load
     if ($.cookie('personalStyle') === "true") {
@@ -148,6 +148,28 @@ $(document).ready(function(){
         }
     });
 });
+
+/**** CORPORATE VERSION 
+$(document).ready(function(){
+    // Append the stylesheet on page load
+    if ($.cookie('corporateStyle') === "true") {
+	  $('head').append('<link rel="stylesheet" href="/wp-content/themes/attentivepress/css/corporate.css" type="text/css" id="corporate_stylesheet"/>'); 
+
+    }
+    // Add the click handler to switch the stylesheet on and off
+    $("#corporate_style_btn a").click(function () {
+        if (!($.cookie('corporateStyle') === "true")) {
+            $('head').append('<link rel="stylesheet" href="/wp-content/themes/attentivepress/css/corporate.css" type="text/css" id="corporate_stylesheet"/>');
+            $.cookie('corporateStyle','true',{path:'/'});
+        }       
+        else {
+            // remove the high-contrast style
+            $("#corporate_stylesheet").remove();
+            $.cookie('corporateStyle','false',{path:'/'});
+        }
+    });
+});
+***/
 
 // /*You can add options like expiration or site-wide validity to the cookie, so if you want the cookie to be valid for a year, add this to the cookie command*/
 // $.cookie('personal_style', 'false', {expires: 365});

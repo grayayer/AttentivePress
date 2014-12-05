@@ -25,3 +25,14 @@
 		} 	
 	}
 }
+
+
+@media only screen and (min-width:40.063em) {
+	.top-bar {
+		background-color: $personal_bg_header_primary;
+		background: radial-gradient(
+			circle at bottom center,
+			$personal_bg_header_highlight, $personal_bg_header_primary)
+		;
+	}
+}

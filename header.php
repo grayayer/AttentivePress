@@ -52,17 +52,17 @@
 	?>
 
 <!-- section for stylesheet switcher, must come after jQuery is already loaded -->
-        <?php
+        <?php /*
             // Checks for, and assigns cookie to local variable:
-            if(!empty($_COOKIE['style'])) $style = $_COOKIE['style'];
+            if(!empty($_COOKIE['personalStyle'])) $style = $_COOKIE['personalStyle'];
             // If no cookie is present then set style as "corporate" (default):
             else $style = 'corporate';
+            */
         ?>
 
 
-		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ; ?>/css/<?php echo $style ?>.css" />
-
-		<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ; ?>/js/styleswitcher.jquery.js"></script>
+<!-- 		<link rel="stylesheet" href="<?php // echo get_stylesheet_directory_uri() ; ?>/css/<?php // echo $style ?>.css" />
+ -->
 
 <!-- end of stylesheet switcher -->
 

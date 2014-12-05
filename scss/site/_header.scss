@@ -10,7 +10,7 @@
 	transition: border-width 300ms ease-in-out;
 }
 
-@media only screen and (min-width:40.063em) {
+/*@media only screen and (min-width:40.063em) {
 	.top-bar {
 		background-color: $corporate_bg_header_primary;
 		background: radial-gradient(
@@ -18,7 +18,7 @@
 			$corporate_bg_header_highlight, $corporate_bg_header_primary)
 		;
 	}
-}
+}*/
 
 .top-bar {
 	height: $header_height;
