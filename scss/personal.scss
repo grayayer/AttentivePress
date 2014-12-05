@@ -6,7 +6,7 @@
 .pre-top-bar-section {
 	 ul {
 	 	li a {
-		&.personal_active {
+		&.personal{
 			background: $header_menu_overlay;
 			}			
 		}
