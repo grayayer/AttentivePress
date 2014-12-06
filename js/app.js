@@ -135,28 +135,28 @@ $(document).ready(function(){
 	  $('head').append('<link rel="stylesheet" href="/wp-content/themes/attentivepress/css/personal.css" type="text/css" id="personal_stylesheet"/>'); 
 	  $("#corporate_stylesheet").remove();
     }
-    if ($.cookie('personalStyle') === "true") {
-	  $('head').append('<link rel="stylesheet" href="/wp-content/themes/attentivepress/css/personal.css" type="text/css" id="personal_stylesheet"/>'); 
+    if ($.cookie('corporateStyle') === "true") {
+	  $('head').append('<link rel="stylesheet" href="/wp-content/themes/attentivepress/css/corporate.css" type="text/css" id="corporate_stylesheet"/>'); 
 	  $("#personal_stylesheet").remove();
     }
     
     // Add the click handler to switch the personal stylesheet
     $("#personal_style_btn a").click(function () {
         if ($.cookie('personalStyle') === "true") {
-        	alert( "Personal Stylesheet Cookie is TURNED ON " );
+        	//alert( "Personal Stylesheet Cookie is TURNED ON " );
         }       
         else { //do something if the cookie personal stylesheet cookie is turned off
-            alert( "Personal Stylesheet Cookie is OFF " );
+            //alert( "Personal Stylesheet Cookie is OFF " );
 			$('head').append('<link rel="stylesheet" href="/wp-content/themes/attentivepress/css/personal.css" type="text/css" id="personal_stylesheet"/>');
             $.cookie('personalStyle','true',{path:'/'}); //clicking on button turns personalStyle cookie to true
             $.cookie('corporateStyle','false',{path:'/'}); //clicking on personal button turns corporateStyle cookie to false
-            alert( "Personal Stylesheet Cookie is now on " );        
+         //   alert( "Personal Stylesheet Cookie is now on " );        
         }
     });
     // Add the click handler to switch the personal stylesheet
     $("#corporate_style_btn a").click(function () {
         if ($.cookie('personalStyle') === "true") {
-            alert( "Personal Stylesheet Cookie is ON, we'll now turn that off and the corporate cookie on " );
+         //   alert( "Personal Stylesheet Cookie is ON, we'll now turn that off and the corporate cookie on " );
 
         	$('head').append('<link rel="stylesheet" href="/wp-content/themes/attentivepress/css/corporate.css" type="text/css" id="personal_stylesheet"/>');
             $.cookie('personalStyle','false',{path:'/'}); //clicking on button turns personalStyle cookie to true
@@ -164,7 +164,7 @@ $(document).ready(function(){
             $("#personal_stylesheet").remove();
         }       
         else { 
-            alert( "corporate Stylesheet Cookie is already ON " );
+         //   alert( "corporate Stylesheet Cookie is already ON " );
         }
     });    
 });

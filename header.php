@@ -51,21 +51,8 @@
 		*/
 	?>
 
-<!-- section for stylesheet switcher, must come after jQuery is already loaded -->
-        <?php /*
-            // Checks for, and assigns cookie to local variable:
-            if(!empty($_COOKIE['personalStyle'])) $style = $_COOKIE['personalStyle'];
-            // If no cookie is present then set style as "corporate" (default):
-            else $style = 'corporate';
-            */
-        ?>
-
-<!-- <link id="corporate_stylesheet" rel="stylesheet" href="<?php // echo get_stylesheet_directory_uri() ; ?>/css/corporate.css" /> -->
-<!-- 		<link rel="stylesheet" href="<?php // echo get_stylesheet_directory_uri() ; ?>/css/<?php // echo $style ?>.css" />
+<!-- 	<link id="corporate_stylesheet" rel="stylesheet" href="<?php // echo get_stylesheet_directory_uri() ; ?>/css/corporate.css" />
  -->
-
-<!-- end of stylesheet switcher -->
-
 	</head>
 	<body <?php body_class(); ?>>
 	<?php do_action('foundationPress_after_body'); ?>
