@@ -23,3 +23,13 @@ h1.entry-title {
 	top: -3px;
 	margin-left: -9px;
 }
+
+input[type="submit"] {
+	-webkit-appearance: none;
+	-webkit-border-radius: 1000px;
+}
+
+.attentive_button {
+  @include button(rem-calc(9), $primary-color, 1000px);
+  font-size: $base-font-size;
+}

@@ -10,7 +10,7 @@
 	transition: border-width 300ms ease-in-out;
 }
 
-@media only screen and (min-width:40.063em) {
+/*@media only screen and (min-width:40.063em) {
 	.top-bar {
 		background-color: $corporate_bg_header_primary;
 		background: radial-gradient(
@@ -18,11 +18,12 @@
 			$corporate_bg_header_highlight, $corporate_bg_header_primary)
 		;
 	}
-}
+}*/
 
 .top-bar {
 	height: $header_height;
 	line-height: 45px;
+	background: transparent;
 	
 	.name {
 		height: $header_height;
@@ -33,12 +34,12 @@
 		width: $logo_width_size;
 
 		li.name h1 a {
-			padding: 8px 4px 0 4px;
+			padding: 4px 4px 0 4px;
 			div.header_logo {
 				background: url('images/logo_attentivehealth_white.svg') no-repeat center center;
 				background-size: contain;
 				text-indent: -9999px;
-				height: $header_height / 1.13;
+				height: $header_height / 1.05;
 			}
 		}
 	}
@@ -137,20 +138,25 @@ section.top-bar-section {
 		}
 	}
 
+	li {
+		&.active.menu_cta { 
+			> a:not(.button) {
+				background: transparent !important;
+				
+				> span {
+			    border-top: 2px solid rgba(255, 255, 255, 0.7);
+			    padding-top: 5px;
+				}
+			}
+		}
+	}
+
 	/**** HOVER EFFECTS ********/
 
 	li:not(.menu_cta) a:not(.button):hover > span { /*hover effect for top level nav items*/
 		@include menu_hover_effect;
 	}
-	li.menu_cta a:not(.button) {
-		&:hover > span { /*hover effect for top level nav items*/
-			background-color: darken($corporate_primary, 5%);
-		}
-		&:active > span {
-			box-shadow: inset 0 0 10px darken($corporate_primary, 10%);
-			color: #F5F5F5;
-		}
-	}
+
 	.dropdown li {
 		border-bottom: 1px solid rgba(0,0,0,.1);
 		border-bottom: 1px solid #CCC;

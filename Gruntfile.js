@@ -37,19 +37,25 @@
     uglify: {
       dist: {
         files: {
-          'js/modernizr/modernizr.min.js': ['js/modernizr/modernizr.js']
+          'js/modernizr/modernizr.min.js': ['js/modernizr/modernizr.js'],
+          'js/app.min.js': ['js/app.js']
+
         }
       }
     },
 
+
+
     concat: {
       options: {
-        separator: ';'
+        separator: ';',
+        outputStyle: 'condensed'
       },
       dist: {
         src: [
           'js/foundation/js/foundation.min.js',
-          'js/custom/*.js'
+          'js/custom/*.js',
+          'js/custom/jquery.cookie.js'
         ],
 
         dest: 'js/app.js'
@@ -70,10 +76,10 @@
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-concat'); // if this isn't working automaticaly, run the command 'grunt watch'
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
 
-  grunt.registerTask('build', ['sass', 'copy', 'uglify', 'concat']);
+  grunt.registerTask('build', ['sass', 'copy', 'concat', 'uglify' ]);
   grunt.registerTask('default', ['watch']);
 }
