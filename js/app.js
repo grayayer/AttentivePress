@@ -4,10 +4,7 @@ var b={start_page_x:a.touches[0].pageX,start_page_y:a.touches[0].pageY,start_tim
 }),e.appendTo(b),this.sticky(),this.assembled(b)},assembled:function(b){b.data(this.attr_name(!0),a.extend({},b.data(this.attr_name(!0)),{assembled:!0}))},height:function(b){var c=0,d=this;return a("> li",b).each(function(){c+=d.S(this).outerHeight(!0)}),c},sticky:function(){var a=this;this.S(b).on("scroll",function(){a.update_sticky_positioning()})},update_sticky_positioning:function(){var a="."+this.settings.sticky_class,c=this.S(b),d=this;if(d.settings.sticky_topbar&&d.is_sticky(this.settings.sticky_topbar,this.settings.sticky_topbar.parent(),this.settings)){var e=this.settings.sticky_topbar.data("stickyoffset");d.S(a).hasClass("expanded")||(c.scrollTop()>e?d.S(a).hasClass("fixed")||(d.S(a).addClass("fixed"),d.S("body").addClass("f-topbar-fixed")):c.scrollTop()<=e&&d.S(a).hasClass("fixed")&&(d.S(a).removeClass("fixed"),d.S("body").removeClass("f-topbar-fixed")))}},off:function(){this.S(this.scope).off(".fndtn.topbar"),this.S(b).off(".fndtn.topbar")},reflow:function(){}}}(jQuery,window,window.document);;jQuery(document).foundation();;// Joyride demo
 $('#start-jr').on('click', function() {
   $(document).foundation('joyride','start');
-});
-
-
-/*!
+});;/*!
  * jQuery Cookie Plugin v1.4.1
  * https://github.com/carhartl/jquery-cookie
  *
@@ -124,53 +121,34 @@ $('#start-jr').on('click', function() {
 	};
 
 }));
-
-/* stylesheet switcher plugin */
+;
+/* stylesheet switcher plugin, to only be used in conjunction with php in header */
 
 
 /**** PERSONAL VERSION ***/
 $(document).ready(function(){
-    // Append the stylesheet on page load 
-    if ($.cookie('personalStyle') === "true") {
-	  $('head').append('<link rel="stylesheet" href="/wp-content/themes/attentivepress/css/personal.css" type="text/css" id="personal_stylesheet"/>'); 
-	  $("#corporate_stylesheet").remove();
-    }
-    if ($.cookie('corporateStyle') === "true") {
-	  $('head').append('<link rel="stylesheet" href="/wp-content/themes/attentivepress/css/corporate.css" type="text/css" id="corporate_stylesheet"/>'); 
-	  $("#personal_stylesheet").remove();
-    }
-    
-    // Add the click handler to switch the personal stylesheet
+    // Add the click handler to assign the the personal stylesheet
     $("#personal_style_btn a").click(function () {
-        if ($.cookie('personalStyle') === "true") {
-        	//alert( "Personal Stylesheet Cookie is TURNED ON " );
+        if ($.cookie('style') === "personal") {
+            /// DOESN'T DO ANYTHING, CUZ IT'S ALREADY LOADED
         }       
         else { //do something if the cookie personal stylesheet cookie is turned off
-            //alert( "Personal Stylesheet Cookie is OFF " );
-			$('head').append('<link rel="stylesheet" href="/wp-content/themes/attentivepress/css/personal.css" type="text/css" id="personal_stylesheet"/>');
-            $.cookie('personalStyle','true',{path:'/'}); //clicking on button turns personalStyle cookie to true
-            $.cookie('corporateStyle','false',{path:'/'}); //clicking on personal button turns corporateStyle cookie to false
-         //   alert( "Personal Stylesheet Cookie is now on " );        
+            $.cookie('style','personal',{path:'/'}); //clicking on button sets the value to 'personal' of the cookie "style"
         }
     });
     // Add the click handler to switch the personal stylesheet
     $("#corporate_style_btn a").click(function () {
-        if ($.cookie('personalStyle') === "true") {
-         //   alert( "Personal Stylesheet Cookie is ON, we'll now turn that off and the corporate cookie on " );
-
-        	$('head').append('<link rel="stylesheet" href="/wp-content/themes/attentivepress/css/corporate.css" type="text/css" id="personal_stylesheet"/>');
-            $.cookie('personalStyle','false',{path:'/'}); //clicking on button turns personalStyle cookie to true
-            $.cookie('corporateStyle','true',{path:'/'}); //clicking on personal button turns corporateStyle cookie to false
-            $("#personal_stylesheet").remove();
+        if ($.cookie('style') === "corporate") {
+            /// DOESN'T DO ANYTHING, CUZ IT'S ALREADY LOADED            
         }       
         else { 
-         //   alert( "corporate Stylesheet Cookie is already ON " );
+            $.cookie('style','corporate',{path:'/'}); //clicking on button sets the value to 'corporate' of the cookie "style"
         }
     });    
 });
 
 
 // /*You can add options like expiration or site-wide validity to the cookie, so if you want the cookie to be valid for a year, add this to the cookie command*/
-// $.cookie('personal_style', 'false', {expires: 365});
+// $.cookie('style', 'false', {expires: 365});
 // /*If you want it to be valid across your whole domain, which may be most likely the case for your implementation, you can add path '/':*/
-// $.cookie('personal_style', 'false', {path: '/'});
+// $.cookie('style', 'false', {path: '/'});
