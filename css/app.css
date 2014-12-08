@@ -6292,6 +6292,37 @@ input[type="submit"] {
   font-weight: 700;
   font-style: normal; }
 
+body article #wpmtp-wrapper ul.wpmtp-three-columns .wpmtp-column {
+  width: 27.33333%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 30px; }
+body article #wpmtp-wrapper .wpmtp-post-image {
+  margin: 0 auto 5px; }
+body article span.wpmtp-job-title {
+  /*subtitle issues on individual team member page*/
+  display: block;
+  font-size: 25px;
+  margin-top: 0px;
+  margin-bottom: 30px; }
+body article #wpmtp-single-wrap .wpmtp-vcard-left {
+  /*the image area*/
+  margin-bottom: 5px; }
+body article #wpmtp-single-wrap .wpmtp-meta {
+  /*custom field spacing*/
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.85rem; }
+  body article #wpmtp-single-wrap .wpmtp-meta label {
+    font-size: 1rem; }
+body article #wpmtp-wrapper h5.wpmtp-position {
+  /*subtitle on all staff page*/
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  font-style: italic; }
+body article #wpmtp-wrapper h3.wpmtp-post-title a {
+  font-size: 1.1rem; }
+
 .personal_section {
   display: none !important; }
 
