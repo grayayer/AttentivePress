@@ -3,6 +3,7 @@ footer.row {
 	border-top: solid 10px $small_contrast;
 	max-width: 100%;
 	margin-bottom: 1.5rem;
+	//margin-top: 3rem;
 }
 
 // makes it so that the medium new grid rules only apply to medium and up. the next mixin does it only for small screens
@@ -52,6 +53,14 @@ footer.row {
   	}
   	&.dots {
   		border-right: 2px $greige_light dotted;
+  	}
+  	&.last {
+  		text-align: left;
+  	}
+  	&.red {
+  		p {
+  			color: $red;
+  		}
   	}
   }
 }

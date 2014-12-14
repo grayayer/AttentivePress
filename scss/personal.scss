@@ -23,6 +23,7 @@
 		li.name h1 a {
 			div.header_logo {
 				background: url('images/logo_attentivehealth.svg') no-repeat center center;
+				background-size: contain;
 			}
 		}
 	}
@@ -48,28 +49,37 @@
 
 
 @media only screen and (min-width:40.063em) {
-	.top-bar {
+	div.top-bar-container {
 		background-color: $personal_bg_header_primary;
 		background: radial-gradient(
 			circle at bottom center,
-			$personal_bg_header_highlight, $personal_bg_header_primary);
+			$personal_bg_header_highlight, $personal_bg_header_primary);	
+
+		.top-bar {
+			background: url('images/spiral_pattern2.png') right no-repeat;
+			background-position-y: 99%;
+			background-position-x: 101%;
+		}
 	}
 }
 
 section.top-bar-section {
 	li.menu_cta { /*rules for the call to action button*/
-		a span {
-			border: 2px solid rgba(255,255,255,.9);
-			background-color: $personal_primary;
-			box-shadow: 0 0 10px $personal_primary;
-			border-radius: 30px;
-			padding: 5px 10px;
-			text-transform: uppercase;
-			-webkit-transition: background 150ms ease-out;
-			-moz-transition: background 150ms ease-out;
-			-ms-transition: background 150ms ease-out;
-			-o-transition: background 150ms ease-out;
-			transition: background 150ms ease-out;		
+		a {
+	//		padding: 0 10px;
+			span {
+				border: 2px solid rgba(255,255,255,.9);
+				background-color: $personal_primary;
+				box-shadow: 0 0 10px $personal_primary;
+				border-radius: 30px;
+				padding: 5px 10px;
+				text-transform: uppercase;
+				-webkit-transition: background 150ms ease-out;
+				-moz-transition: background 150ms ease-out;
+				-ms-transition: background 150ms ease-out;
+				-o-transition: background 150ms ease-out;
+				transition: background 150ms ease-out;	
+			}	
 		}
 	}
 	li.menu_cta a:not(.button) {
@@ -90,4 +100,72 @@ section.top-bar-section {
 			}
 		}
 	}		
+}
+
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) {
+	.tab-bar {
+		background: $personal_bg_header_primary;
+	}
+} 
+
+
+
+/**** HOMEPAGE ********/
+
+#homepage-hero {
+	@include homepage-hero(#{personal}, 500px);
+
+	h1 {
+		color: $blue_dark;
+		font-size: 38px;
+		font-weight: bolder;
+		font-weight: 900;
+	}
+	.tagline {
+		color: $blue_dark;
+		font-weight: 700;
+	}
+	.button.hero_area {
+		background-color: $yellow;
+		color: $green;
+		&:hover {
+			background-color: darken($yellow, 10%);
+		}
+	}
+}
+
+
+
+.blurb {
+	background: $blurb_bg_personal;
+	h3 {
+		color: $primary-color;
+	}
+	i.circle {
+		color: $blue_light;
+	}
+	a.button {
+		background-color: $green;
+	}
+}
+
+
+/******* MOBILE *******/
+
+.left-off-canvas-menu, .right-off-canvas-menu {
+	background-color: $personal_bg_header_primary;
+}
+
+.corporate_off_canvas_link {
+	background-color: $corporate_bg_header_primary;
+}
+
+ul.off-canvas-list {
+	li a:hover {
+		background-color: darken($personal_bg_header_primary, 10%);
+	}
 }

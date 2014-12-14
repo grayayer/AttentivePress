@@ -33,3 +33,14 @@ input[type="submit"] {
   @include button(rem-calc(9), $primary-color, 1000px);
   font-size: $base-font-size;
 }
+
+.button {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	&.personal {
+		background-color: $personal_primary;
+		&:hover {
+			background-color: darken($personal_primary, 10%);
+		}
+	}
+}

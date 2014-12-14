@@ -48,7 +48,7 @@ function foundationpress_sidebar_widgets() {
       'id' => 'footer-widget-4',
       'name' => __('Footer Widget 4', 'FoundationPress'),
       'description' => __('Drag widgets to this footer container', 'FoundationPress'),
-      'before_widget' => '<article id="%1$s" class="small-5 medium-2 columns widget %2$s" data-equalizer-watch>',
+      'before_widget' => '<article id="%1$s" class="small-5 medium-2 columns widget red %2$s" data-equalizer-watch>',
       'after_widget' => '</article>',
       'before_title' => '<h6>',
       'after_title' => '</h6>'      
@@ -59,7 +59,7 @@ function foundationpress_sidebar_widgets() {
       'id' => 'footer-widget-5',
       'name' => __('Footer Widget 5', 'FoundationPress'),
       'description' => __('Drag widgets to this footer container', 'FoundationPress'),
-      'before_widget' => '<article id="%1$s" class="small-10 medium-2 columns widget %2$s" data-equalizer-watch>',
+      'before_widget' => '<article id="%1$s" class="small-10 medium-2 columns last widget %2$s" data-equalizer-watch>',
       'after_widget' => '</article>',
       'before_title' => '<h6>',
       'after_title' => '</h6>'      

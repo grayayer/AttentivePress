@@ -15,6 +15,26 @@ $footer_line_height: 2 * $footer_font_size;
 /*VARIABLES */
 $logo_width_size: 11%;
 $top_bar_width: 100%-$logo_width_size;
-$header_height: 125px;
+$header_height: 130px;
+$topbar-height: 55px;
 $top_bar_left_padding_number: 10px;
 $pre_top_bar_height: $topbar-height * .75;
+
+
+@mixin circle_icon($size) {
+	font-size: $size*3.75rem;
+	background: #FFF;
+	border-radius: 1000px;
+	padding: $size*.45rem $size*.48rem;
+	box-shadow: 0 0 4px rgba(0,0,0,.2);
+}
+
+@mixin homepage-hero($bgimage, $bg_height) {
+	background: url("images/hero_attentivehealth_#{$bgimage}.jpg") no-repeat center center;
+	padding: 1.25rem 0;
+	margin: -2rem 0 0;
+	position: relative;
+	text-align: left;
+	height: auto;
+	min-height: $bg_height;	
+}

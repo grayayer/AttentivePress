@@ -910,8 +910,8 @@ select {
   padding: 0.875rem 1.5rem 0.875rem 0.875rem;
   font-size: 0.8125rem;
   transition: opacity 300ms ease-out;
-  background-color: #008cba;
-  border-color: #007ba0;
+  background-color: #275982;
+  border-color: #224d70;
   color: white; }
   .alert-box .close {
     font-size: 1.375rem;
@@ -1243,11 +1243,11 @@ select {
     font-size: 0.6875rem;
     line-height: 0.6875rem;
     text-transform: uppercase;
-    color: #008cba; }
+    color: #275982; }
     .breadcrumbs > *:hover a, .breadcrumbs > *:focus a {
       text-decoration: underline; }
     .breadcrumbs > * a {
-      color: #008cba; }
+      color: #275982; }
     .breadcrumbs > *.current {
       cursor: default;
       color: #333333; }
@@ -1292,17 +1292,17 @@ button, .button {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   display: inline-block;
-  padding-top: 1rem;
-  padding-right: 2rem;
-  padding-bottom: 1.0625rem;
-  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5625rem;
+  padding-left: 1rem;
   font-size: 1rem;
-  background-color: #008cba;
-  border-color: #007295;
+  background-color: #275982;
+  border-color: #1f4768;
   color: white;
   transition: background-color 300ms ease-out; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #007295; }
+    background-color: #1f4768; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: white; }
   button.secondary, .button.secondary {
@@ -1346,22 +1346,22 @@ button, .button {
     button.info:hover, button.info:focus, .button.info:hover, .button.info:focus {
       color: white; }
   button.large, .button.large {
-    padding-top: 0.875rem;
-    padding-right: 1.75rem;
-    padding-bottom: 0.9375rem;
-    padding-left: 1.75rem;
-    font-size: 0.8125rem; }
+    padding-top: 0.5625rem;
+    padding-right: 1.125rem;
+    padding-bottom: 0.625rem;
+    padding-left: 1.125rem;
+    font-size: 1.25rem; }
   button.small, .button.small {
-    padding-top: 0.875rem;
-    padding-right: 1.75rem;
-    padding-bottom: 0.9375rem;
-    padding-left: 1.75rem;
+    padding-top: 0.4375rem;
+    padding-right: 0.875rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.875rem;
     font-size: 0.8125rem; }
   button.tiny, .button.tiny {
-    padding-top: 0.625rem;
-    padding-right: 1.25rem;
-    padding-bottom: 0.6875rem;
-    padding-left: 1.25rem;
+    padding-top: 0.3125rem;
+    padding-right: 0.625rem;
+    padding-bottom: 0.375rem;
+    padding-left: 0.625rem;
     font-size: 0.6875rem; }
   button.expand, .button.expand {
     padding-right: 0;
@@ -1378,18 +1378,18 @@ button, .button {
   button.round, .button.round {
     border-radius: 1000px; }
   button.disabled, button[disabled], .button.disabled, .button[disabled] {
-    background-color: #008cba;
-    border-color: #007295;
+    background-color: #275982;
+    border-color: #1f4768;
     color: white;
     cursor: default;
     opacity: 0.7;
     box-shadow: none; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #007295; }
+      background-color: #1f4768; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
       color: white; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #008cba; }
+      background-color: #275982; }
     button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
       background-color: #e7e7e7;
       border-color: #b9b9b9;
@@ -1670,15 +1670,15 @@ button::-moz-focus-inner {
     .button-group.round.stack > *, .button-group.round.stack > * > a, .button-group.round.stack > * > button, .button-group.round.stack > * > .button {
       border-radius: 0; }
     .button-group.round.stack > *:first-child, .button-group.round.stack > *:first-child > a, .button-group.round.stack > *:first-child > button, .button-group.round.stack > *:first-child > .button {
-      -webkit-top-left-radius: 1rem;
-      -webkit-top-right-radius: 1rem;
-      border-top-left-radius: 1rem;
-      border-top-right-radius: 1rem; }
+      -webkit-top-left-radius: 0.5rem;
+      -webkit-top-right-radius: 0.5rem;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem; }
     .button-group.round.stack > *:last-child, .button-group.round.stack > *:last-child > a, .button-group.round.stack > *:last-child > button, .button-group.round.stack > *:last-child > .button {
-      -webkit-bottom-left-radius: 1rem;
-      -webkit-bottom-right-radius: 1rem;
-      border-bottom-left-radius: 1rem;
-      border-bottom-right-radius: 1rem; }
+      -webkit-bottom-left-radius: 0.5rem;
+      -webkit-bottom-right-radius: 0.5rem;
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem; }
   @media only screen and (min-width:40.063em) {
     .button-group.round.stack-for-small > * {
       margin: 0 -2px;
@@ -1722,15 +1722,15 @@ button::-moz-focus-inner {
       .button-group.round.stack-for-small > *, .button-group.round.stack-for-small > * > a, .button-group.round.stack-for-small > * > button, .button-group.round.stack-for-small > * > .button {
         border-radius: 0; }
       .button-group.round.stack-for-small > *:first-child, .button-group.round.stack-for-small > *:first-child > a, .button-group.round.stack-for-small > *:first-child > button, .button-group.round.stack-for-small > *:first-child > .button {
-        -webkit-top-left-radius: 1rem;
-        -webkit-top-right-radius: 1rem;
-        border-top-left-radius: 1rem;
-        border-top-right-radius: 1rem; }
+        -webkit-top-left-radius: 0.5rem;
+        -webkit-top-right-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem; }
       .button-group.round.stack-for-small > *:last-child, .button-group.round.stack-for-small > *:last-child > a, .button-group.round.stack-for-small > *:last-child > button, .button-group.round.stack-for-small > *:last-child > .button {
-        -webkit-bottom-left-radius: 1rem;
-        -webkit-bottom-right-radius: 1rem;
-        border-bottom-left-radius: 1rem;
-        border-bottom-right-radius: 1rem; } }
+        -webkit-bottom-left-radius: 0.5rem;
+        -webkit-bottom-right-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem; } }
   .button-group.even-2 li {
     margin: 0 -2px;
     display: inline-block;
@@ -2176,7 +2176,7 @@ button::-moz-focus-inner {
     line-height: 1.125rem;
     margin: 0; }
     .f-dropdown li:hover, .f-dropdown li:focus {
-      background: #eeeeee; }
+      background: red; }
     .f-dropdown li.radius {
       border-radius: 3px; }
     .f-dropdown li a {
@@ -2680,7 +2680,7 @@ label.error {
       width: 1.875rem;
       height: 1.875rem; }
   .icon-bar > *:hover {
-    background: #008cba; }
+    background: #275982; }
   .icon-bar > * label {
     color: white; }
   .icon-bar > * i {
@@ -2926,7 +2926,7 @@ label.error {
   margin-bottom: inherit;
   padding: 0.25rem 0.5rem 0.25rem;
   font-size: 0.6875rem;
-  background-color: #008cba;
+  background-color: #275982;
   color: white; }
   .label.radius {
     border-radius: 3px; }
@@ -3220,12 +3220,12 @@ ul.pagination {
     ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus, ul.pagination li.unavailable:hover button, ul.pagination li.unavailable button:focus {
       background: transparent; }
     ul.pagination li.current a, ul.pagination li.current button {
-      background: #008cba;
+      background: #275982;
       color: white;
       font-weight: bold;
       cursor: default; }
       ul.pagination li.current a:hover, ul.pagination li.current a:focus, ul.pagination li.current button:hover, ul.pagination li.current button:focus {
-        background: #008cba; }
+        background: #275982; }
   ul.pagination li {
     float: left;
     display: block; }
@@ -3260,10 +3260,10 @@ ul.pagination {
   .panel.callout {
     border-style: solid;
     border-width: 1px;
-    border-color: #b6edff;
+    border-color: #c6dced;
     margin-bottom: 1.25rem;
     padding: 1.25rem;
-    background: #ecfaff;
+    background: #eff5fa;
     color: #333333; }
     .panel.callout > :first-child {
       margin-top: 0; }
@@ -3277,7 +3277,7 @@ ul.pagination {
       .panel.callout h1.subheader, .panel.callout h2.subheader, .panel.callout h3.subheader, .panel.callout h4.subheader, .panel.callout h5.subheader, .panel.callout h6.subheader {
         line-height: 1.4; }
     .panel.callout a:not(.button) {
-      color: #008cba; }
+      color: #275982; }
   .panel.radius {
     border-radius: 3px; }
 
@@ -3335,7 +3335,7 @@ ul.pagination {
   padding: 0.125rem;
   margin-bottom: 0.625rem; }
   .progress .meter {
-    background: #008cba;
+    background: #275982;
     height: 100%;
     display: block; }
   .progress.secondary .meter {
@@ -3394,28 +3394,28 @@ ul.pagination {
     background: #fafafa;
     border-radius: 3px; }
     .range-slider.radius .range-slider-handle {
-      background: #008cba;
+      background: #275982;
       border-radius: 3px; }
       .range-slider.radius .range-slider-handle:hover {
-        background: #007da4; }
+        background: #224e72; }
   .range-slider.round {
     background: #fafafa;
     border-radius: 1000px; }
     .range-slider.round .range-slider-handle {
-      background: #008cba;
+      background: #275982;
       border-radius: 1000px; }
       .range-slider.round .range-slider-handle:hover {
-        background: #007da4; }
+        background: #224e72; }
   .range-slider.disabled, .range-slider[disabled] {
     background: #fafafa;
     cursor: default;
     opacity: 0.7; }
     .range-slider.disabled .range-slider-handle, .range-slider[disabled] .range-slider-handle {
-      background: #008cba;
+      background: #275982;
       cursor: default;
       opacity: 0.7; }
       .range-slider.disabled .range-slider-handle:hover, .range-slider[disabled] .range-slider-handle:hover {
-        background: #007da4; }
+        background: #224e72; }
 
 .range-slider-active-segment {
   display: inline-block;
@@ -3434,9 +3434,9 @@ ul.pagination {
   cursor: pointer;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
-  background: #008cba; }
+  background: #275982; }
   .range-slider-handle:hover {
-    background: #007da4; }
+    background: #224e72; }
 
 .reveal-modal-bg {
   position: fixed;
@@ -3583,14 +3583,14 @@ dialog {
     font-weight: normal; }
     .side-nav li a:not(.button) {
       display: block;
-      color: #008cba;
+      color: #275982;
       margin: 0;
       padding: 0.4375rem 0.875rem; }
       .side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
         background: rgba(0, 0, 0, 0.025);
-        color: #1ccaff; }
+        color: #478ec8; }
     .side-nav li.active > a:first-child:not(.button) {
-      color: #1ccaff;
+      color: #478ec8;
       font-weight: normal;
       font-family: 'Montserrat', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
     .side-nav li.divider {
@@ -3600,7 +3600,7 @@ dialog {
       list-style: none;
       border-top-color: white; }
     .side-nav li.heading {
-      color: #008cba;
+      color: #275982;
       font-size: 0.875rem;
       font-weight: bold;
       text-transform: uppercase; }
@@ -3713,12 +3713,12 @@ dialog {
     .sub-nav dt.active a, .sub-nav dd.active a, .sub-nav li.active a {
       border-radius: 3px;
       font-weight: normal;
-      background: #008cba;
+      background: #275982;
       padding: 0.1875rem 1rem;
       cursor: default;
       color: white; }
       .sub-nav dt.active a:hover, .sub-nav dd.active a:hover, .sub-nav li.active a:hover {
-        background: #007ba0; }
+        background: #224d70; }
 
 .switch {
   padding: 0;
@@ -3764,7 +3764,7 @@ dialog {
     -moz-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
   .switch input:checked + label {
-    background: #008cba; }
+    background: #275982; }
   .switch input:checked + label:after {
     left: 2.25rem; }
   .switch label {
@@ -3781,7 +3781,7 @@ dialog {
   .switch label:after {
     background: white; }
   .switch input:checked + label {
-    background: #008cba; }
+    background: #275982; }
   .switch.large label {
     width: 5rem;
     height: 2.5rem; }
@@ -3943,7 +3943,7 @@ table {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   transition: all 200ms ease-out; }
   .th:hover, .th:focus {
-    box-shadow: 0 0 6px 1px rgba(0, 140, 186, 0.5); }
+    box-shadow: 0 0 6px 1px rgba(39, 89, 130, 0.5); }
   .th.radius {
     border-radius: 3px; }
 
@@ -3954,8 +3954,8 @@ table {
   font-weight: bold;
   color: #333333; }
   .has-tip:hover, .has-tip:focus {
-    border-bottom: dotted 1px #004054;
-    color: #008cba; }
+    border-bottom: dotted 1px #12283a;
+    color: #275982; }
   .has-tip.tip-left, .has-tip.tip-right {
     float: none !important; }
 
@@ -3992,8 +3992,8 @@ table {
     .tooltip.round > .nub {
       left: 2rem; }
   .tooltip.opened {
-    color: #008cba !important;
-    border-bottom: dotted 1px #004054 !important; }
+    color: #275982 !important;
+    border-bottom: dotted 1px #12283a !important; }
 
 .tap-to-close {
   display: block;
@@ -4098,7 +4098,7 @@ meta.foundation-mq-topbar {
         color: white;
         width: 75%;
         display: block;
-        padding: 0 18.33333px; }
+        padding: 0 14.66667px; }
   .top-bar .toggle-topbar {
     position: absolute;
     right: 0;
@@ -4110,7 +4110,7 @@ meta.foundation-mq-topbar {
       font-weight: bold;
       position: relative;
       display: block;
-      padding: 0 18.33333px;
+      padding: 0 14.66667px;
       height: 55px;
       line-height: 55px; }
     .top-bar .toggle-topbar.menu-icon {
@@ -4119,7 +4119,7 @@ meta.foundation-mq-topbar {
       .top-bar .toggle-topbar.menu-icon a {
         height: 34px;
         line-height: 33px;
-        padding: 0 43.33333px 0 18.33333px;
+        padding: 0 39.66667px 0 14.66667px;
         color: white;
         position: relative; }
         .top-bar .toggle-topbar.menu-icon a span::after {
@@ -4129,7 +4129,7 @@ meta.foundation-mq-topbar {
           height: 0;
           top: 50%;
           margin-top: -8px;
-          right: 18.33333px;
+          right: 14.66667px;
           box-shadow: 0 0px 0 1px white, 0 7px 0 1px white, 0 14px 0 1px white;
           width: 16px; }
         .top-bar .toggle-topbar.menu-icon a span:hover:after {
@@ -4168,20 +4168,20 @@ meta.foundation-mq-topbar {
       width: 100%;
       color: white;
       padding: 12px 0 12px 0;
-      padding-left: 18.33333px;
+      padding-left: 14.66667px;
       font-family: 'Montserrat', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
       font-size: 0.8125rem;
       font-weight: normal;
       text-transform: none; }
       .top-bar-section ul li > a.button {
         font-size: 0.8125rem;
-        padding-right: 18.33333px;
-        padding-left: 18.33333px;
-        background-color: #008cba;
-        border-color: #007295;
+        padding-right: 14.66667px;
+        padding-left: 14.66667px;
+        background-color: #275982;
+        border-color: #1f4768;
         color: white; }
         .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
-          background-color: #007295; }
+          background-color: #1f4768; }
         .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
           color: white; }
       .top-bar-section ul li > a.button.secondary {
@@ -4218,13 +4218,13 @@ meta.foundation-mq-topbar {
           color: white; }
     .top-bar-section ul li > button {
       font-size: 0.8125rem;
-      padding-right: 18.33333px;
-      padding-left: 18.33333px;
-      background-color: #008cba;
-      border-color: #007295;
+      padding-right: 14.66667px;
+      padding-left: 14.66667px;
+      background-color: #275982;
+      border-color: #1f4768;
       color: white; }
       .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
-        background-color: #007295; }
+        background-color: #1f4768; }
       .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
         color: white; }
       .top-bar-section ul li > button.secondary {
@@ -4264,13 +4264,13 @@ meta.foundation-mq-topbar {
       background: inherit;
       color: white; }
     .top-bar-section ul li.active > a {
-      background: #008cba;
+      background: #275982;
       color: white; }
       .top-bar-section ul li.active > a:hover {
-        background: #007ba0;
+        background: #224d70;
         color: white; }
   .top-bar-section .has-form {
-    padding: 18.33333px; }
+    padding: 14.66667px; }
   .top-bar-section .has-dropdown {
     position: relative; }
     .top-bar-section .has-dropdown > a:after {
@@ -4281,7 +4281,7 @@ meta.foundation-mq-topbar {
       border: inset 5px;
       border-color: transparent transparent transparent rgba(255, 255, 255, 0.4);
       border-left-style: solid;
-      margin-right: 18.33333px;
+      margin-right: 14.66667px;
       margin-top: -4.5px;
       position: absolute;
       top: 50%;
@@ -4316,7 +4316,7 @@ meta.foundation-mq-topbar {
       height: auto; }
       .top-bar-section .dropdown li a {
         font-weight: normal;
-        padding: 8px 18.33333px; }
+        padding: 8px 14.66667px; }
         .top-bar-section .dropdown li a.parent-link {
           font-weight: normal; }
       .top-bar-section .dropdown li.title h5, .top-bar-section .dropdown li.parent-link {
@@ -4329,11 +4329,11 @@ meta.foundation-mq-topbar {
           .top-bar-section .dropdown li.title h5 a:hover, .top-bar-section .dropdown li.parent-link a:hover {
             background: none; }
       .top-bar-section .dropdown li.has-form {
-        padding: 8px 18.33333px; }
+        padding: 8px 14.66667px; }
       .top-bar-section .dropdown li .button, .top-bar-section .dropdown li button {
         top: auto; }
     .top-bar-section .dropdown label {
-      padding: 8px 18.33333px 2px;
+      padding: 8px 14.66667px 2px;
       margin-bottom: 0;
       text-transform: uppercase;
       color: #777777;
@@ -4384,22 +4384,22 @@ meta.foundation-mq-topbar {
       background: inherit;
       color: white; }
     .top-bar-section li:not(.has-form) a:not(.button) {
-      padding: 0 18.33333px;
+      padding: 0 14.66667px;
       line-height: 55px;
       background: transparent; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
         background-color: rgba(255, 255, 255, 0.08);
         background: inherit; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
-      padding: 0 18.33333px;
+      padding: 0 14.66667px;
       line-height: 55px;
       color: white;
-      background: #008cba; }
+      background: #275982; }
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-        background: #007ba0;
+        background: #224d70;
         color: white; }
     .top-bar-section .has-dropdown > a {
-      padding-right: 38.33333px !important; }
+      padding-right: 34.66667px !important; }
       .top-bar-section .has-dropdown > a:after {
         content: "";
         display: block;
@@ -4451,7 +4451,7 @@ meta.foundation-mq-topbar {
         color: #275982;
         line-height: 55px;
         white-space: nowrap;
-        padding: 12px 18.33333px;
+        padding: 12px 14.66667px;
         background: rgba(255, 255, 255, 0.95); }
       .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
         color: #275982;
@@ -4492,7 +4492,7 @@ meta.foundation-mq-topbar {
     background: inherit;
     color: white; }
   .no-js .top-bar-section ul li:active > a {
-    background: #008cba;
+    background: #275982;
     color: white; }
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
     display: block;
@@ -5695,6 +5695,9 @@ button, .button {
   #homepage-hero .download {
     margin-top: 1.25rem; }
 
+section.container {
+  margin-bottom: 3rem; }
+
 /**
 	 * 4.2 Posts
 	 * ------------------------------------
@@ -5729,11 +5732,11 @@ button, .button {
 	}
 }*/
 .top-bar {
-  height: 125px;
+  height: 130px;
   line-height: 45px;
   background: transparent; }
   .top-bar .name {
-    height: 125px; }
+    height: 130px; }
   .top-bar ul.title-area {
     position: relative;
     width: 11%; }
@@ -5743,7 +5746,7 @@ button, .button {
         background: url('images/logo_attentivehealth_white.svg') no-repeat center center;
         background-size: contain;
         text-indent: -9999px;
-        height: 119.04762px; }
+        height: 121.49533px; }
 
 .pre-top-bar-section, section.top-bar-section {
   display: table;
@@ -5796,7 +5799,8 @@ button, .button {
 section.top-bar-section {
   background: rgba(255, 255, 255, 0.08);
   padding: 0 15px 0 10px;
-  /*the states of the main navigation buttons when on the active page, and hovering, but only for the first level */
+  /*the states of the main navigation buttons when on the active page,
+	and hovering, but only for the first level, since i'm using the class of ".has-dropdown" */
   /**** HOVER EFFECTS ********/ }
   section.top-bar-section li.menu_cta {
     /*rules for the call to action button*/ }
@@ -5812,9 +5816,9 @@ section.top-bar-section {
       -ms-transition: background 150ms ease-out;
       -o-transition: background 150ms ease-out;
       transition: background 150ms ease-out; }
-  section.top-bar-section li.active:not(.has-form) > a:not(.button) {
+  section.top-bar-section li.active.has-dropdown:not(.has-form) > a:not(.button) {
     background: transparent !important; }
-    section.top-bar-section li.active:not(.has-form) > a:not(.button) > span {
+    section.top-bar-section li.active.has-dropdown:not(.has-form) > a:not(.button) > span {
       border-top: 3px solid rgba(255, 255, 255, 0.3);
       padding-top: 2px;
       -webkit-transition: border-width 300ms ease-in-out;
@@ -5823,10 +5827,13 @@ section.top-bar-section {
       -o-transition: border-width 300ms ease-in-out;
       transition: border-width 300ms ease-in-out; }
   section.top-bar-section li.active.menu_cta > a:not(.button) {
-    background: transparent !important; }
+    background: white !important;
+    /*DOES THIS MAKE THE ACTIVE BUTTON NOT SHOW UP?*/ }
     section.top-bar-section li.active.menu_cta > a:not(.button) > span {
       border-top: 2px solid rgba(255, 255, 255, 0.7);
       padding-top: 5px; }
+  section.top-bar-section li.active.menu_cta .sub-menu li a {
+    background-color: RED !important; }
   section.top-bar-section li:not(.menu_cta) a:not(.button):hover > span {
     /*hover effect for top level nav items*/
     border-top: 3px solid rgba(255, 255, 255, 0.3);
@@ -5843,7 +5850,12 @@ section.top-bar-section {
     color: #222222;
     background: rgba(255, 255, 255, 0.95);
     background: white; }
+  section.top-bar-section .dropdown li.active > a:not(.button) {
+    color: #222222;
+    background: rgba(255, 255, 255, 0.95);
+    background: white; }
 
+/* MOBILE STYLES*/
 .right-off-canvas-toggle.right-menu-icon {
   float: right;
   color: white;
@@ -5853,6 +5865,25 @@ section.top-bar-section {
     position: relative;
     top: 4px;
     line-height: initial; }
+
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .top-bar-section ul li > a {
+    font-size: 0.65rem; } }
+
+ul.off-canvas-list ul.sub-menu {
+  list-style: none;
+  margin-left: 0; }
+  ul.off-canvas-list ul.sub-menu li a {
+    padding-left: 1.9167rem; }
+
+.off_canvas_link_item {
+  list-style: none;
+  text-align: center;
+  padding: 1rem; }
+  .off_canvas_link_item a.button {
+    color: white;
+    font-size: 0.8rem; }
 
 footer.row {
   border-top: solid 10px #f7f6f5;
@@ -6203,6 +6234,10 @@ footer.row {
             color: #221f1b; }
     .footer_grid article.widget.dots {
       border-right: 2px #d1c1ab dotted; }
+    .footer_grid article.widget.last {
+      text-align: left; }
+    .footer_grid article.widget.red p {
+      color: #722519; }
 
 .credit_footer {
   background: #f7f6f5;
@@ -6256,16 +6291,25 @@ input[type="submit"] {
   padding-right: 1.125rem;
   padding-bottom: 0.625rem;
   padding-left: 1.125rem;
-  background-color: #008cba;
-  border-color: #007295;
+  font-size: 1.25rem;
+  background-color: #275982;
+  border-color: #1f4768;
   color: white;
   border-radius: 1000px;
   transition: background-color 300ms ease-out;
   font-size: 100%; }
   .attentive_button:hover, .attentive_button:focus {
-    background-color: #007295; }
+    background-color: #1f4768; }
   .attentive_button:hover, .attentive_button:focus {
     color: white; }
+
+.button {
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+  .button.personal {
+    background-color: #559634; }
+    .button.personal:hover {
+      background-color: #417027; }
 
 /* Generated by Font Squirrel (http://www.fontsquirrel.com) on December 3, 2014 */
 @font-face {
@@ -6291,6 +6335,204 @@ input[type="submit"] {
   font-weight: bolder;
   font-weight: 700;
   font-style: normal; }
+
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on December 10, 2014 */
+@font-face {
+  font-family: 'montserrat';
+  src: url('fonts/montserrat-hairline-webfont.eot');
+  src: url('fonts/montserrat-hairline-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/montserrat-hairline-webfont.woff2') format('woff2'), url('fonts/montserrat-hairline-webfont.woff') format('woff'), url('fonts/montserrat-hairline-webfont.ttf') format('truetype'), url('fonts/montserrat-hairline-webfont.svg#montserrathairline') format('svg');
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('fonts/montserrat-light-webfont.eot');
+  src: url('fonts/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/montserrat-light-webfont.woff2') format('woff2'), url('fonts/montserrat-light-webfont.woff') format('woff'), url('fonts/montserrat-light-webfont.ttf') format('truetype'), url('fonts/montserrat-light-webfont.svg#montserratlight') format('svg');
+  font-weight: 400;
+  font-style: regular;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('fonts/montserrat-regular-webfont.eot');
+  src: url('fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/montserrat-regular-webfont.woff2') format('woff2'), url('fonts/montserrat-regular-webfont.woff') format('woff'), url('fonts/montserrat-regular-webfont.ttf') format('truetype'), url('fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
+  font-weight: bold;
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('fonts/montserrat-bold-webfont.eot');
+  src: url('fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/montserrat-bold-webfont.woff2') format('woff2'), url('fonts/montserrat-bold-webfont.woff') format('woff'), url('fonts/montserrat-bold-webfont.ttf') format('truetype'), url('fonts/montserrat-bold-webfont.svg#montserratbold') format('svg');
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'attenticon';
+  src: url('fonts/attenticon.eot?klkqh3');
+  src: url('fonts/attenticon.eot?#iefixklkqh3') format('embedded-opentype'), url('fonts/attenticon.woff?klkqh3') format('woff'), url('fonts/attenticon.ttf?klkqh3') format('truetype'), url('fonts/attenticon.svg?klkqh3#attenticon') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="at-"], [class*=" at-"] {
+  font-family: 'attenticon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.at-circle-f:before {
+  content: "\e600"; }
+
+.at-circle-p:before {
+  content: "\e601"; }
+
+.at-clock:before {
+  content: "\e602"; }
+
+.at-document-fat:before {
+  content: "\e603"; }
+
+.at-document-thin:before {
+  content: "\e604"; }
+
+.at-fork:before {
+  content: "\e605"; }
+
+.at-heart-beat:before {
+  content: "\e606"; }
+
+.at-img:before {
+  content: "\e607"; }
+
+.at-pencil:before {
+  content: "\e608"; }
+
+.at-wrench:before {
+  content: "\e609"; }
+
+ul#section-choice {
+  max-width: 840px;
+  margin: 0 auto; }
+  ul#section-choice li {
+    list-style: none; }
+
+#section-choice li.first {
+  float: left; }
+
+#section-choice li.last {
+  float: right; }
+
+#section-choice a {
+  background: white;
+  border: 1px solid #bebebe;
+  display: block;
+  height: 358px;
+  padding: 7px;
+  position: relative;
+  width: 372px; }
+
+.rgba #section-choice a {
+  border-color: rgba(3, 3, 3, 0.27);
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px; }
+
+#section-choice a .rollover {
+  display: none; }
+
+#section-choice a:hover .rollover {
+  display: block;
+  height: 372px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+#section-choice .personal .rollover {
+  background: url('../img/front-personal-rollover.png') no-repeat 50% 50%; }
+
+#section-choice .business .rollover {
+  background: url('../img/front-business-rollover.png') no-repeat 50% 50%; }
+
+#section-choice img {
+  background: none;
+  border: none;
+  padding: 0; }
+
+#homepage-hero {
+  background: url("images/hero_attentivehealth_corporate.jpg") no-repeat center center;
+  padding: 1.25rem 0;
+  margin: -2rem 0 0;
+  position: relative;
+  text-align: left;
+  height: auto;
+  min-height: 500px; }
+  #homepage-hero h1 {
+    margin-top: 7rem;
+    color: #b0cfed;
+    font-size: 38px;
+    font-weight: bold;
+    font-family: 'Montserrat', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+  #homepage-hero .tagline {
+    color: white;
+    font-family: 'Montserrat', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 24px; }
+  #homepage-hero .button.hero_area {
+    display: table;
+    background-color: #54972c;
+    margin-top: 1.5rem;
+    font-family: "Nimbus Condensed", "nimbus-sans-condensed", "helvetica LT Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosCnRegular', sans-serif;
+    letter-spacing: 2px; }
+
+.blurb {
+  background: #dfe7d9;
+  padding: 2rem 0; }
+  .blurb h3 {
+    text-transform: uppercase;
+    color: #559634;
+    letter-spacing: 3px;
+    font-weight: 500; }
+    .blurb h3 a {
+      color: #559634;
+      transition: all 300ms ease-out; }
+      .blurb h3 a:hover {
+        color: #417027; }
+  .blurb i.circle {
+    font-size: 3rem;
+    background: white;
+    border-radius: 1000px;
+    padding: 0.36rem 0.384rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    color: #559634;
+    transition: all 300ms ease-out; }
+    .blurb i.circle:hover {
+      color: #417027;
+      transform: rotate(45%); }
+
+@media only screen and (max-width: 64em) {
+  /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+  #homepage-hero {
+    background: url("images/hero_attentivehealth_corporate.jpg") no-repeat center center;
+    height: auto;
+    min-height: inherit;
+    text-align: center; }
+    #homepage-hero h1 {
+      margin-top: 0;
+      font-size: 27px; }
+    #homepage-hero .tagline {
+      display: inline-block;
+      font-size: 18px; }
+    #homepage-hero .button.hero_area {
+      margin: 1rem auto 0.5rem; } }
+
+body.page-template-home_personal-php section.container, body.page-template-home_corporate-php section.container {
+  margin-bottom: 0; }
 
 body article #wpmtp-wrapper ul.wpmtp-three-columns .wpmtp-column {
   width: 27.33333%;

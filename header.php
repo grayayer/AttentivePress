@@ -63,11 +63,12 @@
 			<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
 		</section>
 		<section class="middle tab-bar-section">
-			<h1 class="title"><?php bloginfo( 'name' ); ?></h1>
+			<h1 class="title"><?php // bloginfo( 'name' ); ?><img src="<?php echo get_stylesheet_directory_uri()?>/css/images/attentive_type_logo_white.svg"></h1>
+
 		</section>
-		<section class="right-small">
+<!-- 		<section class="right-small">
 			<a href="#" role="button" class="right-off-canvas-toggle menu-icon" ><span></span></a>
-		</section>		
+		</section>		 -->
 	</nav>
 
 

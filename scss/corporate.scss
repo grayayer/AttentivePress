@@ -27,6 +27,13 @@
 	}
 }
 
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em) {
+	.tab-bar {
+		background: $corporate_bg_header_primary;
+	}
+} 
+
 @media only screen and (min-width:40.063em) {
 	.top-bar {
 		background-color: $corporate_bg_header_primary;
@@ -71,4 +78,20 @@ section.top-bar-section {
 			}
 		}
 	}	
+}
+
+/******* MOBILE *******/
+
+.left-off-canvas-menu, .right-off-canvas-menu {
+	background-color: $corporate_bg_header_primary;
+}
+
+.personal_off_canvas_link {
+	background-color: $personal_bg_header_primary;
+}
+
+ul.off-canvas-list {
+	li a:hover {
+		background-color: darken($corporate_bg_header_primary, 5%);
+	}
 }

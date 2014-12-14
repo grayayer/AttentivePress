@@ -39,7 +39,7 @@
 				background: url('images/logo_attentivehealth_white.svg') no-repeat center center;
 				background-size: contain;
 				text-indent: -9999px;
-				height: $header_height / 1.05;
+				height: $header_height / 1.07;
 			}
 		}
 	}
@@ -125,12 +125,12 @@ section.top-bar-section {
 		}
 	}
 	
-	/*the states of the main navigation buttons when on the active page, and hovering, but only for the first level */
+	/*the states of the main navigation buttons when on the active page,
+	and hovering, but only for the first level, since i'm using the class of ".has-dropdown" */
 	li {
-		&.active:not(.has-form) { 
+		&.active.has-dropdown:not(.has-form) { 
 			> a:not(.button) {
 				background: transparent !important;
-				
 				> span {
 			    @include menu_hover_effect;
 				}
@@ -141,16 +141,18 @@ section.top-bar-section {
 	li {
 		&.active.menu_cta { 
 			> a:not(.button) {
-				background: transparent !important;
+				background: #FFF !important; /*DOES THIS MAKE THE ACTIVE BUTTON NOT SHOW UP?*/
 				
 				> span {
 			    border-top: 2px solid rgba(255, 255, 255, 0.7);
 			    padding-top: 5px;
 				}
 			}
+			.sub-menu li a {
+				background-color: RED !important;
+			}			
 		}
 	}
-
 	/**** HOVER EFFECTS ********/
 
 	li:not(.menu_cta) a:not(.button):hover > span { /*hover effect for top level nav items*/
@@ -166,10 +168,20 @@ section.top-bar-section {
 		background: $header_menu_dropdown_overlay;
 		background: #FFF;
 	}
+	.dropdown li.active > a:not(.button) {
+		color: $jet;
+		background: $header_menu_dropdown_overlay;
+		background: #FFF;
+	}	
 }
 
 
 
+
+
+
+
+/* MOBILE STYLES*/
 
 .right-off-canvas-toggle.right-menu-icon {
 	float: right;
@@ -181,4 +193,33 @@ section.top-bar-section {
 		top: 4px;
 		line-height: initial;		
 	}
+}
+
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+	.top-bar-section ul li > a {
+		font-size: 0.65rem;
+	}
+} 
+
+ul.off-canvas-list {
+	ul.sub-menu {
+		list-style: none;
+		margin-left: 0;
+
+		li a {
+			padding-left: 1.25rem+.6667rem;
+		}
+	}
+}
+
+.off_canvas_link_item {
+	list-style: none;
+	text-align: center;
+	padding: 1rem;
+	a.button {
+		color: #FFF;
+		font-size: .8rem;
+	}
+
 }
