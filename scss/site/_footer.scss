@@ -68,8 +68,42 @@ footer.row {
 
 .action_footer {
 	color: $red;
+	.outline_button {
+		border: 2px solid $red;
+		color: $red;
+		padding: 1px 10px;
+		background: transparent;
+		border-radius: 1000px;
+		transition: all 150ms ease-out;
+		margin-bottom: 15px;
+		font-size: 12px;
+		font-weight: 600;
+		display: inline-block;
+		text-transform: uppercase;
+		&:hover {
+			background: lighten($red, 70%);
+			//color: #FFF;
+		}
+	}
 	a.footer_triangle_link {
 		color: $red;
+		position: relative;
+		left:0;
+		font-weight: 600;
+		@include single-transition;
+
+		&:after {
+			content:'\25B6'; /*a right facing arrow*/
+			font-size: 8px;
+			margin-left: 3px;
+			position: relative;
+			top: -1px;
+		}
+		&:hover {
+			color: darken($red, 10%);
+			position: relative;
+			left: 3px;
+		}
 	}
 }
 

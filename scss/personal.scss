@@ -150,6 +150,9 @@ section.top-bar-section {
 	}
 	a.button {
 		background-color: $green;
+		&:hover {
+			background-color: darken($green, 10%);
+		}
 	}
 }
 

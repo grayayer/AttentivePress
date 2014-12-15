@@ -108,6 +108,8 @@ section.top-bar-section li.active.menu_cta > a:not(.button) > span {
     color: #7dace3; }
   .blurb a.button {
     background-color: #559634; }
+    .blurb a.button:hover {
+      background-color: #417027; }
 
 /******* MOBILE *******/
 .left-off-canvas-menu, .right-off-canvas-menu {
