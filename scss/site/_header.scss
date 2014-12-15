@@ -1,5 +1,5 @@
-@mixin menu_hover_effect {
-	border-top: 3px solid rgba(255,255,255, 0.3);
+@mixin menu_hover_effect($hover_color: inherit, $border_color:rgba(255,255,255, 0.3)) {
+	border-top: 3px solid $border_color;
 	padding-top: 2px;
 	//opacity: 1;
 	//@include single-transition();
@@ -8,6 +8,7 @@
 	-ms-transition: border-width 300ms ease-in-out;
 	-o-transition: border-width 300ms ease-in-out;
 	transition: border-width 300ms ease-in-out;
+	color: $hover_color;
 }
 
 /*@media only screen and (min-width:40.063em) {
@@ -128,7 +129,7 @@ section.top-bar-section {
 	/*the states of the main navigation buttons when on the active page,
 	and hovering, but only for the first level, since i'm using the class of ".has-dropdown" */
 	li {
-		&.active.has-dropdown:not(.has-form) { 
+		&.active:not(.has-form){ 
 			> a:not(.button) {
 				background: transparent !important;
 				> span {
@@ -138,19 +139,28 @@ section.top-bar-section {
 		}
 	}
 
+	li.active.has-dropdown.current-page-ancestor {
+		&:not(.has-form) li.current-menu-item{ 
+			> a:not(.button) {
+				background: #FFF !important;
+				> span {
+			    @include menu_hover_effect(#000, rgba(0,0,0,.1)); /*sets the current and hover state of the active page menu item if it's a submenu item, like the staff page */ 
+				}
+			}
+		}
+	}
+
+
 	li {
 		&.active.menu_cta { 
 			> a:not(.button) {
-				background: #FFF !important; /*DOES THIS MAKE THE ACTIVE BUTTON NOT SHOW UP?*/
+				background: #FFF !important;
 				
 				> span {
 			    border-top: 2px solid rgba(255, 255, 255, 0.7);
 			    padding-top: 5px;
 				}
-			}
-			.sub-menu li a {
-				background-color: RED !important;
-			}			
+			}		
 		}
 	}
 	/**** HOVER EFFECTS ********/

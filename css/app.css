@@ -5794,7 +5794,8 @@ section.container {
         -moz-transition: border-width 300ms ease-in-out;
         -ms-transition: border-width 300ms ease-in-out;
         -o-transition: border-width 300ms ease-in-out;
-        transition: border-width 300ms ease-in-out; }
+        transition: border-width 300ms ease-in-out;
+        color: inherit; }
 
 section.top-bar-section {
   background: rgba(255, 255, 255, 0.08);
@@ -5816,24 +5817,34 @@ section.top-bar-section {
       -ms-transition: background 150ms ease-out;
       -o-transition: background 150ms ease-out;
       transition: background 150ms ease-out; }
-  section.top-bar-section li.active.has-dropdown:not(.has-form) > a:not(.button) {
+  section.top-bar-section li.active:not(.has-form) > a:not(.button) {
     background: transparent !important; }
-    section.top-bar-section li.active.has-dropdown:not(.has-form) > a:not(.button) > span {
+    section.top-bar-section li.active:not(.has-form) > a:not(.button) > span {
       border-top: 3px solid rgba(255, 255, 255, 0.3);
       padding-top: 2px;
       -webkit-transition: border-width 300ms ease-in-out;
       -moz-transition: border-width 300ms ease-in-out;
       -ms-transition: border-width 300ms ease-in-out;
       -o-transition: border-width 300ms ease-in-out;
-      transition: border-width 300ms ease-in-out; }
+      transition: border-width 300ms ease-in-out;
+      color: inherit; }
+  section.top-bar-section li.active.has-dropdown.current-page-ancestor:not(.has-form) li.current-menu-item > a:not(.button) {
+    background: white !important; }
+    section.top-bar-section li.active.has-dropdown.current-page-ancestor:not(.has-form) li.current-menu-item > a:not(.button) > span {
+      border-top: 3px solid rgba(0, 0, 0, 0.1);
+      padding-top: 2px;
+      -webkit-transition: border-width 300ms ease-in-out;
+      -moz-transition: border-width 300ms ease-in-out;
+      -ms-transition: border-width 300ms ease-in-out;
+      -o-transition: border-width 300ms ease-in-out;
+      transition: border-width 300ms ease-in-out;
+      color: black;
+      /*sets the current and hover state of the active page menu item if it's a submenu item, like the staff page */ }
   section.top-bar-section li.active.menu_cta > a:not(.button) {
-    background: white !important;
-    /*DOES THIS MAKE THE ACTIVE BUTTON NOT SHOW UP?*/ }
+    background: white !important; }
     section.top-bar-section li.active.menu_cta > a:not(.button) > span {
       border-top: 2px solid rgba(255, 255, 255, 0.7);
       padding-top: 5px; }
-  section.top-bar-section li.active.menu_cta .sub-menu li a {
-    background-color: RED !important; }
   section.top-bar-section li:not(.menu_cta) a:not(.button):hover > span {
     /*hover effect for top level nav items*/
     border-top: 3px solid rgba(255, 255, 255, 0.3);
@@ -5842,7 +5853,8 @@ section.top-bar-section {
     -moz-transition: border-width 300ms ease-in-out;
     -ms-transition: border-width 300ms ease-in-out;
     -o-transition: border-width 300ms ease-in-out;
-    transition: border-width 300ms ease-in-out; }
+    transition: border-width 300ms ease-in-out;
+    color: inherit; }
   section.top-bar-section .dropdown li {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid #cccccc; }
