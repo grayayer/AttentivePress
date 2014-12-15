@@ -151,10 +151,10 @@ section.top-bar-section {
 	}
 
 
-	li {
+	li { /*the call-to-action buttons in the menu, when the page is "active"*/
 		&.active.menu_cta { 
 			> a:not(.button) {
-				background: #FFF !important;
+				background: transparent;
 				
 				> span {
 			    border-top: 2px solid rgba(255, 255, 255, 0.7);

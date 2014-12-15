@@ -66,6 +66,13 @@ footer.row {
 }
 
 
+.action_footer {
+	color: $red;
+	a.footer_triangle_link {
+		color: $red;
+	}
+}
+
 .credit_footer {
 	background: $small_contrast;
 	height: 3rem;

@@ -47,6 +47,15 @@
 				transform: rotate(45%);
 			}
 	}
+	h3.show-for-small-only {
+		margin-bottom: 20px;
+		i.circle {
+			@include circle_icon(.6);
+			position: relative;
+			top: 8px;
+			margin-right: 5px;			
+		}
+	}
 }
 
 @media only screen and (max-width: 64em) {  /* max-width 640px, mobile-only styles, use when QAing mobile issues */
@@ -59,15 +68,24 @@
 
 		h1 {
 			margin-top: 0;
-		font-size: 27px;
+			font-size: 27px;
+			text-align: center;
 		}
 
 		.tagline {
 			display: inline-block;
 			font-size: 18px;
+			text-align: center;
 		}
 		.button.hero_area {
 			margin: 1rem auto .5rem;
+		}
+	}
+
+	.blurb {
+		padding: 1rem 0;
+		.omega {
+			margin-top: 1rem;
 		}
 	}
 

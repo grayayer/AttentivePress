@@ -29,21 +29,23 @@ get_header(); ?>
 <section class="blurb">
 	<div class="row">
 		<div class="small-12 medium-6 columns">
-			<div class="small-2 columns">
+			<div class="medium-2 columns hide-for-small-only">
 				<i class="at-fork circle icon"></i>
 			</div>
-			<div class="small-10 columns">
-				<h3>Latest Recipe</h3>
+			<div class="small-12 medium-10 columns">
+				<h3 class="show-for-small-only"><i class="at-fork circle icon"></i> Latest Recipe</h3>
+				<h3 class="show-for-medium-up"></i> Latest Recipe</h3>
 				<p>Red Lentil Soup is amazing, delicious and healthy. Other short text about this recipce goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				<a href="#" class="button small">Browse Recipes</a>
 			</div>		
 		</div>
 		<div class="small-12 medium-6 columns">
-			<div class="small-2 columns">
+			<div class="medium-2 columns hide-for-small-only">
 				<i class="at-wrench circle icon"></i>
 			</div>
-			<div class="small-10 columns">
-				<h3>Newest Resource</h3>
+			<div class="small-12 medium-10 columns omega">
+				<h3 class="show-for-medium-only">Newest Resource</h3>
+				<h3 class="show-for-small-only"><i class="at-wrench circle icon"></i> Newest Resource</h3>
 				<p>We just launched a comprehensive new tool for your colleagues. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
 				<a href="#" class="button small">More Resources</a>
 			</div>		

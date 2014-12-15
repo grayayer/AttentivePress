@@ -5840,11 +5840,13 @@ section.top-bar-section {
       transition: border-width 300ms ease-in-out;
       color: black;
       /*sets the current and hover state of the active page menu item if it's a submenu item, like the staff page */ }
-  section.top-bar-section li.active.menu_cta > a:not(.button) {
-    background: white !important; }
-    section.top-bar-section li.active.menu_cta > a:not(.button) > span {
-      border-top: 2px solid rgba(255, 255, 255, 0.7);
-      padding-top: 5px; }
+  section.top-bar-section li {
+    /*the call-to-action buttons in the menu, when the page is "active"*/ }
+    section.top-bar-section li.active.menu_cta > a:not(.button) {
+      background: transparent; }
+      section.top-bar-section li.active.menu_cta > a:not(.button) > span {
+        border-top: 2px solid rgba(255, 255, 255, 0.7);
+        padding-top: 5px; }
   section.top-bar-section li:not(.menu_cta) a:not(.button):hover > span {
     /*hover effect for top level nav items*/
     border-top: 3px solid rgba(255, 255, 255, 0.3);
@@ -6251,6 +6253,11 @@ footer.row {
     .footer_grid article.widget.red p {
       color: #722519; }
 
+.action_footer {
+  color: #722519; }
+  .action_footer a.footer_triangle_link {
+    color: #722519; }
+
 .credit_footer {
   background: #f7f6f5;
   height: 3rem; }
@@ -6526,6 +6533,17 @@ ul#section-choice {
     .blurb i.circle:hover {
       color: #417027;
       transform: rotate(45%); }
+  .blurb h3.show-for-small-only {
+    margin-bottom: 20px; }
+    .blurb h3.show-for-small-only i.circle {
+      font-size: 2.25rem;
+      background: white;
+      border-radius: 1000px;
+      padding: 0.27rem 0.288rem;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+      position: relative;
+      top: 8px;
+      margin-right: 5px; }
 
 @media only screen and (max-width: 64em) {
   /* max-width 640px, mobile-only styles, use when QAing mobile issues */
@@ -6536,12 +6554,18 @@ ul#section-choice {
     text-align: center; }
     #homepage-hero h1 {
       margin-top: 0;
-      font-size: 27px; }
+      font-size: 27px;
+      text-align: center; }
     #homepage-hero .tagline {
       display: inline-block;
-      font-size: 18px; }
+      font-size: 18px;
+      text-align: center; }
     #homepage-hero .button.hero_area {
-      margin: 1rem auto 0.5rem; } }
+      margin: 1rem auto 0.5rem; }
+  .blurb {
+    padding: 1rem 0; }
+    .blurb .omega {
+      margin-top: 1rem; } }
 
 body.page-template-home_personal-php section.container, body.page-template-home_corporate-php section.container {
   margin-bottom: 0; }
