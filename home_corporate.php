@@ -39,33 +39,33 @@ get_header(); ?>
 							<i class="at-pencil circle icon"></i>
 						</div>
 						<div class="small-9 columns" style="padding-left:0;">
-							Build a Custom Program
+							<a href="#">Build a Custom Program</a>
 						</div>
 					</div>
 				</h3>
-				<h3 class="show-for-medium-up"></i> Build a Custom Program</h3>
+				<h3 class="show-for-medium-up"><a href="#">Build a Custom Program</a></h3>
 				<p>Each work environmecnt is unique, and every team has specific needs. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				<a href="#" class="button small">Create a Custom Program Today</a>
 			</div>		
 		</div>
 		<div class="small-12 medium-6 columns">
 			<div class="medium-2 columns hide-for-small-only">
-				<i class="at-heart-beat circle icon"></i>
+				<a href="https://passport.attentivehealth.com/"><i class="at-heart-beat circle icon"></i></a>
 			</div>
 			<div class="small-12 medium-10 columns omega">
-				<h3 class="show-for-medium-up">Passport to Health</h3>
+				<h3 class="show-for-medium-up"><a href="https://passport.attentivehealth.com/">Passport to Health</a></h3>
 				<h3 class="show-for-small-only">
 					<div class="row">
 						<div class="small-3 medium-6 columns">
-							<i class="at-heart-beat circle icon"></i>
+							<a href="https://passport.attentivehealth.com/"><i class="at-heart-beat circle icon"></i></a>
 						</div>
 						<div class="small-9 columns" style="padding-left:0;">
-							Passport<br>to Health
+							<a href="https://passport.attentivehealth.com/">Passport<br>to Health</a>
 						</div>
 					</div>
 				</h3>
 				<p>We just launched a comprehensive new tool for your colleagues. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-				<a href="#" class="button small">Learn More About This Tool</a>
+				<a href="https://passport.attentivehealth.com/" class="button small">Learn More About This Tool</a>
 			</div>		
 		</div>
 	</div>

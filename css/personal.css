@@ -102,7 +102,7 @@ section.top-bar-section li.active.menu_cta > a:not(.button) > span {
 
 .blurb {
   background: #edf3fc; }
-  .blurb h3 {
+  .blurb h3, .blurb h3 a {
     color: #275982; }
   .blurb i.circle {
     color: #7dace3; }

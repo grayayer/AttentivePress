@@ -33,8 +33,8 @@ get_header(); ?>
 				<i class="at-fork circle icon"></i>
 			</div>
 			<div class="small-12 medium-10 columns">
-				<h3 class="show-for-small-only"><i class="at-fork circle icon"></i> Latest Recipe</h3>
-				<h3 class="show-for-medium-up"></i> Latest Recipe</h3>
+				<h3 class="show-for-small-only"><i class="at-fork circle icon"></i> <a href="#">Latest Recipe</a></h3>
+				<h3 class="show-for-medium-up"></i> <a href="#">Latest Recipe</a></h3>
 				<p>Red Lentil Soup is amazing, delicious and healthy. Other short text about this recipce goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				<a href="#" class="button small">Browse Recipes</a>
 			</div>		
@@ -44,8 +44,8 @@ get_header(); ?>
 				<i class="at-wrench circle icon"></i>
 			</div>
 			<div class="small-12 medium-10 columns omega">
-				<h3 class="show-for-medium-only">Newest Resource</h3>
-				<h3 class="show-for-small-only"><i class="at-wrench circle icon"></i> Newest Resource</h3>
+				<h3 class="show-for-medium-up"><a href="#">Newest Resource</a></h3>
+				<h3 class="show-for-small-only"><i class="at-wrench circle icon"></i> <a href="#">Newest Resource</a></h3>
 				<p>We just launched a comprehensive new tool for your colleagues. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
 				<a href="#" class="button small">More Resources</a>
 			</div>		

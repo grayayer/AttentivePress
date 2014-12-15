@@ -16,7 +16,7 @@
                     <li id="personal_style_btn"><a class="left" href="#">high contrast</a></li> -->
 
 
-                <li><a href="#" class="passport right"><span>Passport to Health</span></a></li>
+                <li><a href="https://passport.attentivehealth.com/" class="passport right"><span>Passport to Health</span></a></li>
             </ul>
         </nav>
         <section class="top-bar-section">

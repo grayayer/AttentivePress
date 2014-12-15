@@ -32,6 +32,6 @@
 	<?php do_action('foundationPress_after_content'); ?>
 
 	</div>
-	<?php get_sidebar(); ?>
+	<?php get_sidebar('blog'); ?>
 </div>
 <?php get_footer(); ?>

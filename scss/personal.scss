@@ -142,7 +142,7 @@ section.top-bar-section {
 
 .blurb {
 	background: $blurb_bg_personal;
-	h3 {
+	h3, h3 a {
 		color: $primary-color;
 	}
 	i.circle {
