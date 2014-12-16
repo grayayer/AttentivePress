@@ -5,7 +5,7 @@
 /**** PERSONAL VERSION ***/
 $(document).ready(function(){
     // Add the click handler to assign the the personal stylesheet
-    $("#personal_style_btn a").click(function () {
+    $("#personal_style_btn a, a#personal_style_btn").click(function () {
         if ($.cookie('style') === "personal") {
             /// DOESN'T DO ANYTHING, CUZ IT'S ALREADY LOADED
         }       
@@ -14,7 +14,7 @@ $(document).ready(function(){
         }
     });
     // Add the click handler to switch the personal stylesheet
-    $("#corporate_style_btn a").click(function () {
+    $("#corporate_style_btn a, a#corporate_style_btn").click(function () {
         if ($.cookie('style') === "corporate") {
             /// DOESN'T DO ANYTHING, CUZ IT'S ALREADY LOADED            
         }       
