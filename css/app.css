@@ -6513,6 +6513,10 @@ ul#section-choice {
   border: none;
   padding: 0; }
 
+a#personal_style_btn.squeeze_image img {
+  margin-bottom: 1rem;
+  display: block; }
+
 #homepage-hero {
   background: url("images/hero_attentivehealth_corporate.jpg") no-repeat center center;
   padding: 1.25rem 0;

@@ -1,3 +1,9 @@
+
+a#personal_style_btn.squeeze_image img {
+	margin-bottom: 1rem;
+	display: block;
+}
+
 #homepage-hero {
 	@include homepage-hero(#{corporate}, 500px);
 

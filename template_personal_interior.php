@@ -5,7 +5,7 @@ Template Name: Personal Interior Pages
 get_header(); ?>
 
 <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ; ?>/css/personal.css" />
-
+<!-- as this is a personal page, it should always have the personal styles -->
 
 <div class="row">
 	<?php get_sidebar('left'); ?>

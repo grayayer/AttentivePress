@@ -3,6 +3,7 @@
 Template Name: Personal Homepage
 */
 get_header(); ?>
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ; ?>/css/personal.css" />
 
 <header id="homepage-hero" class="homepage-hero" role="banner">
 	<div class="row">

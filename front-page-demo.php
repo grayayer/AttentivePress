@@ -10,15 +10,23 @@
 			<?php do_action('foundationPress_page_before_entry_content'); ?>
 			<div class="entry-content">
 				<div class="row">
-					<div class="small-12 medium-6 columns">
-						<a href="/personal" id="personal_style_btn" class="squeeze_image">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/css/images/img-front-itspersonal.jpg" width="auto" height="auto" alt="It&#39;s Personal">
-						</a>
+					<div class="small-6 columns">
+						<ul id="section-choice">
+							<li class="personal first" id="personal_style_btn">
+								<a href="/personal">
+									<img src="<?php echo get_stylesheet_directory_uri() ?>/css/images/img-front-itspersonal.jpg" width="auto" height="auto" alt="It&#39;s Personal">
+								</a>
+							</li>
+						</ul>
 					</div><!-- end column -->
-					<div class="small-12 medium-6 columns">
-						<a href="/corporate" id="corporate_style_btn">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/css/images/img-front-itsbusiness.jpg" width="auto" height="358" alt="It&#39;s Business">
-						</a>
+					<div class="small-6 columns">
+						<ul id="section-choice">						
+							<li class="business last" id="corporate_style_btn">
+								<a href="/corporate">
+								<img src="<?php echo get_stylesheet_directory_uri() ?>/css/images/img-front-itsbusiness.jpg" width="auto" height="358" alt="It&#39;s Business">
+								</a>
+							</li>
+						</ul
 					</div><!-- end column -->
 				</div><!-- end row -->
 			</div><!-- end entry-content -->
