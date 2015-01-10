@@ -84,6 +84,9 @@ footer.row {
 			background: lighten($red, 70%);
 			//color: #FFF;
 		}
+		&.corporate_section {
+			font-size: 10px;
+		}
 	}
 	a.footer_triangle_link {
 		color: $red;

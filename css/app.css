@@ -6269,6 +6269,8 @@ footer.row {
     text-transform: uppercase; }
     .action_footer .outline_button:hover {
       background: #fcf5f4; }
+    .action_footer .outline_button.corporate_section {
+      font-size: 10px; }
   .action_footer a.footer_triangle_link {
     color: #722519;
     position: relative;

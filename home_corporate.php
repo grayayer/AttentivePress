@@ -7,14 +7,14 @@ get_header(); ?>
 <header id="homepage-hero" role="banner">
 	<div class="row">
 		<div class="small-12 columns">
-			<h1>Genuine, sustainable wellness support.</h1>			
+			<h1>Customized, flexible wellness programs.</h1>			
 		</div>
 		<div class="show-for-medium-up">
 			<div class="small-12 medium-offset-1 medium-11 columns">
-				<span class="tagline">Because once you have the tools,</span >
+				<span class="tagline">Because good health is good business,</span >
 			</div>
 			<div class="small-12 medium-offset-2 medium-10 columns">
-				<span class="tagline">you can create whatever life you want.</span >
+				<span class="tagline">and every business is different.</span >
 				<a role="button" class="large button hero_area" href="/corporate/schedule-an-evaluation/">SCHEDULE AN EVALUATION</a>			
 			</div>
 		</div>
