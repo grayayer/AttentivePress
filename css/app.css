@@ -6515,9 +6515,49 @@ ul#section-choice {
   border: none;
   padding: 0; }
 
-a#personal_style_btn.squeeze_image img {
-  margin-bottom: 1rem;
+/* Outline Out */
+.hvr-outline-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative; }
+
+.hvr-outline-out:before {
+  content: '';
+  position: absolute;
+  border: #e1e1e1 solid 4px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: top, right, bottom, left;
+  transition-property: top, right, bottom, left;
+  opacity: 0; }
+
+.hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before {
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+  opacity: 1; }
+
+.hvr-outline-out.corporate:before {
+  border: #275982 solid 4px; }
+
+.hvr-outline-out.personal:before {
+  border: #559634 solid 4px; }
+
+.squeeze_image img {
   display: block; }
+  .squeeze_image img:hover {
+    opacity: 0.8; }
 
 #homepage-hero {
   background: url("images/hero_attentivehealth_corporate.jpg") no-repeat center center;
@@ -6635,6 +6675,9 @@ body article #wpmtp-wrapper h5.wpmtp-position {
   font-style: italic; }
 body article #wpmtp-wrapper h3.wpmtp-post-title a {
   font-size: 1.1rem; }
+
+#sidebar img.attachment-post-thumbnail {
+  max-width: 200px; }
 
 .personal_section {
   display: none !important; }

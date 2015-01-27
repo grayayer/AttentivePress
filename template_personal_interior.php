@@ -8,9 +8,9 @@ get_header(); ?>
 <!-- as this is a personal page, it should always have the personal styles -->
 
 <div class="row">
-	<?php get_sidebar('left'); ?>
+	<?php get_sidebar(); ?>
 	
-	<div class="small-12 medium-8 columns" role="main">
+	<div class="small-12 medium-9 columns" role="main">
 
 	<?php do_action('foundationPress_before_content'); ?>
 

@@ -11,13 +11,13 @@
 			<div class="entry-content">
 				<div class="row">
 					<div class="small-12 medium-6 columns">
-						<a href="/personal" id="personal_style_btn" class="squeeze_image">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/css/images/img-front-itspersonal.jpg" width="auto" height="auto" alt="It&#39;s Personal">
+						<a href="/corporate" id="corporate_style_btn" class="squeeze_image hvr-outline-out corporate">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/landingpage-corporate-alt.jpg" width="auto" height="358" alt="It&#39;s Business">
 						</a>
 					</div><!-- end column -->
 					<div class="small-12 medium-6 columns">
-						<a href="/corporate" id="corporate_style_btn">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/css/images/img-front-itsbusiness.jpg" width="auto" height="358" alt="It&#39;s Business">
+						<a href="/personal" id="personal_style_btn"  class="squeeze_image hvr-outline-out personal">
+							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/landingpage-personal-alt.jpg" width="auto" height="auto" alt="It&#39;s Personal">
 						</a>
 					</div><!-- end column -->
 				</div><!-- end row -->

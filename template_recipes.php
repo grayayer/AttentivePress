@@ -9,7 +9,7 @@ get_header(); ?>
 
 <div class="row">
 	
-	<div class="small-12 medium-9 columns" role="main">
+	<div class="small-12 columns" role="main">
 
 	<?php do_action('foundationPress_before_content'); ?>
 
@@ -36,7 +36,7 @@ get_header(); ?>
 
 	</div>
 
-	<?php get_sidebar('recipes'); ?>
-	
+	<?php // get_sidebar('recipes'); ?>
+
 </div>
 <?php get_footer(); ?>

@@ -37,7 +37,7 @@ get_header(); ?>
 				<h3 class="show-for-small-only"><i class="at-fork circle icon"></i> <a href="#">Latest Recipe</a></h3>
 				<h3 class="show-for-medium-up"></i> <a href="#">Latest Recipe</a></h3>
 				<p>Red Lentil Soup is amazing, delicious and healthy. Other short text about this recipce goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				<a href="#" class="button small">Browse Recipes</a>
+				<a href="/personal/recipes/" class="button small">Browse Recipes</a>
 			</div>		
 		</div>
 		<div class="small-12 medium-6 columns">
