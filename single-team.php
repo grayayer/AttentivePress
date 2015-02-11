@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="row">
-	<?php get_sidebar(); ?>
+	<?php /* get_sidebar(); */ ?>
 
 	<div class="small-12 large-9 columns" role="main">
 

@@ -143,4 +143,44 @@ add_action('admin_head', 'fix_svg_thumb_display');
 
 #########
 
+######## creates a conditional display for events manager webinar link #######
+
+/**
+* add some conditional output conditions for Events Manager
+* @param string $replacement
+* @param string $condition
+* @param string $match
+* @param object $EM_Event
+* @return string
+*/
+function filterEventOutputCondition($replacement, $condition, $match, $EM_Event){
+    if (is_object($EM_Event)) {
+ 
+        switch ($condition) {
+ 
+            // replace LF with HTML line breaks
+            case 'nl2br':
+                // remove conditional
+                $replacement = preg_replace('/\{\/?nl2br\}/', '', $match);
+                // process any placeholders and replace LF
+                $replacement = nl2br($EM_Event->output($replacement));
+                break;
+ 
+            // #_ATT{Website}
+            case 'has_att_website':
+                if (is_array($EM_Event->event_attributes) && !empty($EM_Event->event_attributes['Website']))
+                    $replacement = preg_replace('/\{\/?has_att_website\}/', '', $match);
+                else
+                    $replacement = '';
+                break;
+ 
+        }
+ 
+    }
+ 
+    return $replacement;
+}
+ 
+add_filter('em_event_output_condition', 'filterEventOutputCondition', 10, 4);
+
 ?>

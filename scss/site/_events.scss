@@ -1,0 +1,36 @@
+header.events_data {
+	p {
+		margin-bottom:.6rem;
+		clear: both;
+	}
+	i {
+		margin-right: 7px;
+		&.at-tag2 {
+			float: left;
+		}
+	}
+	div.event_categories_container {
+		ul.event-categories {
+			list-style: none;
+			float: left;
+			display: inline;
+			margin: 0;
+			position: relative;
+			top: -5px;
+			left: 4px;			
+			li {
+				display: inline;
+			}
+
+		}
+	}
+}
+
+.icon-alone {
+  display: inline-block; /* Fix for clickability issue in WebKit */
+}
+.screen-reader-text { /* Reusable, toolbox kind of class */
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}

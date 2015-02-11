@@ -55,12 +55,14 @@ This can decrease the css file size drastically, and should be done before produ
 @import "site/footer";
 @import "site/typography";
 @import "site/webfonts";
+@import "site/attenticon";
 @import "site/squeeze";
 @import "site/homepage";
 //@import "site/homepage_corporate";
 //@import "site/homepage_personal";
 @import "site/team";
 @import "site/sidebar";
+@import "site/events";
 @import "site/default_reset";
 
 /* Assets */

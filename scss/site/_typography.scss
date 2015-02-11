@@ -44,3 +44,32 @@ input[type="submit"] {
 		}
 	}
 }
+
+/*TABLE STYLES*/
+
+.tablepress {
+	.resources_nutrition {
+		color: $green;
+		font-weight: bold;
+	}
+	.resources_fitness {
+		color: darken($yellow, 10%);
+		font-weight: bold;
+	}
+	.resources_relationships {
+		color: $red;
+		font-weight: bold;
+	}
+	.resources_career {
+		color: $greige;
+		font-weight: bold;
+	}
+	.resources_wellbeing {
+		color: $blue;
+		font-weight: bold;
+	}			
+	.resources_corp_wellness {
+		color: purple;
+		font-weight: bold;
+	}	
+}

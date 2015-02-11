@@ -1,0 +1,41 @@
+<header class="events_data">
+	{has_locationmap}
+		<div style="float:right; margin:0px 0px 15px 15px;">
+			#_LOCATIONMAP
+		</div>
+	{/has_locationmap}
+
+	<p>
+		<i class="at-calendar"></i> #_EVENTDATES
+	</p>
+
+	<p>
+		<i class="at-clock3"></i> #_EVENTTIMES
+	</p>
+
+	<div class="event_categories_container">
+		<i class="at-tag2"></i> #_CATEGORIES
+	</div>
+
+	{has_location}
+		<p>
+			<strong>Location</strong><br/>
+			#_LOCATIONLINK
+		</p>
+	{/has_location}
+
+	{has_att_website}
+	<p>
+	  <i class="at-world"></i> <a href="http://#_ATT{Website}" target="_blank">#_ATT{Website}</a>
+	</p>
+	{/has_att_website}
+</header>
+
+<br style="clear:both" />
+
+#_EVENTNOTES
+
+{has_bookings}
+	<h3>Bookings</h3>
+	#_BOOKINGFORM
+{/has_bookings}
