@@ -80,6 +80,25 @@ section.top-bar-section {
 	}	
 }
 
+/*resources table*/
+
+.dataTables_wrapper .footable {
+	border: 3px solid $corporate_primary;
+
+	&>thead>tr>th, &>thead>tr>td {
+		background-color: $corporate_primary;
+		border: 1px solid $corporate_primary;
+	}
+	.sorting {
+		transition: all 150ms ease-out;
+	}
+
+	.sorting:hover, .sorting_asc, .sorting_desc {
+		color: #B9E9FE;
+		background-color: $corporate_primary; 
+	}
+}
+
 /******* MOBILE *******/
 
 .left-off-canvas-menu, .right-off-canvas-menu {

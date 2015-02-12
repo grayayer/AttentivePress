@@ -73,3 +73,7 @@ input[type="submit"] {
 		font-weight: bold;
 	}	
 }
+
+.footable>tbody>tr>td.footable-row-detail-cell, .footable>tbody>tr>td.footable-first-column, .footable>thead>tr>th.footable-first-column, .footable>thead>tr>td.footable-first-column {
+	padding-left: 15px;
+}

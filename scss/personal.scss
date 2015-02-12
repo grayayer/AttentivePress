@@ -156,6 +156,24 @@ section.top-bar-section {
 	}
 }
 
+/*resources table*/
+
+.dataTables_wrapper .footable {
+	border: 3px solid $personal_primary;
+
+	&>thead>tr>th, &>thead>tr>td {
+		background-color: $personal_primary;
+		border: 1px solid $personal_primary;
+	}
+	.sorting {
+		transition: all 150ms ease-out;
+	}
+
+	.sorting:hover, .sorting_asc, .sorting_desc {
+		color: #164200;
+		background-color: $personal_primary; 
+	}
+}
 
 /******* MOBILE *******/
 

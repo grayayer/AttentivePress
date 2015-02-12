@@ -201,13 +201,21 @@ function tribe_custom_theme_text ( $translations, $text, $domain ) {
 	$custom_text = array(
 		'Upcoming Events' => 'Upcoming Webinars',
 		'Related Events' => 'Similar Events',
-		'Previous Events' => 'Previous Webinars',
-		'Next Webinars' => 'Next Webinars',
+		'<span>&laquo;</span> Previous Events' => '<span>&laquo;</span> Previous Webinars',
+		'Next Events <span>&raquo;</span>' => 'Next Webinars <span>&raquo;</span>',
+//		'<span>&laquo;</span> All Events' => '<span>&laquo;</span> All Webinars',	
+//		'<span>&larr;</span> All Events' => '<span>&larr;</span> All Webinars',	
+		'&laquo; All Events' => '&laquo; All Webinars',	
+//		'&larr; All Events' => '&larr; All Webinars',	
+		'&larr; Back to Events' => '&larr; Back to Webinars',	
 		'Organizer' => 'Sponsor',
 		'All Events' => 'All Webinars',
 		'Events' => 'Webinars',
 		'Add Event' => 'Add Webinar',	
-		'Edit Events' => 'Edit Webinars',			
+		'Edit Events' => 'Edit Webinars',
+		'Default Organizer' => 'Default Sponsor',
+		'Events List Navigation' => 'Webinars List Navigation',
+		
 	);
  
 	// If this text domain starts with "tribe-", and we have replacement text
@@ -292,4 +300,58 @@ function replace_excerpt($content) {
 }
 add_filter('the_excerpt', 'replace_excerpt');
 */
+
+
+// Hides the iCal/Export Listed Events link from tribe archive views such as List and Month
+remove_filter('tribe_events_after_footer', array('TribeiCal', 'maybe_add_link'), 10, 1);
+
+
+/*
+ * Removes the Google Calendar and iCal single event links
+ */
+ 
+add_action('tribe_events_single_event_before_the_content', 'tribe_remove_single_event_links');
+ 
+function tribe_remove_single_event_links () {
+ remove_action( 'tribe_events_single_event_after_the_content', array( 'TribeiCal', 'single_event_links' ) );
+}
+ 
+/*
+ * Uncomment the following action to add the Google Calendar Link
+ */
+ 
+add_action('tribe_events_single_event_after_the_content', 'tribe_add_gcal_link');
+ 
+function tribe_add_gcal_link() {
+ 
+ // don't show on password protected posts
+ if (is_single() && !post_password_required()) {
+ echo '
+<div class="tribe-events-cal-links">';
+echo '<a class="tribe-events-gcal tribe-events-button" title="' . __( 'Add to Google Calendar', 'tribe-events-calendar' ) . '" href="' . tribe_get_gcal_link() . '">+ ' . __( 'Google Calendar', 'tribe-events-calendar-pro' ) . '</a>';
+echo '</div>
+<!-- .tribe-events-cal-links -->';
+ }
+ 
+}
+ 
+/*
+ * Uncomment the following action to add the iCal Link
+ */
+ 
+//add_action('tribe_events_single_event_after_the_content', 'tribe_add_ical_link');
+ 
+function tribe_add_ical_link() {
+ 
+ // don't show on password protected posts
+ if (is_single() && !post_password_required()) {
+ echo '
+<div class="tribe-events-cal-links">';
+echo '<a class="tribe-events-ical tribe-events-button" href="' . tribe_get_single_ical_link() . '">+ ' . __( 'iCal Import', 'tribe-events-calendar' ) . '</a>';
+echo '</div>
+<!-- .tribe-events-cal-links -->';
+ }
+ 
+}
+
 ?>

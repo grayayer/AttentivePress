@@ -61,6 +61,18 @@ section.top-bar-section li.menu_cta a:not(.button):active > span {
 section.top-bar-section li.active.menu_cta > a:not(.button) > span {
   border-top: 2px solid rgba(255, 255, 255, 0.7); }
 
+/*resources table*/
+.dataTables_wrapper .footable {
+  border: 3px solid #275982; }
+  .dataTables_wrapper .footable > thead > tr > th, .dataTables_wrapper .footable > thead > tr > td {
+    background-color: #275982;
+    border: 1px solid #275982; }
+  .dataTables_wrapper .footable .sorting {
+    transition: all 150ms ease-out; }
+  .dataTables_wrapper .footable .sorting:hover, .dataTables_wrapper .footable .sorting_asc, .dataTables_wrapper .footable .sorting_desc {
+    color: #b9e9fe;
+    background-color: #275982; }
+
 /******* MOBILE *******/
 .left-off-canvas-menu, .right-off-canvas-menu {
   background-color: #16304b; }

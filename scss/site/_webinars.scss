@@ -1,0 +1,19 @@
+div.tribe-events-schedule.published.tribe-clearfix {
+	display: none;
+}
+
+#tribe-events-content.tribe-events-single h2.tribe-events-single-event-title {
+	margin-bottom: 1rem;
+}
+
+#tribe_events_filters_wrapper {
+	h3 {
+		&.tribe-events-filters-group-heading {
+			font-size: 1.1rem;
+			font-weight: 100;
+		}
+		span:after {
+			top: 2px;
+		}
+	}
+}

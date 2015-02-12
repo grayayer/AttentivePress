@@ -111,6 +111,18 @@ section.top-bar-section li.active.menu_cta > a:not(.button) > span {
     .blurb a.button:hover {
       background-color: #417027; }
 
+/*resources table*/
+.dataTables_wrapper .footable {
+  border: 3px solid #559634; }
+  .dataTables_wrapper .footable > thead > tr > th, .dataTables_wrapper .footable > thead > tr > td {
+    background-color: #559634;
+    border: 1px solid #559634; }
+  .dataTables_wrapper .footable .sorting {
+    transition: all 150ms ease-out; }
+  .dataTables_wrapper .footable .sorting:hover, .dataTables_wrapper .footable .sorting_asc, .dataTables_wrapper .footable .sorting_desc {
+    color: #164200;
+    background-color: #559634; }
+
 /******* MOBILE *******/
 .left-off-canvas-menu, .right-off-canvas-menu {
   background-color: #569634; }
