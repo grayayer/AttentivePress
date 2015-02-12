@@ -1,0 +1,25 @@
+body.blog {
+	article header { //gives some space to the meta data from the content 
+	margin-bottom: 0rem;
+	}
+}
+
+.entry_meta {
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+.post_thumbnail {
+	float: left;
+	padding: 0 2rem 0.5rem 0;
+}
+
+h1.title.category {
+	text-transform: capitalize;
+	border-bottom: dotted 1px #ccc;
+	margin-bottom: 2rem;
+}
+
+article.has-post-thumbnail img.th.wp-post-image {
+	margin-bottom: 1rem;
+}

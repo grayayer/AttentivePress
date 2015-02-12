@@ -183,4 +183,113 @@ function filterEventOutputCondition($replacement, $condition, $match, $EM_Event)
  
 add_filter('em_event_output_condition', 'filterEventOutputCondition', 10, 4);
 
+
+/*
+ * EXAMPLE OF CHANGING ANY TEXT (STRING) IN THE EVENTS CALENDAR
+ * See the codex to learn more about WP text domains:
+ * http://codex.wordpress.org/Translating_WordPress#Localization_Technology
+ * Example Tribe domains: 'tribe-events-calendar', 'tribe-events-calendar-pro'...
+ */
+function tribe_custom_theme_text ( $translations, $text, $domain ) {
+ 
+	// Put your custom text here in a key => value pair
+	// Example: 'Text you want to change' => 'This is what it will be changed to'
+	// The text you want to change is the key, and it is case-sensitive
+	// The text you want to change it to is the value
+	// You can freely add or remove key => values, but make sure to separate them with a comma
+	// This example changes the label "Venue" to "Location", and "Related Events" to "Similar Events"
+	$custom_text = array(
+		'Upcoming Events' => 'Upcoming Webinars',
+		'Related Events' => 'Similar Events',
+		'Previous Events' => 'Previous Webinars',
+		'Next Webinars' => 'Next Webinars',
+		'Organizer' => 'Sponsor',
+		'All Events' => 'All Webinars',
+		'Events' => 'Webinars',
+		'Add Event' => 'Add Webinar',	
+		'Edit Events' => 'Edit Webinars',			
+	);
+ 
+	// If this text domain starts with "tribe-", and we have replacement text
+	if(strpos($domain, 'tribe-') === 0 && array_key_exists($text, $custom_text) ) {
+		$text = $custom_text[$text];
+	}
+ 
+	return $text;
+}
+add_filter('gettext', 'tribe_custom_theme_text', 20, 3);
+
+// custom excerpt length
+if ( ! function_exists( 'pietergoosen_custom_wp_trim_excerpt' ) ) : 
+
+    function pietergoosen_custom_wp_trim_excerpt($pietergoosen_excerpt) {
+    global $post;
+    $raw_excerpt = $pietergoosen_excerpt;
+        if ( '' == $pietergoosen_excerpt ) {
+
+            $pietergoosen_excerpt = get_the_content('');
+            $pietergoosen_excerpt = strip_shortcodes( $pietergoosen_excerpt );
+            $pietergoosen_excerpt = apply_filters('the_content', $pietergoosen_excerpt);
+            $pietergoosen_excerpt = str_replace(']]>', ']]&gt;', $pietergoosen_excerpt);
+
+            //Set the excerpt word count and only break after sentence is complete.
+                $excerpt_word_count = 50;
+                $excerpt_length = apply_filters('excerpt_length', $excerpt_word_count); 
+                $tokens = array();
+                $excerptOutput = '';
+                $count = 0;
+
+                // Divide the string into tokens; HTML tags, or words, followed by any whitespace
+                preg_match_all('/(<[^>]+>|[^<>\s]+)\s*/u', $pietergoosen_excerpt, $tokens);
+
+                foreach ($tokens[0] as $token) { 
+
+                    if ($count >= $excerpt_word_count && preg_match('/[\?\.\!]\s*$/uS', $token)) { 
+                    // Limit reached, continue until  ? . or ! occur at the end
+                        $excerptOutput .= trim($token);
+                        break;
+                    }
+
+                    // Add words to complete sentence
+                    $count++;
+
+                    // Append what's left of the token
+                    $excerptOutput .= $token;
+                }
+
+            $pietergoosen_excerpt = trim(force_balance_tags($excerptOutput));
+
+                $excerpt_end = ' <a href="'. esc_url( get_permalink() ) . '">' . '&nbsp;&raquo;&nbsp;' . sprintf(__( 'Read more &raquo;', 'pietergoosen' ), get_the_title()) . '</a>'; 
+                $excerpt_more = apply_filters('excerpt_more', ' ' . $excerpt_end); 
+
+                //$pos = strrpos($pietergoosen_excerpt, '</');
+                //if ($pos !== false)
+                // Inside last HTML tag
+                //$pietergoosen_excerpt = substr_replace($pietergoosen_excerpt, $excerpt_end, $pos, 0);
+                //else
+                // After the content
+                $pietergoosen_excerpt .= $excerpt_end;
+
+            return $pietergoosen_excerpt;   
+
+        }
+        return apply_filters('pietergoosen_custom_wp_trim_excerpt', $pietergoosen_excerpt, $raw_excerpt);
+    }
+
+endif; 
+
+remove_filter('get_the_excerpt', 'wp_trim_excerpt');
+add_filter('get_the_excerpt', 'pietergoosen_custom_wp_trim_excerpt'); 
+
+
+/* Replace Excerpt Ellipsis with Permalink
+
+function replace_excerpt($content) {
+       return str_replace('[&hellip;]',
+               '&hellip; <a href="'. get_permalink() .'">»',
+               $content
+       );
+}
+add_filter('the_excerpt', 'replace_excerpt');
+*/
 ?>

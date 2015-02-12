@@ -6814,6 +6814,25 @@ header.events_data div.event_categories_container ul.event-categories {
   top: -9999px;
   left: -9999px; }
 
+body.blog article header {
+  margin-bottom: 0rem; }
+
+.entry_meta {
+  margin-bottom: 10px;
+  font-size: 14px; }
+
+.post_thumbnail {
+  float: left;
+  padding: 0 2rem 0.5rem 0; }
+
+h1.title.category {
+  text-transform: capitalize;
+  border-bottom: dotted 1px #cccccc;
+  margin-bottom: 2rem; }
+
+article.has-post-thumbnail img.th.wp-post-image {
+  margin-bottom: 1rem; }
+
 .personal_section {
   display: none !important; }
 
