@@ -6378,7 +6378,7 @@ input[type="submit"] {
   color: #275982;
   font-weight: bold; }
 .tablepress .resources_corp_wellness {
-  color: purple;
+  color: teal;
   font-weight: bold; }
 
 .footable > tbody > tr > td.footable-row-detail-cell, .footable > tbody > tr > td.footable-first-column, .footable > thead > tr > th.footable-first-column, .footable > thead > tr > td.footable-first-column {
@@ -6854,6 +6854,22 @@ div.tribe-events-schedule.published.tribe-clearfix {
     margin: 0px 0 0rem 3px; }
   .gform_wrapper .gform_body select {
     padding: 5px 0 5px 10px; }
+
+.wpurp-recipe-grid-filter-box {
+  margin-left: 7px; }
+  .wpurp-recipe-grid-filter-box .select2-container-multi .select2-choices {
+    border-color: #365d20;
+    background: #559634 !important; }
+    .wpurp-recipe-grid-filter-box .select2-container-multi .select2-choices li.select2-search-field input {
+      font-size: 100%;
+      color: white !important;
+      outline: 0;
+      border-color: #365d20;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background: #559634 !important;
+      margin: 0;
+      padding-left: 0.5em; }
 
 .personal_section {
   display: none !important; }

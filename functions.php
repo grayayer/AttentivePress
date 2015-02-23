@@ -199,22 +199,22 @@ function tribe_custom_theme_text ( $translations, $text, $domain ) {
 	// You can freely add or remove key => values, but make sure to separate them with a comma
 	// This example changes the label "Venue" to "Location", and "Related Events" to "Similar Events"
 	$custom_text = array(
-		'Upcoming Events' => 'Upcoming Webinars',
+		'Upcoming Events' => 'Upcoming Lessons',
 		'Related Events' => 'Similar Events',
-		'<span>&laquo;</span> Previous Events' => '<span>&laquo;</span> Previous Webinars',
-		'Next Events <span>&raquo;</span>' => 'Next Webinars <span>&raquo;</span>',
-//		'<span>&laquo;</span> All Events' => '<span>&laquo;</span> All Webinars',	
-//		'<span>&larr;</span> All Events' => '<span>&larr;</span> All Webinars',	
-		'&laquo; All Events' => '&laquo; All Webinars',	
-//		'&larr; All Events' => '&larr; All Webinars',	
-		'&larr; Back to Events' => '&larr; Back to Webinars',	
+		'<span>&laquo;</span> Previous Events' => '<span>&laquo;</span> Previous Lessons',
+		'Next Events <span>&raquo;</span>' => 'Next Lessons <span>&raquo;</span>',
+//		'<span>&laquo;</span> All Events' => '<span>&laquo;</span> All Lessons',	
+//		'<span>&larr;</span> All Events' => '<span>&larr;</span> All Lessons',	
+		'&laquo; All Events' => '&laquo; All Lessons',	
+//		'&larr; All Events' => '&larr; All Lessons',	
+		'&larr; Back to Events' => '&larr; Back to Lessons',	
 		'Organizer' => 'Sponsor',
-		'All Events' => 'All Webinars',
-		'Events' => 'Webinars',
-		'Add Event' => 'Add Webinar',	
-		'Edit Events' => 'Edit Webinars',
+		'All Events' => 'All Lessons',
+		'Events' => 'Lessons',
+		'Add Event' => 'Add Lesson',	
+		'Edit Events' => 'Edit Lessons',
 		'Default Organizer' => 'Default Sponsor',
-		'Events List Navigation' => 'Webinars List Navigation',
+		'Events List Navigation' => 'Lessons List Navigation',
 		
 	);
  
