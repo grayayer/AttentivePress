@@ -34,57 +34,112 @@ get_header(); ?>
 				<i class="at-fork circle icon"></i>
 			</div>
 			<div class="small-12 medium-10 columns">
-				<h3 class="show-for-small-only"><i class="at-fork circle icon"></i> <a href="#">Latest Recipe</a></h3>
-				<h3 class="show-for-medium-up"></i> <a href="#">Latest Recipe</a></h3>
-				<p>Red Lentil Soup is amazing, delicious and healthy. Other short text about this recipce goes here. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				<a href="/personal/recipes/" class="button small">Browse Recipes</a>
+				<h3 class="show-for-small-only">
+					<i class="at-fork circle icon"></i>
+					<?php 
+						if ( function_exists( 'ot_get_option' ) ) {
+	 						$blurb_1_url_link = ot_get_option( 'blurb_1_url_link');
+	 						$personal_blurb_1_title = ot_get_option( 'personal_blurb_1_title', 'Latest Recipe' );
+	 						echo '<a href="'.$blurb_1_url_link.'"/>';
+
+	 						echo $personal_blurb_1_title;
+	 						echo '</a>';
+	 					}
+ 					?>
+				</h3>
+				<h3 class="show-for-medium-up">
+					
+					<?php 
+						if ( function_exists( 'ot_get_option' ) ) {
+	 						$blurb_1_url_link = ot_get_option( 'blurb_1_url_link');
+	 						$personal_blurb_1_title = ot_get_option( 'personal_blurb_1_title', 'Latest Recipe' );
+	 						echo '<a href="'.$blurb_1_url_link.'"/>';
+
+	 						echo $personal_blurb_1_title;
+	 						echo '</a>';
+	 					}
+ 					?>
+				</h3>
+				<!-- This is the paragraph text that describes the recipe to be featured -->
+				<?php
+					if ( function_exists( 'ot_get_option' ) ) {
+	 					$personal_blurb_1_paragraph = ot_get_option( 'personal_blurb_1_paragraph', 'Latest Recipe' );
+	 					echo '<p>'.$personal_blurb_1_paragraph.'</p>';
+	 				}
+ 				?>					
+				<!-- blurb 1 button -->
+				<?php 
+					if ( function_exists( 'ot_get_option' ) ) {
+	 					$blurb_1_button_link = ot_get_option( 'blurb_1_button_link', '/personal/recipes/');
+	 					$blurb_1_button_label = ot_get_option( 'blurb_1_button_label', 'Browse All Recipes');	 					
+	 					echo '<a href="'.$blurb_1_button_link.'" class="button small"/>';
+	 					echo $blurb_1_button_label;
+	 					echo '</a>';
+	 				}
+ 				?>				
 			</div>		
 		</div>
 		<div class="small-12 medium-6 columns">
 			<div class="medium-2 columns hide-for-small-only">
 				<i class="at-wrench circle icon"></i>
 			</div>
-			<div class="small-12 medium-10 columns omega">
+
+			<!-- Blurb 2 theme content inputs -->
+			<div class="small-12 medium-10 columns">
+				<h3 class="show-for-small-only">
+					<i class="at-fork wrench icon"></i>
+					<?php 
+						if ( function_exists( 'ot_get_option' ) ) {
+	 						$blurb_1_url_link = ot_get_option( 'blurb_2_url_link');
+	 						$personal_blurb_2_title = ot_get_option( 'personal_blurb_2_title', 'Latest Recipe' );
+	 						echo '<a href="'.$blurb_2_url_link.'"/>';
+
+	 						echo $personal_blurb_2_title;
+	 						echo '</a>';
+	 					}
+ 					?>
+				</h3>
+				<h3 class="show-for-medium-up">
+					
+					<?php 
+						if ( function_exists( 'ot_get_option' ) ) {
+	 						$blurb_2_url_link = ot_get_option( 'blurb_2_url_link');
+	 						$personal_blurb_2_title = ot_get_option( 'personal_blurb_2_title', 'Latest Recipe' );
+	 						echo '<a href="'.$blurb_2_url_link.'"/>';
+
+	 						echo $personal_blurb_2_title;
+	 						echo '</a>';
+	 					}
+ 					?>
+				</h3>
+				<!-- This is the paragraph text that describes the recipe to be featured -->
+				<?php
+					if ( function_exists( 'ot_get_option' ) ) {
+	 					$personal_blurb_2_paragraph = ot_get_option( 'personal_blurb_2_paragraph', 'Latest Recipe' );
+	 					echo '<p>'.$personal_blurb_2_paragraph.'</p>';
+	 				}
+ 				?>					
+				<!-- blurb 1 button -->
+				<?php 
+					if ( function_exists( 'ot_get_option' ) ) {
+	 					$blurb_2_button_link = ot_get_option( 'blurb_2_button_link', '/personal/recipes/');
+	 					$blurb_2_button_label = ot_get_option( 'blurb_2_button_label', 'Browse All Recipes');	 					
+	 					echo '<a href="'.$blurb_2_button_link.'" class="button small"/>';
+	 					echo $blurb_2_button_label;
+	 					echo '</a>';
+	 				}
+ 				?>				
+			</div>	
+
+<!-- 			<div class="small-12 medium-10 columns omega">
 				<h3 class="show-for-medium-up"><a href="#">Newest Resource</a></h3>
 				<h3 class="show-for-small-only"><i class="at-wrench circle icon"></i> <a href="#">Newest Resource</a></h3>
 				<p>We just launched a comprehensive new tool for your colleagues. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
 				<a href="#" class="button small">More Resources</a>
-			</div>		
+			</div>		 -->
 		</div>
 	</div>
 </section>
 
 
-<?php /*
-	<div class="row">
-		<div class="small-12 large-8 columns" role="main">
-
-		<?php do_action('foundationPress_before_content'); ?>
-
-		<?php while (have_posts()) : the_post(); ?>
-			<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-				<header>
-					<h1 class="entry-title"><?php the_title(); ?></h1>
-				</header>
-				<?php do_action('foundationPress_page_before_entry_content'); ?>
-				<div class="entry-content">
-					<?php the_content(); ?>
-				</div>
-				<footer>
-					<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'FoundationPress'), 'after' => '</p></nav>' )); ?>
-					<p><?php the_tags(); ?></p>
-				</footer>
-				<?php do_action('foundationPress_page_before_comments'); ?>
-				<?php comments_template(); ?>
-				<?php do_action('foundationPress_page_after_comments'); ?>
-			</article>
-		<?php endwhile;?>
-
-		<?php do_action('foundationPress_after_content'); ?>
-
-		</div>
-
-	<?php get_sidebar(); ?>
-</div>
-< */ ?>
 <?php get_footer(); ?>
