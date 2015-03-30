@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="row">
-	<div class="small-12 large-9 columns" role="main">
+	<div class="small-12 medium-9 columns" role="main">
 
 	<?php do_action('foundationPress_before_content'); ?>
 
@@ -8,7 +8,7 @@
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
-				<?php // FoundationPress_entry_meta(); ?>
+				<?php recipe_entry_meta(); ?>
 			</header>
 			<?php do_action('foundationPress_post_before_entry_content'); ?>
 			<div class="entry-content">

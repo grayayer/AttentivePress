@@ -16,8 +16,8 @@
 <footer class="credit_footer">
   <div class="row">
     <div class="centered">
-      <a href="http://#"><img src="<?php echo get_stylesheet_directory_uri()?>/css/images/laura_sue_logo2.png"/ style="padding-right:10px;"></a>
-      <a href="http://#"><img src="<?php echo get_stylesheet_directory_uri()?>/css/images/studiok40_logo2.png"/></a>
+      <a href="http://laurasuedesign.com/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/logo_laurasue.svg" height="33" style="padding-right:10px;"></a>
+      <a href="http://studiok40.com"><img src="<?php echo get_stylesheet_directory_uri()?>/images/logo_studiok40.svg" height="33"/></a>
     </div>
   </div>
 </div>

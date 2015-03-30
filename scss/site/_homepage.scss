@@ -110,6 +110,10 @@
 
 @media only screen and (max-width: 64em) {  /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
+	.squeeze_image img {
+		padding: 0 0 1rem 0;
+	}
+
 	#homepage-hero {
 		background: url("images/hero_attentivehealth_corporate.jpg") no-repeat center center;
 		height: auto;

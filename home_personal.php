@@ -29,6 +29,7 @@ get_header(); ?>
 </header>
 <section class="blurb">
 	<div class="row">
+		<!-- blurb 1 -->
 		<div class="small-12 medium-6 columns">
 			<div class="medium-2 columns hide-for-small-only">
 				<i class="at-fork circle icon"></i>
@@ -79,6 +80,8 @@ get_header(); ?>
  				?>				
 			</div>		
 		</div>
+
+		<!-- blurb 2 -->
 		<div class="small-12 medium-6 columns">
 			<div class="medium-2 columns hide-for-small-only">
 				<i class="at-wrench circle icon"></i>
@@ -87,13 +90,12 @@ get_header(); ?>
 			<!-- Blurb 2 theme content inputs -->
 			<div class="small-12 medium-10 columns">
 				<h3 class="show-for-small-only">
-					<i class="at-fork wrench icon"></i>
+					<i class="at-wrench circle icon"></i>
 					<?php 
 						if ( function_exists( 'ot_get_option' ) ) {
-	 						$blurb_1_url_link = ot_get_option( 'blurb_2_url_link');
-	 						$personal_blurb_2_title = ot_get_option( 'personal_blurb_2_title', 'Latest Recipe' );
+	 						$blurb_2_url_link = ot_get_option( 'blurb_2_url_link');
+	 						$personal_blurb_2_title = ot_get_option( 'personal_blurb_2_title', 'Newest Resource' );
 	 						echo '<a href="'.$blurb_2_url_link.'"/>';
-
 	 						echo $personal_blurb_2_title;
 	 						echo '</a>';
 	 					}
@@ -103,8 +105,8 @@ get_header(); ?>
 					
 					<?php 
 						if ( function_exists( 'ot_get_option' ) ) {
-	 						$blurb_2_url_link = ot_get_option( 'blurb_2_url_link');
-	 						$personal_blurb_2_title = ot_get_option( 'personal_blurb_2_title', 'Latest Recipe' );
+	 						$blurb_2_url_link = ot_get_option( 'blurb_2_url_link', '/resources/');
+	 						$personal_blurb_2_title = ot_get_option( 'personal_blurb_2_title', 'Newest Resource' );
 	 						echo '<a href="'.$blurb_2_url_link.'"/>';
 
 	 						echo $personal_blurb_2_title;
@@ -112,18 +114,18 @@ get_header(); ?>
 	 					}
  					?>
 				</h3>
-				<!-- This is the paragraph text that describes the recipe to be featured -->
+				<!-- This is the paragraph text that is generally about resources to be featured -->
 				<?php
 					if ( function_exists( 'ot_get_option' ) ) {
-	 					$personal_blurb_2_paragraph = ot_get_option( 'personal_blurb_2_paragraph', 'Latest Recipe' );
+	 					$personal_blurb_2_paragraph = ot_get_option( 'personal_blurb_2_paragraph', 'Looking for tools to help you build a better life? The choices can be rather overwhelming, so here you’ll find a selection of some of our favorites.' );
 	 					echo '<p>'.$personal_blurb_2_paragraph.'</p>';
 	 				}
  				?>					
 				<!-- blurb 1 button -->
 				<?php 
 					if ( function_exists( 'ot_get_option' ) ) {
-	 					$blurb_2_button_link = ot_get_option( 'blurb_2_button_link', '/personal/recipes/');
-	 					$blurb_2_button_label = ot_get_option( 'blurb_2_button_label', 'Browse All Recipes');	 					
+	 					$blurb_2_button_link = ot_get_option( 'blurb_2_button_link', '/resources/');
+	 					$blurb_2_button_label = ot_get_option( 'blurb_2_button_label', 'More Resources');	 					
 	 					echo '<a href="'.$blurb_2_button_link.'" class="button small"/>';
 	 					echo $blurb_2_button_label;
 	 					echo '</a>';
@@ -131,12 +133,6 @@ get_header(); ?>
  				?>				
 			</div>	
 
-<!-- 			<div class="small-12 medium-10 columns omega">
-				<h3 class="show-for-medium-up"><a href="#">Newest Resource</a></h3>
-				<h3 class="show-for-small-only"><i class="at-wrench circle icon"></i> <a href="#">Newest Resource</a></h3>
-				<p>We just launched a comprehensive new tool for your colleagues. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-				<a href="#" class="button small">More Resources</a>
-			</div>		 -->
 		</div>
 	</div>
 </section>

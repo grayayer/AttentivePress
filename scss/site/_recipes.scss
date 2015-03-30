@@ -19,9 +19,11 @@
 				margin: 0;
 				padding-left: .5em;	
 			}
-
 		}
-
 	}
+}
 
+article.recipe .entry-content .wpurp-container {
+	margin: 0 !important;
+	max-width: 100%;
 }

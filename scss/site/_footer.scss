@@ -4,6 +4,17 @@ footer.row {
 	max-width: 100%;
 	margin-bottom: 1.5rem;
 	//margin-top: 3rem;
+
+	.social_icon_footer {
+		font-size: 1.4em;
+		margin-right: .25em;
+		line-height: 1.75rem;
+		color: $greige;
+		@include single-transition();
+		&:hover {
+			color: $blue;
+		}
+	}
 }
 
 // makes it so that the medium new grid rules only apply to medium and up. the next mixin does it only for small screens
@@ -114,7 +125,13 @@ footer.row {
 	background: $small_contrast;
 	height: 3rem;
 	.centered {
-		width: 325px;
-		margin: .5rem auto 0 auto;
+		display: table;
+		margin: .5rem auto 1rem auto;
+  		padding: 0 .5rem;
+  		box-sizing: border-box;
+  		img {
+  			max-width: 50%;
+  		}	
 	}
 }
+

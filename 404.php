@@ -5,7 +5,7 @@
 
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
-				<h1 class="entry-title"><?php _e('File Not Found', 'FoundationPress'); ?></h1>
+				<h1 class="entry-title"><?php _e('Error 404, File Not Found', 'FoundationPress'); ?></h1>
 			</header>
 			<div class="entry-content">
 				<div class="error">
@@ -16,11 +16,13 @@
 					<li><?php _e('Check your spelling', 'FoundationPress'); ?></li>
 					<li><?php printf(__('Return to the <a href="%s">home page</a>', 'FoundationPress'), home_url()); ?></li>
 					<li><?php _e('Click the <a href="javascript:history.back()">Back</a> button', 'FoundationPress'); ?></li>
+					<li><?php _e('Perform a search for the content below', 'FoundationPress'); ?></li>
 				</ul>
+				<?php get_search_form(); ?>
 			</div>
 		</article>
 
 	</div>
-	<?php get_sidebar(); ?>
+	<?php /* get_sidebar(); */ ?>
 </div>
 <?php get_footer(); ?>

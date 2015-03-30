@@ -1,3 +1,8 @@
+article a:hover {
+	text-decoration: underline;
+}
+
+
 h1.entry-title {
 	font-weight: bold;
 	font-weight: 500;
@@ -32,6 +37,18 @@ input[type="submit"] {
 .attentive_button {
   @include button(rem-calc(9), $primary-color, 1000px);
   font-size: $base-font-size;
+  &.red_button {
+  	background-color: $red;
+		&:hover {
+			background-color: darken($red, 10%);
+		}  	
+  }
+  &.green_button {
+  	background-color: $green;
+		&:hover {
+			background-color: darken($green, 10%);
+		}  	
+  }  
 }
 
 .button {
@@ -76,4 +93,38 @@ input[type="submit"] {
 
 .footable>tbody>tr>td.footable-row-detail-cell, .footable>tbody>tr>td.footable-first-column, .footable>thead>tr>th.footable-first-column, .footable>thead>tr>td.footable-first-column {
 	padding-left: 15px;
+}
+
+.dataTables_info, .dataTables_paginate {
+	display: none;
+}
+
+/* the search submit button on the 404 page */
+
+form#searchform input#searchsubmit {
+  border-radius: 0 20px 20px 0px;
+  width: 50%;
+}
+
+.container {
+
+	ul {
+		padding-left: 1.1rem;
+	}
+
+	.red, .relationships {
+		color: $red;
+	}
+	.green, .nutrition {
+		color: $green;
+	}
+	.blue, .spiritual {
+		color: $blue;
+	}
+	.yellow, .fitness {
+		color: $yellow;
+	}
+	.greige, .career {
+		color: $greige;
+	}				
 }
