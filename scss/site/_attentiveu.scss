@@ -2,3 +2,21 @@
 	display: block;
 	padding:0;
 }
+
+div#tribe-events div.tribe-events-before-html {
+	padding-bottom: 2rem;
+
+	h1 {
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		font-size: 2.75rem;
+		margin-bottom: 0;
+	}
+
+	h2 {
+		font-size: 2.3125rem;
+		margin-top: 0.2rem;
+		margin-bottom: 0.5rem;		
+	}
+}
