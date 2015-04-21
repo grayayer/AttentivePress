@@ -8,7 +8,7 @@
       },
       dist: {
         options: {
-          outputStyle: 'extended'
+          outputStyle: 'compressed'
         },
         files: {
           'css/app.css': 'scss/app.scss',

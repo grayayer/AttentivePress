@@ -17,3 +17,15 @@ div.tribe-events-schedule.published.tribe-clearfix {
 		}
 	}
 }
+
+.tribe-events-list {
+	
+	.tribe-events-loop .tribe-events-event-meta {
+		display: block;
+		padding:0;
+	}
+
+	.vevent.hentry h2 {
+	  font-size: 2.2em;
+	}
+}

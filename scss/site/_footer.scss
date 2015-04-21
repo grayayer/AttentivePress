@@ -13,6 +13,7 @@ footer.row {
 		@include single-transition();
 		&:hover {
 			color: $blue;
+			text-decoration: none;
 		}
 	}
 }
@@ -93,6 +94,7 @@ footer.row {
 		text-transform: uppercase;
 		&:hover {
 			background: lighten($red, 70%);
+			text-decoration: none;
 			//color: #FFF;
 		}
 		&.corporate_section {
@@ -112,11 +114,18 @@ footer.row {
 			margin-left: 3px;
 			position: relative;
 			top: -1px;
+			&:hover {
+				text-decoration:none;
+			}
 		}
 		&:hover {
 			color: darken($red, 10%);
 			position: relative;
 			left: 3px;
+			text-decoration: none; //this is negating underline for all the anchor because I can't just select it for the arrow
+			&:after {
+				text-decoration:none;
+			}
 		}
 	}
 }
