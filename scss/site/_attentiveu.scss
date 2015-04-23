@@ -20,3 +20,7 @@ div#tribe-events div.tribe-events-before-html {
 		margin-bottom: 0.5rem;		
 	}
 }
+
+body.single-tribe_events div.tribe-events-before-html {
+	display: none;
+}
